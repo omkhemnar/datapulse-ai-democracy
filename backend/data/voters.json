@@ -1,0 +1,1445 @@
+{
+  "voters": [
+    {
+      "id": 1,
+      "Name": "Ramesh Kumar",
+      "Age": 45,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "20"
+    },
+    {
+      "id": 2,
+      "Name": "Priya Sharma",
+      "Age": 22,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Student",
+      "Experience": "0"
+    },
+    {
+      "id": 3,
+      "Name": "Suresh Patel",
+      "Age": 67,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "40"
+    },
+    {
+      "id": 4,
+      "Name": "Anita Devi",
+      "Age": 35,
+      "Gender": "Female",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "15"
+    },
+    {
+      "id": 5,
+      "Name": "Vikram Singh",
+      "Age": 28,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Engineer",
+      "Experience": "5"
+    },
+    {
+      "id": 6,
+      "Name": "Kavita Joshi",
+      "Age": 72,
+      "Gender": "Female",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "45"
+    },
+    {
+      "id": 7,
+      "Name": "Rajesh Gupta",
+      "Age": 55,
+      "Gender": "Male",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "30"
+    },
+    {
+      "id": 8,
+      "Name": "Deepa Nair",
+      "Age": 19,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Student",
+      "Experience": "0"
+    },
+    {
+      "id": 9,
+      "Name": "Mohan Reddy",
+      "Age": 62,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "35"
+    },
+    {
+      "id": 10,
+      "Name": "Sneha Iyer",
+      "Age": 31,
+      "Gender": "Female",
+      "BoothID": "B003",
+      "Area": "Urban",
+      "Occupation": "Teacher",
+      "Experience": "8"
+    },
+    {
+      "id": 11,
+      "Name": "Arun Pillai",
+      "Age": 48,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "25"
+    },
+    {
+      "id": 12,
+      "Name": "Lakshmi Menon",
+      "Age": 68,
+      "Gender": "Female",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "40"
+    },
+    {
+      "id": 13,
+      "Name": "Karthik Rao",
+      "Age": 25,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Developer",
+      "Experience": "3"
+    },
+    {
+      "id": 14,
+      "Name": "Meera Krishnan",
+      "Age": 42,
+      "Gender": "Female",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "20"
+    },
+    {
+      "id": 15,
+      "Name": "Gopal Sharma",
+      "Age": 70,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "50"
+    },
+    {
+      "id": 16,
+      "Name": "Sunita Verma",
+      "Age": 29,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Nurse",
+      "Experience": "6"
+    },
+    {
+      "id": 17,
+      "Name": "Venkatesh Iyengar",
+      "Age": 52,
+      "Gender": "Male",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "28"
+    },
+    {
+      "id": 18,
+      "Name": "Pooja Bhat",
+      "Age": 21,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Student",
+      "Experience": "0"
+    },
+    {
+      "id": 19,
+      "Name": "Srinivas Murthy",
+      "Age": 65,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "42"
+    },
+    {
+      "id": 20,
+      "Name": "Rekha Venkat",
+      "Age": 38,
+      "Gender": "Female",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "18"
+    },
+    {
+      "id": 21,
+      "Name": "Naveen Kumar",
+      "Age": 26,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Accountant",
+      "Experience": "4"
+    },
+    {
+      "id": 22,
+      "Name": "Indira Govind",
+      "Age": 71,
+      "Gender": "Female",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "48"
+    },
+    {
+      "id": 23,
+      "Name": "Sanjay Mehta",
+      "Age": 44,
+      "Gender": "Male",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "22"
+    },
+    {
+      "id": 24,
+      "Name": "Kavitha Rao",
+      "Age": 27,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Teacher",
+      "Experience": "4"
+    },
+    {
+      "id": 25,
+      "Name": "Bala Subramanian",
+      "Age": 58,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "35"
+    },
+    {
+      "id": 26,
+      "Name": "Shanti Devi",
+      "Age": 69,
+      "Gender": "Female",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "45"
+    },
+    {
+      "id": 27,
+      "Name": "Rahul Nambiar",
+      "Age": 23,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Student",
+      "Experience": "0"
+    },
+    {
+      "id": 28,
+      "Name": "Uma Krishnan",
+      "Age": 33,
+      "Gender": "Female",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "12"
+    },
+    {
+      "id": 29,
+      "Name": "Vijay Chennapatna",
+      "Age": 63,
+      "Gender": "Male",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "40"
+    },
+    {
+      "id": 30,
+      "Name": "Divya Reddy",
+      "Age": 24,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Designer",
+      "Experience": "2"
+    },
+    {
+      "id": 31,
+      "Name": "Chandrasekhar",
+      "Age": 50,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "30"
+    },
+    {
+      "id": 32,
+      "Name": "Lalita Sharma",
+      "Age": 66,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "42"
+    },
+    {
+      "id": 33,
+      "Name": "Amit Joshi",
+      "Age": 30,
+      "Gender": "Male",
+      "BoothID": "B003",
+      "Area": "Urban",
+      "Occupation": "Engineer",
+      "Experience": "6"
+    },
+    {
+      "id": 34,
+      "Name": "Geeta Patel",
+      "Age": 40,
+      "Gender": "Female",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "20"
+    },
+    {
+      "id": 35,
+      "Name": "Prakash Singh",
+      "Age": 74,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "52"
+    },
+    {
+      "id": 36,
+      "Name": "Neha Gupta",
+      "Age": 20,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Student",
+      "Experience": "0"
+    },
+    {
+      "id": 37,
+      "Name": "Murugan Pillai",
+      "Age": 46,
+      "Gender": "Male",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "25"
+    },
+    {
+      "id": 38,
+      "Name": "Saraswati Devi",
+      "Age": 64,
+      "Gender": "Female",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "40"
+    },
+    {
+      "id": 39,
+      "Name": "Aditya Rao",
+      "Age": 32,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Manager",
+      "Experience": "8"
+    },
+    {
+      "id": 40,
+      "Name": "Vasundhara Iyer",
+      "Age": 36,
+      "Gender": "Female",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "15"
+    },
+    {
+      "id": 41,
+      "Name": "Ravi Kumar",
+      "Age": 57,
+      "Gender": "Male",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "35"
+    },
+    {
+      "id": 42,
+      "Name": "Anjali Nair",
+      "Age": 18,
+      "Gender": "Female",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Student",
+      "Experience": "0"
+    },
+    {
+      "id": 43,
+      "Name": "Balakrishnan",
+      "Age": 73,
+      "Gender": "Male",
+      "BoothID": "B003",
+      "Area": "Rural",
+      "Occupation": "Retired",
+      "Experience": "50"
+    },
+    {
+      "id": 44,
+      "Name": "Kamala Krishnan",
+      "Age": 39,
+      "Gender": "Female",
+      "BoothID": "B001",
+      "Area": "Rural",
+      "Occupation": "Farmer",
+      "Experience": "18"
+    },
+    {
+      "id": 45,
+      "Name": "Siddharth Menon",
+      "Age": 27,
+      "Gender": "Male",
+      "BoothID": "B002",
+      "Area": "Urban",
+      "Occupation": "Doctor",
+      "Experience": "4"
+    }
+  ],
+  "clusters": [
+    {
+      "cluster_name": "Working Age (36-59)",
+      "count": 14
+    },
+    {
+      "cluster_name": "Farmers",
+      "count": 18
+    },
+    {
+      "cluster_name": "Youth (18-25)",
+      "count": 8
+    },
+    {
+      "cluster_name": "Women",
+      "count": 22
+    },
+    {
+      "cluster_name": "Senior Citizens (60+)",
+      "count": 13
+    },
+    {
+      "cluster_name": "Youth (26-35)",
+      "count": 10
+    }
+  ],
+  "recommendations": [
+    {
+      "cluster": "PM-KISAN",
+      "scheme": "PM-KISAN"
+    },
+    {
+      "cluster": "Crop Insurance (Fasal Bima)",
+      "scheme": "Crop Insurance (Fasal Bima)"
+    },
+    {
+      "cluster": "Skill India (18+)",
+      "scheme": "Skill India (18+)"
+    },
+    {
+      "cluster": "Youth Education Scholarship",
+      "scheme": "Youth Education Scholarship"
+    },
+    {
+      "cluster": "Startup India",
+      "scheme": "Startup India"
+    },
+    {
+      "cluster": "Beti Bachao Beti Padhao",
+      "scheme": "Beti Bachao Beti Padhao"
+    },
+    {
+      "cluster": "Ujjwala Yojana",
+      "scheme": "Ujjwala Yojana"
+    },
+    {
+      "cluster": "Ladli Behna Yojana",
+      "scheme": "Ladli Behna Yojana"
+    },
+    {
+      "cluster": "Ayushman Bharat",
+      "scheme": "Ayushman Bharat"
+    },
+    {
+      "cluster": "Senior Citizen Pension",
+      "scheme": "Senior Citizen Pension"
+    }
+  ],
+  "voter_groups": [
+    {
+      "id": 1,
+      "Name": "Ramesh Kumar",
+      "Age": 45,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 2,
+      "Name": "Priya Sharma",
+      "Age": 22,
+      "Gender": "Female",
+      "Occupation": "Student",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)",
+        "Women"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana"
+      ]
+    },
+    {
+      "id": 3,
+      "Name": "Suresh Patel",
+      "Age": 67,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Farmers"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 4,
+      "Name": "Anita Devi",
+      "Age": 35,
+      "Gender": "Female",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Youth (26-35)",
+        "Women",
+        "Farmers"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 5,
+      "Name": "Vikram Singh",
+      "Age": 28,
+      "Gender": "Male",
+      "Occupation": "Engineer",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (26-35)"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India"
+      ]
+    },
+    {
+      "id": 6,
+      "Name": "Kavita Joshi",
+      "Age": 72,
+      "Gender": "Female",
+      "Occupation": "Retired",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Women"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 7,
+      "Name": "Rajesh Gupta",
+      "Age": 55,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 8,
+      "Name": "Deepa Nair",
+      "Age": 19,
+      "Gender": "Female",
+      "Occupation": "Student",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)",
+        "Women"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 9,
+      "Name": "Mohan Reddy",
+      "Age": 62,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Farmers"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 10,
+      "Name": "Sneha Iyer",
+      "Age": 31,
+      "Gender": "Female",
+      "Occupation": "Teacher",
+      "BoothID": "B003",
+      "groups": [
+        "Youth (26-35)",
+        "Women"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana"
+      ]
+    },
+    {
+      "id": 11,
+      "Name": "Arun Pillai",
+      "Age": 48,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B002",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 12,
+      "Name": "Lakshmi Menon",
+      "Age": 68,
+      "Gender": "Female",
+      "Occupation": "Retired",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Women"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 13,
+      "Name": "Karthik Rao",
+      "Age": 25,
+      "Gender": "Male",
+      "Occupation": "Developer",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India"
+      ]
+    },
+    {
+      "id": 14,
+      "Name": "Meera Krishnan",
+      "Age": 42,
+      "Gender": "Female",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Working Age (36-59)",
+        "Women",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 15,
+      "Name": "Gopal Sharma",
+      "Age": 70,
+      "Gender": "Male",
+      "Occupation": "Retired",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension"
+      ]
+    },
+    {
+      "id": 16,
+      "Name": "Sunita Verma",
+      "Age": 29,
+      "Gender": "Female",
+      "Occupation": "Nurse",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (26-35)",
+        "Women"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana"
+      ]
+    },
+    {
+      "id": 17,
+      "Name": "Venkatesh Iyengar",
+      "Age": 52,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 18,
+      "Name": "Pooja Bhat",
+      "Age": 21,
+      "Gender": "Female",
+      "Occupation": "Student",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)",
+        "Women"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana"
+      ]
+    },
+    {
+      "id": 19,
+      "Name": "Srinivas Murthy",
+      "Age": 65,
+      "Gender": "Male",
+      "Occupation": "Retired",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension"
+      ]
+    },
+    {
+      "id": 20,
+      "Name": "Rekha Venkat",
+      "Age": 38,
+      "Gender": "Female",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Working Age (36-59)",
+        "Women",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 21,
+      "Name": "Naveen Kumar",
+      "Age": 26,
+      "Gender": "Male",
+      "Occupation": "Accountant",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (26-35)"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India"
+      ]
+    },
+    {
+      "id": 22,
+      "Name": "Indira Govind",
+      "Age": 71,
+      "Gender": "Female",
+      "Occupation": "Retired",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Women"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 23,
+      "Name": "Sanjay Mehta",
+      "Age": 44,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 24,
+      "Name": "Kavitha Rao",
+      "Age": 27,
+      "Gender": "Female",
+      "Occupation": "Teacher",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (26-35)",
+        "Women"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana"
+      ]
+    },
+    {
+      "id": 25,
+      "Name": "Bala Subramanian",
+      "Age": 58,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 26,
+      "Name": "Shanti Devi",
+      "Age": 69,
+      "Gender": "Female",
+      "Occupation": "Retired",
+      "BoothID": "B003",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Women"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 27,
+      "Name": "Rahul Nambiar",
+      "Age": 23,
+      "Gender": "Male",
+      "Occupation": "Student",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India"
+      ]
+    },
+    {
+      "id": 28,
+      "Name": "Uma Krishnan",
+      "Age": 33,
+      "Gender": "Female",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Youth (26-35)",
+        "Women",
+        "Farmers"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 29,
+      "Name": "Vijay Chennapatna",
+      "Age": 63,
+      "Gender": "Male",
+      "Occupation": "Retired",
+      "BoothID": "B003",
+      "groups": [
+        "Senior Citizens (60+)"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension"
+      ]
+    },
+    {
+      "id": 30,
+      "Name": "Divya Reddy",
+      "Age": 24,
+      "Gender": "Female",
+      "Occupation": "Designer",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)",
+        "Women"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana"
+      ]
+    },
+    {
+      "id": 31,
+      "Name": "Chandrasekhar",
+      "Age": 50,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 32,
+      "Name": "Lalita Sharma",
+      "Age": 66,
+      "Gender": "Female",
+      "Occupation": "Retired",
+      "BoothID": "B002",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Women"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 33,
+      "Name": "Amit Joshi",
+      "Age": 30,
+      "Gender": "Male",
+      "Occupation": "Engineer",
+      "BoothID": "B003",
+      "groups": [
+        "Youth (26-35)"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India"
+      ]
+    },
+    {
+      "id": 34,
+      "Name": "Geeta Patel",
+      "Age": 40,
+      "Gender": "Female",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Working Age (36-59)",
+        "Women",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 35,
+      "Name": "Prakash Singh",
+      "Age": 74,
+      "Gender": "Male",
+      "Occupation": "Retired",
+      "BoothID": "B002",
+      "groups": [
+        "Senior Citizens (60+)"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension"
+      ]
+    },
+    {
+      "id": 36,
+      "Name": "Neha Gupta",
+      "Age": 20,
+      "Gender": "Female",
+      "Occupation": "Student",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)",
+        "Women"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 37,
+      "Name": "Murugan Pillai",
+      "Age": 46,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 38,
+      "Name": "Saraswati Devi",
+      "Age": 64,
+      "Gender": "Female",
+      "Occupation": "Retired",
+      "BoothID": "B001",
+      "groups": [
+        "Senior Citizens (60+)",
+        "Women"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 39,
+      "Name": "Aditya Rao",
+      "Age": 32,
+      "Gender": "Male",
+      "Occupation": "Manager",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (26-35)"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India"
+      ]
+    },
+    {
+      "id": 40,
+      "Name": "Vasundhara Iyer",
+      "Age": 36,
+      "Gender": "Female",
+      "Occupation": "Farmer",
+      "BoothID": "B003",
+      "groups": [
+        "Working Age (36-59)",
+        "Women",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 41,
+      "Name": "Ravi Kumar",
+      "Age": 57,
+      "Gender": "Male",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Working Age (36-59)",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 42,
+      "Name": "Anjali Nair",
+      "Age": 18,
+      "Gender": "Female",
+      "Occupation": "Student",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (18-25)",
+        "Women"
+      ],
+      "primary_group": "Youth (18-25)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Youth Education Scholarship",
+        "Startup India",
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana"
+      ]
+    },
+    {
+      "id": 43,
+      "Name": "Balakrishnan",
+      "Age": 73,
+      "Gender": "Male",
+      "Occupation": "Retired",
+      "BoothID": "B003",
+      "groups": [
+        "Senior Citizens (60+)"
+      ],
+      "primary_group": "Senior Citizens (60+)",
+      "eligible_schemes": [
+        "Ayushman Bharat",
+        "Senior Citizen Pension"
+      ]
+    },
+    {
+      "id": 44,
+      "Name": "Kamala Krishnan",
+      "Age": 39,
+      "Gender": "Female",
+      "Occupation": "Farmer",
+      "BoothID": "B001",
+      "groups": [
+        "Working Age (36-59)",
+        "Women",
+        "Farmers"
+      ],
+      "primary_group": "Working Age (36-59)",
+      "eligible_schemes": [
+        "Beti Bachao Beti Padhao",
+        "Ujjwala Yojana",
+        "Ladli Behna Yojana",
+        "PM-KISAN",
+        "Crop Insurance (Fasal Bima)"
+      ]
+    },
+    {
+      "id": 45,
+      "Name": "Siddharth Menon",
+      "Age": 27,
+      "Gender": "Male",
+      "Occupation": "Doctor",
+      "BoothID": "B002",
+      "groups": [
+        "Youth (26-35)"
+      ],
+      "primary_group": "Youth (26-35)",
+      "eligible_schemes": [
+        "Skill India (18+)",
+        "Startup India"
+      ]
+    }
+  ],
+  "scheme_groups": [
+    {
+      "scheme": "PM-KISAN",
+      "count": 18,
+      "eligibility": "PM-KISAN",
+      "description": ""
+    },
+    {
+      "scheme": "Crop Insurance (Fasal Bima)",
+      "count": 18,
+      "eligibility": "Crop Insurance (Fasal Bima)",
+      "description": ""
+    },
+    {
+      "scheme": "Skill India (18+)",
+      "count": 18,
+      "eligibility": "Skill India (18+)",
+      "description": ""
+    },
+    {
+      "scheme": "Youth Education Scholarship",
+      "count": 8,
+      "eligibility": "Youth Education Scholarship",
+      "description": ""
+    },
+    {
+      "scheme": "Startup India",
+      "count": 18,
+      "eligibility": "Startup India",
+      "description": ""
+    },
+    {
+      "scheme": "Beti Bachao Beti Padhao",
+      "count": 22,
+      "eligibility": "Beti Bachao Beti Padhao",
+      "description": ""
+    },
+    {
+      "scheme": "Ujjwala Yojana",
+      "count": 22,
+      "eligibility": "Ujjwala Yojana",
+      "description": ""
+    },
+    {
+      "scheme": "Ladli Behna Yojana",
+      "count": 13,
+      "eligibility": "Ladli Behna Yojana",
+      "description": ""
+    },
+    {
+      "scheme": "Ayushman Bharat",
+      "count": 13,
+      "eligibility": "Ayushman Bharat",
+      "description": ""
+    },
+    {
+      "scheme": "Senior Citizen Pension",
+      "count": 13,
+      "eligibility": "Senior Citizen Pension",
+      "description": ""
+    }
+  ],
+  "group_summary": [
+    {
+      "name": "Working Age (36-59)",
+      "count": 14
+    },
+    {
+      "name": "Farmers",
+      "count": 18
+    },
+    {
+      "name": "Youth (18-25)",
+      "count": 8
+    },
+    {
+      "name": "Women",
+      "count": 22
+    },
+    {
+      "name": "Senior Citizens (60+)",
+      "count": 13
+    },
+    {
+      "name": "Youth (26-35)",
+      "count": 10
+    }
+  ]
+}
