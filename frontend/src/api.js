@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Use VITE_API_URL in production (set in Vercel), fallback to localhost in development
-const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? '' : 'http://localhost:5001')
+export const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? '' : 'http://localhost:5001')
 
 export const uploadCSV = async (file) => {
   const formData = new FormData()

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Shield, ArrowRight, Loader2, Eye, EyeOff } from 'lucide-react';
+import { API_BASE } from '../api';
 
 export default function BoothAuthPage() {
   const navigate = useNavigate();
@@ -37,7 +38,7 @@ export default function BoothAuthPage() {
         payload.password = password;
       }
 
-      const res = await fetch(endpoint, {
+      const res = await fetch(`${API_BASE}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)

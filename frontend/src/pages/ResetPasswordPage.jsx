@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Shield, BarChart4, ArrowRight, Loader2, Eye, EyeOff } from 'lucide-react';
+import { API_BASE } from '../api';
 
 export default function ResetPasswordPage() {
   const { role, token } = useParams(); // role will be 'booth' or 'voter'
@@ -27,7 +28,7 @@ export default function ResetPasswordPage() {
 
     try {
       const endpoint = `/api/auth/${role}/reset-password/${token}`;
-      const res = await fetch(endpoint, {
+      const res = await fetch(`${API_BASE}${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ password })
