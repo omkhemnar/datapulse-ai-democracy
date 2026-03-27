@@ -2,6 +2,11 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
 const VoterAuthSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    trim: true
+  },
   voterId: {
     type: String,
     required: true,
@@ -11,10 +16,19 @@ const VoterAuthSchema = new mongoose.Schema({
     minlength: 10,
     maxlength: 10
   },
+  email: {
+    type: String,
+    required: true,
+    unique: true,
+    trim: true,
+    lowercase: true
+  },
   password: {
     type: String,
     required: true
-  }
+  },
+  resetPasswordToken: String,
+  resetPasswordExpires: Date
 }, { timestamps: true });
 
 // Hash password before saving

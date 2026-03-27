@@ -21,114 +21,38 @@ app.add_middleware(
 class ClusterRequest(BaseModel):
     voters: List[dict]
 
+def build_cluster_profiles(df, n_clusters):
+    cluster_profiles = {}
+    for i in range(n_clusters):
+        c_df = df[df['Cluster_ID'] == i]
+        if c_df.empty:
+            cluster_profiles[i] = "General Citizens"
+            continue
+            
+        avg_age = c_df['Age'].mean()
+        
+        mode_occ = c_df['Occupation'].mode()
+        top_occ = mode_occ[0] if not mode_occ.empty and str(mode_occ[0]).strip() else "workers"
+        top_occ_lower = str(top_occ).lower()
+        
+        mode_gen = c_df['Gender'].mode()
+        top_gen = mode_gen[0] if not mode_gen.empty and str(mode_gen[0]).strip() else "citizens"
+        top_gen_lower = str(top_gen).lower()
 
-# Scheme definitions with eligibility rules
-SCHEMES = {
-    "Ladli Behna Yojana": {
-        "eligibility": "Women, Age 21-60",
-        "description": "Monthly financial assistance for women",
-    },
-    "Beti Bachao Beti Padhao": {
-        "eligibility": "Women & Girls",
-        "description": "Girl child welfare and education",
-    },
-    "Ujjwala Yojana": {
-        "eligibility": "Women (BPL)",
-        "description": "Free LPG connection",
-    },
-    "Skill India (18+)": {
-        "eligibility": "Age 18-35",
-        "description": "Free skill development courses",
-    },
-    "Startup India": {
-        "eligibility": "Age 18-40",
-        "description": "Entrepreneurship support",
-    },
-    "Youth Education Scholarship": {
-        "eligibility": "Age 18-25",
-        "description": "Higher education scholarships",
-    },
-    "Child Welfare Schemes": {
-        "eligibility": "Under 18",
-        "description": "Education and child development",
-    },
-    "PM-KISAN": {
-        "eligibility": "Farmers",
-        "description": "Direct income support for farmers",
-    },
-    "Crop Insurance (Fasal Bima)": {
-        "eligibility": "Farmers",
-        "description": "Pradhan Mantri Fasal Bima Yojana",
-    },
-    "Ayushman Bharat": {
-        "eligibility": "Age 60+ / Senior Citizens",
-        "description": "Health insurance scheme",
-    },
-    "Senior Citizen Pension": {
-        "eligibility": "Age 60+",
-        "description": "National Pension Scheme",
-    },
-}
+        age_tag = "young" if avg_age < 30 else "senior" if avg_age > 55 else "working-age"
+        gen_tag = "women" if top_gen_lower in ["female", "f"] else "citizens" if top_gen_lower in ["male", "m"] else "people"
+        
+        if "farm" in top_occ_lower or "agri" in top_occ_lower:
+            occ_tag = "farmers"
+        elif "student" in top_occ_lower or "study" in top_occ_lower:
+            occ_tag = "students"
+        else:
+            occ_tag = top_occ_lower.split()[0] if top_occ_lower else "workers"
 
-
-def classify_voter(voter: dict) -> dict:
-    """Classify a voter into scheme-eligible groups based on age, gender, occupation."""
-    age = int(voter.get("Age") or 0)
-    gender = (voter.get("Gender") or "").strip().lower()
-    occupation = (voter.get("Occupation") or "").lower()
-
-    is_female = gender in ("female", "f")
-    is_farmer = "farmer" in occupation or "agricultur" in occupation
-
-    groups = []
-    eligible_schemes = []
-
-    # Age-based groups
-    if age < 18:
-        groups.append("Youth (Under 18)")
-        eligible_schemes.append("Child Welfare Schemes")
-    elif 18 <= age <= 25:
-        groups.append("Youth (18-25)")
-        eligible_schemes.extend([
-            "Skill India (18+)",
-            "Youth Education Scholarship",
-            "Startup India",
-        ])
-    elif 26 <= age <= 35:
-        groups.append("Youth (26-35)")
-        eligible_schemes.extend([
-            "Skill India (18+)",
-            "Startup India",
-        ])
-    elif 36 <= age <= 59:
-        groups.append("Working Age (36-59)")
-    else:
-        groups.append("Senior Citizens (60+)")
-        eligible_schemes.extend([
-            "Ayushman Bharat",
-            "Senior Citizen Pension",
-        ])
-
-    # Gender-based
-    if is_female:
-        groups.append("Women")
-        eligible_schemes.extend(["Beti Bachao Beti Padhao", "Ujjwala Yojana"])
-        if 21 <= age <= 60:
-            eligible_schemes.append("Ladli Behna Yojana")
-
-    # Occupation-based
-    if is_farmer:
-        groups.append("Farmers")
-        eligible_schemes.extend(["PM-KISAN", "Crop Insurance (Fasal Bima)"])
-
-    # Deduplicate schemes
-    eligible_schemes = list(dict.fromkeys(eligible_schemes))
-
-    return {
-        "groups": groups,
-        "eligible_schemes": eligible_schemes,
-        "primary_group": groups[0] if groups else "General",
-    }
+        cluster_name = f"Cluster {i+1} - {age_tag.capitalize()} {gen_tag.capitalize()} {occ_tag.capitalize()}"
+        cluster_profiles[i] = cluster_name
+        
+    return cluster_profiles
 
 
 @app.post("/api/cluster")
@@ -140,67 +64,60 @@ def cluster_voters(req: ClusterRequest):
             "recommendations": [],
             "voter_groups": [],
             "scheme_groups": [],
+            "group_summary": []
         }
 
-    # Classify each voter
+    df = pd.DataFrame(voters)
+    df['Age'] = pd.to_numeric(df['Age'], errors='coerce').fillna(35)
+    
+    df['Gender_Code'] = df['Gender'].str.lower().map({'male': 0, 'female': 1, 'm': 0, 'f': 1}).fillna(0)
+    
+    le = LabelEncoder()
+    df['Occ_Code'] = le.fit_transform(df['Occupation'].astype(str).str.lower().fillna('general'))
+
+    X = df[['Age', 'Gender_Code', 'Occ_Code']].values
+    n_clusters = min(4, len(df))
+    
+    if n_clusters > 0:
+        kmeans = KMeans(n_clusters=n_clusters, random_state=42, n_init=10)
+        df['Cluster_ID'] = kmeans.fit_predict(X)
+    else:
+        df['Cluster_ID'] = 0
+
+    cluster_profiles = build_cluster_profiles(df, n_clusters)
+        
     voter_groups = []
     group_counts = {}
-    scheme_to_voters = {}
-
-    for v in voters:
-        classification = classify_voter(v)
+    
+    for idx, row in df.iterrows():
+        c_id = row['Cluster_ID']
+        c_name = cluster_profiles.get(c_id, "General Cluster")
+        
+        group_counts[c_name] = group_counts.get(c_name, 0) + 1
+        
         voter_groups.append({
-            "id": v.get("id"),
-            "Name": v.get("Name"),
-            "Age": v.get("Age"),
-            "Gender": v.get("Gender"),
-            "Occupation": v.get("Occupation"),
-            "BoothID": v.get("BoothID"),
-            "groups": classification["groups"],
-            "primary_group": classification["primary_group"],
-            "eligible_schemes": classification["eligible_schemes"],
+            "id": row.get("id"),
+            "Name": row.get("Name"),
+            "Age": row.get("Age"),
+            "Gender": row.get("Gender"),
+            "Occupation": row.get("Occupation"),
+            "BoothID": row.get("BoothID"),
+            "Email": row.get("Email", f"voter_{idx}@example.com"),
+            "VoterID": row.get("VoterID", ""),
+            "groups": [c_name],
+            "primary_group": c_name,
+            "eligible_schemes": []  # Assigned dynamically by NLP algorithm in Node.js
         })
 
-        for g in classification["groups"]:
-            group_counts[g] = group_counts.get(g, 0) + 1
-        for s in classification["eligible_schemes"]:
-            if s not in scheme_to_voters:
-                scheme_to_voters[s] = []
-            scheme_to_voters[s].append(v.get("Name"))
-
-    # Build scheme groups for display
-    scheme_groups = []
-    for scheme_name, count in sorted(
-        ((s, len(names)) for s, names in scheme_to_voters.items()),
-        key=lambda x: -x[1],
-    ):
-        info = SCHEMES.get(scheme_name, {})
-        scheme_groups.append({
-            "scheme": scheme_name,
-            "count": count,
-            "eligibility": info.get("eligibility", ""),
-            "description": info.get("description", ""),
-        })
-
-    # Cluster distribution (primary groups)
     clusters = [{"cluster_name": k, "count": v} for k, v in group_counts.items()]
-
-    # Legacy recommendations format
-    recommendations = []
-    for sg in scheme_groups:
-        recommendations.append({
-            "cluster": sg["eligibility"],
-            "scheme": f"{sg['scheme']} - {sg['description']}",
-        })
 
     return {
         "clusters": clusters,
-        "recommendations": recommendations,
+        "recommendations": [], 
         "voter_groups": voter_groups,
-        "scheme_groups": scheme_groups,
+        "scheme_groups": [], 
         "group_summary": [{"name": k, "count": v} for k, v in group_counts.items()],
     }
-
 
 @app.get("/health")
 def health():

@@ -1,11 +1,20 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { BarChart4, ArrowRight, Loader2, Eye, EyeOff } from 'lucide-react';
 
 export default function VoterAuthPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      navigate('/citizen', { replace: true });
+    }
+  }, [navigate]);
+
   const [mode, setMode] = useState('login'); // login | signup | forgot
+  const [name, setName] = useState('');
   const [voterId, setVoterId] = useState('');
+  const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -23,14 +32,21 @@ export default function VoterAuthPage() {
       let payload = { voterId };
 
       if (mode === 'login') endpoint = '/api/auth/voter/login';
-      if (mode === 'signup') endpoint = '/api/auth/voter/signup';
-      if (mode === 'forgot') endpoint = '/api/auth/voter/forgot-password';
+      if (mode === 'signup') {
+        endpoint = '/api/auth/voter/signup';
+        payload.email = email;
+        payload.name = name;
+      }
+      if (mode === 'forgot') {
+        endpoint = '/api/auth/voter/forgot-password';
+        payload = { email };
+      }
 
       if (mode !== 'forgot') {
         payload.password = password;
       }
 
-      const res = await fetch(`http://localhost:5001${endpoint}`, {
+      const res = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -42,9 +58,10 @@ export default function VoterAuthPage() {
       }
 
       if (mode === 'login') {
-        localStorage.setItem('voterToken', data.token);
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('voterName', data.name || 'Citizen');
         // Navigate and pass voterData to CitizenMobilePage
-        navigate('/citizen', { state: { voterData: data.voterData } });
+        navigate('/citizen', { state: { voterData: data.voterData, name: data.name, voterId: data.voterId } });
       } else if (mode === 'signup') {
         setMessage('Registration successful. Please login.');
         setTimeout(() => setMode('login'), 2000);
@@ -88,18 +105,46 @@ export default function VoterAuthPage() {
           {message && <div className="mb-4 p-3 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-sm">{message}</div>}
 
           <form onSubmit={handleSubmit} className="space-y-4 text-left">
-            <div>
-              <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Voter ID</label>
-              <input
-                type="text"
-                required
-                maxLength={10}
-                value={voterId}
-                onChange={e => setVoterId(e.target.value.toUpperCase())}
-                className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white font-mono tracking-widest uppercase focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition"
-                placeholder="ABC1234567"
-              />
-            </div>
+            {mode === 'signup' && (
+              <div>
+                <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name</label>
+                <input
+                  type="text"
+                  required
+                  value={name}
+                  onChange={e => setName(e.target.value)}
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition"
+                  placeholder="Gauri Patil"
+                />
+              </div>
+            )}
+            {mode !== 'forgot' && (
+              <div>
+                <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Voter ID</label>
+                <input
+                  type="text"
+                  required
+                  maxLength={10}
+                  value={voterId}
+                  onChange={e => setVoterId(e.target.value.toUpperCase())}
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white font-mono tracking-widest uppercase focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition"
+                  placeholder="ABC1234567"
+                />
+              </div>
+            )}
+            {mode !== 'login' && (
+              <div>
+                <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Registered Email</label>
+                <input
+                  type="email"
+                  required
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  className="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-lg text-white focus:outline-none focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition"
+                  placeholder="voter@example.com"
+                />
+              </div>
+            )}
             {mode !== 'forgot' && (
               <div>
                 <label className="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Password</label>

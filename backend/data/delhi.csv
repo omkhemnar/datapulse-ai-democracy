@@ -1,0 +1,502 @@
+Name,Voter_ID,Booth_Address,Latitude,Longitude,Age,Gender,Ward_No,Date_of_Voting,Time_of_Voting,Turnout_Category,Peak_Hour_Flag,Primary Occupation,Geographic Region,Region,Email
+Gauri Lanke,GL12345678,"Andheri East, Mumbai, Maharashtra, India",19.1159597,72.8713973,37,Female,20,3/4/2025,17:21,Medium,0,Student,Urban,North,gaurilanke24@gmail.com
+Aarav Sharma,KCR1635353,"Andheri East, Mumbai, Maharashtra, India",19.1159597,72.8713973,37,Female,20,3/4/2025,17:21,Medium,0,Student,Urban,North,payallanke7@gmail.com
+Aarav Kadam,XKM8874019,"Garkheda, Aurangabad, Maharashtra, India",19.86203669,75.35360244,50,Female,18,3/8/2025,15:34,Medium,0,Business,Rural,South,omkhemnar2@gmail.com
+Arjun Patil,EMU4241865,"CIDCO, Aurangabad, Maharashtra, India",19.87584894,75.34148465,42,Female,17,3/3/2025,16:33,Medium,0,Student,Rural,South,kalenikhil0007@gmail.com
+Aditya Deshmukh,FST6420271,"Andheri East, Mumbai, Maharashtra, India",19.11185143,72.86606697,50,Male,17,3/3/2025,14:36,Medium,1,Government Employee,Urban,North,pranavjaiwal321@gmail.com
+Diya Gupta,VFB5616153,"College Road, Nashik, Maharashtra, India",19.99411185,73.79234004,63,Male,17,3/4/2025,15:21,Low,0,Retired,Urban,East,kadamshubham1905@gmail.com
+Arjun Jain,GKB0519890,"College Road, Nashik, Maharashtra, India",19.99600775,73.79205885,53,Female,16,3/4/2025,12:32,Medium,1,Student,Semi-Urban,Central,gauriilanke45@gmail.com
+Aditya Joshi,PCW1206172,"Sitabuldi, Nagpur, Maharashtra, India",21.15037362,79.09026206,50,Female,10,3/4/2025,15:20,Medium,0,Farmer,Semi-Urban,East,aditya.joshi@gmail.com
+Kavya Gupta,TCU1146146,"MG Road, Pune, Maharashtra, India",18.52447654,73.85361403,65,Male,2,3/1/2025,11:39,Low,1,Retired,Urban,Central,kavya.gupta@gmail.com
+Priya Deshmukh,XNQ3092202,"Andheri East, Mumbai, Maharashtra, India",19.11713943,72.86714832,31,Male,14,3/1/2025,7:58,Medium,0,Government Employee,Semi-Urban,Central,priya.deshmukh@gmail.com
+Ananya Gupta,RYP0228835,"MG Road, Pune, Maharashtra, India",18.51622903,73.86124562,19,Male,1,3/6/2025,11:21,High,1,Student,Rural,Central,ananya.gupta@gmail.com
+Aditya Kadam,QXP2422864,"MG Road, Pune, Maharashtra, India",18.51925566,73.85213161,33,Male,2,3/1/2025,12:52,Medium,1,Retired,Semi-Urban,North,aditya.kadam@gmail.com
+Priya Sharma,CXR3181221,"College Road, Nashik, Maharashtra, India",19.99280811,73.78928653,67,Male,9,3/7/2025,17:36,Low,0,Business,Urban,Central,priya.sharma@gmail.com
+Aditya Jain,BRH7856551,"Shivaji Nagar, Pune, Maharashtra, India",18.53300828,73.84276306,24,Male,15,3/3/2025,15:50,High,0,Student,Rural,Central,aditya.jain@gmail.com
+Priya Yadav,AYH8307471,"CIDCO, Aurangabad, Maharashtra, India",19.87379096,75.34436078,44,Male,18,3/3/2025,18:26,Medium,0,Business,Urban,North,priya.yadav@gmail.com
+Aarav Joshi,QAR5098265,"Andheri East, Mumbai, Maharashtra, India",19.11030711,72.8692339,32,Male,8,3/4/2025,14:35,Medium,1,Government Employee,Rural,South,aarav.joshi@gmail.com
+Vivaan Joshi,NYB6575045,"Dadar West, Mumbai, Maharashtra, India",19.01884164,72.85080207,63,Female,9,3/7/2025,11:45,Low,1,Student,Urban,West,vivaan.joshi@gmail.com
+Kavya Patil,YZJ3497708,"Garkheda, Aurangabad, Maharashtra, India",19.85808726,75.34611175,64,Male,8,3/2/2025,8:42,Low,0,Business,Semi-Urban,North,kavya.patil@gmail.com
+Aarav Kadam,GWS5412074,"Shivaji Nagar, Pune, Maharashtra, India",18.52857354,73.84480736,47,Female,10,3/7/2025,10:37,Medium,1,Farmer,Urban,East,aarav.kadam1@gmail.com
+Sai Yadav,KEC4554890,"MG Road, Pune, Maharashtra, India",18.52421437,73.86098881,55,Male,4,3/8/2025,13:14,Medium,1,Business,Semi-Urban,Central,sai.yadav@gmail.com
+Aarav Sharma,TUT6555298,"Sitabuldi, Nagpur, Maharashtra, India",21.14770395,79.09252447,37,Male,14,3/2/2025,8:47,Medium,0,Worker,Semi-Urban,South,aarav.sharma1@gmail.com
+Arjun Deshmukh,PLM8031651,"Garkheda, Aurangabad, Maharashtra, India",19.86037295,75.3496334,74,Male,1,3/5/2025,7:24,Low,0,Government Employee,Rural,North,arjun.deshmukh@gmail.com
+Ananya Joshi,GCC0450432,"College Road, Nashik, Maharashtra, India",19.99442359,73.79051553,43,Female,5,3/6/2025,13:44,Medium,1,Student,Urban,South,ananya.joshi@gmail.com
+Vivaan Joshi,GHT4182041,"Shivaji Nagar, Pune, Maharashtra, India",18.53256541,73.84294483,43,Male,4,3/1/2025,17:33,Medium,0,Farmer,Rural,North,vivaan.joshi1@gmail.com
+Isha Patil,WDM4326143,"CIDCO, Aurangabad, Maharashtra, India",19.880796,75.33971466,41,Female,16,3/8/2025,14:09,Medium,1,Retired,Urban,Central,isha.patil@gmail.com
+Isha Joshi,SOV5443232,"Andheri East, Mumbai, Maharashtra, India",19.11348789,72.86729405,45,Male,19,3/2/2025,8:12,Medium,0,Worker,Urban,East,isha.joshi@gmail.com
+Ananya Kadam,DVL4720948,"Andheri East, Mumbai, Maharashtra, India",19.11833915,72.86860594,63,Female,15,3/3/2025,15:56,Low,0,Student,Urban,Central,ananya.kadam@gmail.com
+Arjun Sharma,BNX2264002,"CIDCO, Aurangabad, Maharashtra, India",19.87636501,75.34545365,34,Male,6,3/8/2025,19:00,Medium,0,Farmer,Urban,Central,arjun.sharma@gmail.com
+Sai Yadav,NGA5786710,"College Road, Nashik, Maharashtra, India",19.99691183,73.78509385,56,Female,6,3/7/2025,15:42,Medium,0,Business,Urban,North,sai.yadav1@gmail.com
+Aarav Jain,AEV7117557,"Sitabuldi, Nagpur, Maharashtra, India",21.1479046,79.0925667,63,Female,12,3/6/2025,18:14,Low,0,Worker,Urban,Central,aarav.jain@gmail.com
+Vivaan Deshmukh,OXN5448012,"Garkheda, Aurangabad, Maharashtra, India",19.86377234,75.35134831,18,Female,15,3/8/2025,18:05,High,0,Student,Urban,North,vivaan.deshmukh@gmail.com
+Aditya Sharma,BDS0322833,"Dadar West, Mumbai, Maharashtra, India",19.01989464,72.84886444,75,Male,4,3/7/2025,16:31,Low,0,Student,Semi-Urban,West,aditya.sharma@gmail.com
+Sai Joshi,JFM5571822,"Andheri East, Mumbai, Maharashtra, India",19.10868484,72.87148696,48,Female,17,3/3/2025,14:58,Medium,1,Business,Semi-Urban,North,sai.joshi@gmail.com
+Sai Sharma,YSO2021222,"College Road, Nashik, Maharashtra, India",19.99783166,73.79149088,22,Female,11,3/8/2025,11:33,High,1,Student,Semi-Urban,West,sai.sharma@gmail.com
+Kavya Jain,OBY9237017,"CIDCO, Aurangabad, Maharashtra, India",19.872937,75.34580256,68,Female,9,3/3/2025,7:55,Low,0,Government Employee,Rural,South,kavya.jain@gmail.com
+Aditya Jain,RXK6782340,"MG Road, Pune, Maharashtra, India",18.51822655,73.85637392,18,Female,2,3/7/2025,16:37,High,0,Farmer,Urban,North,aditya.jain1@gmail.com
+Isha Deshmukh,OIC7531072,"Andheri East, Mumbai, Maharashtra, India",19.11343787,72.87008569,76,Female,3,3/5/2025,12:20,Low,1,Business,Urban,South,isha.deshmukh@gmail.com
+Arjun Gupta,ERY8151156,"Garkheda, Aurangabad, Maharashtra, India",19.85918085,75.35420497,50,Male,13,3/3/2025,15:36,Medium,0,Business,Urban,South,arjun.gupta@gmail.com
+Vivaan Joshi,YRH7024922,"College Road, Nashik, Maharashtra, India",19.99811303,73.79002632,21,Male,4,3/7/2025,13:13,High,1,Government Employee,Rural,North,vivaan.joshi2@gmail.com
+Sai Gupta,SPB7726765,"CIDCO, Aurangabad, Maharashtra, India",19.8757738,75.33996497,46,Female,15,3/3/2025,14:32,Medium,1,Business,Rural,North,sai.gupta@gmail.com
+Sai Joshi,ZKI6143208,"Shivaji Nagar, Pune, Maharashtra, India",18.53527717,73.8442889,66,Female,6,3/6/2025,9:23,Low,0,Worker,Rural,West,sai.joshi1@gmail.com
+Aditya Deshmukh,PXR3708912,"CIDCO, Aurangabad, Maharashtra, India",19.87400744,75.34550069,56,Female,13,3/5/2025,16:04,Medium,0,Student,Rural,North,aditya.deshmukh1@gmail.com
+Priya Sharma,GVY1601132,"Garkheda, Aurangabad, Maharashtra, India",19.85884,75.34757922,75,Female,15,3/8/2025,8:29,Low,0,Retired,Urban,South,priya.sharma1@gmail.com
+Aditya Gupta,UIX9852055,"Andheri East, Mumbai, Maharashtra, India",19.1182799,72.86574269,28,Female,3,3/7/2025,7:08,High,0,Student,Urban,East,aditya.gupta@gmail.com
+Kavya Gupta,JSR8172525,"Andheri East, Mumbai, Maharashtra, India",19.11219822,72.86672129,49,Male,5,3/4/2025,12:39,Medium,1,Student,Urban,Central,kavya.gupta1@gmail.com
+Arjun Kadam,WZF4272718,"Sitabuldi, Nagpur, Maharashtra, India",21.14169141,79.08507515,63,Male,20,3/1/2025,12:44,Low,1,Worker,Urban,West,arjun.kadam@gmail.com
+Ananya Patil,YPU0717057,"Andheri East, Mumbai, Maharashtra, India",19.11710824,72.86899777,67,Female,5,3/6/2025,15:55,Low,0,Farmer,Rural,East,ananya.patil@gmail.com
+Priya Sharma,ZBH6116631,"MG Road, Pune, Maharashtra, India",18.51932303,73.85643793,57,Female,18,3/2/2025,17:02,Medium,0,Student,Rural,East,priya.sharma2@gmail.com
+Kavya Jain,MAZ4892049,"College Road, Nashik, Maharashtra, India",19.99419403,73.78865996,46,Male,4,3/8/2025,17:05,Medium,0,Government Employee,Rural,West,kavya.jain1@gmail.com
+Aditya Sharma,LXO9782433,"Shivaji Nagar, Pune, Maharashtra, India",18.53032618,73.84417693,63,Male,9,3/2/2025,18:24,Low,0,Worker,Urban,South,aditya.sharma1@gmail.com
+Ananya Deshmukh,EEP5792694,"Andheri East, Mumbai, Maharashtra, India",19.11287305,72.87453344,39,Female,2,3/8/2025,11:07,Medium,1,Farmer,Semi-Urban,East,ananya.deshmukh@gmail.com
+Vivaan Jain,YCT0507995,"MG Road, Pune, Maharashtra, India",18.51588344,73.85716156,18,Female,17,3/4/2025,9:23,High,0,Student,Semi-Urban,Central,vivaan.jain@gmail.com
+Ananya Jain,BRI1025511,"Shivaji Nagar, Pune, Maharashtra, India",18.528867,73.8442637,69,Male,20,3/4/2025,17:41,Low,0,Farmer,Urban,Central,ananya.jain@gmail.com
+Diya Gupta,DKD5166450,"Andheri East, Mumbai, Maharashtra, India",19.11370971,72.87303315,27,Male,6,3/7/2025,10:26,High,1,Student,Rural,East,diya.gupta1@gmail.com
+Arjun Gupta,YZY0005955,"Garkheda, Aurangabad, Maharashtra, India",19.85530402,75.3481369,37,Male,18,3/2/2025,15:04,Medium,0,Business,Urban,North,arjun.gupta1@gmail.com
+Arjun Joshi,USY5341268,"Garkheda, Aurangabad, Maharashtra, India",19.86103089,75.35199056,60,Male,1,3/4/2025,10:37,Low,1,Student,Semi-Urban,Central,arjun.joshi@gmail.com
+Sai Yadav,YWS1392761,"Andheri East, Mumbai, Maharashtra, India",19.11485432,72.87212199,62,Female,18,3/1/2025,10:49,Low,1,Retired,Urban,Central,sai.yadav2@gmail.com
+Aditya Gupta,DIP9763539,"Dadar West, Mumbai, Maharashtra, India",19.02257142,72.84420418,62,Male,3,3/8/2025,17:44,Low,0,Retired,Rural,Central,aditya.gupta1@gmail.com
+Arjun Deshmukh,JOG5788539,"Shivaji Nagar, Pune, Maharashtra, India",18.53052687,73.84375457,64,Male,15,3/5/2025,18:15,Low,0,Worker,Semi-Urban,North,arjun.deshmukh1@gmail.com
+Vivaan Joshi,GGL7055190,"Garkheda, Aurangabad, Maharashtra, India",19.8573322,75.35038012,43,Male,14,3/3/2025,18:49,Medium,0,Government Employee,Urban,West,vivaan.joshi3@gmail.com
+Aditya Jain,BMD9704263,"CIDCO, Aurangabad, Maharashtra, India",19.87502859,75.34442686,57,Male,19,3/8/2025,14:35,Medium,1,Student,Urban,Central,aditya.jain2@gmail.com
+Sai Jain,CLG5078485,"Shivaji Nagar, Pune, Maharashtra, India",18.52810425,73.84565073,73,Female,8,3/3/2025,18:38,Low,0,Retired,Rural,South,sai.jain@gmail.com
+Arjun Deshmukh,YPD2761502,"Shivaji Nagar, Pune, Maharashtra, India",18.52652626,73.84830452,30,Female,2,3/6/2025,16:06,Medium,0,Retired,Rural,East,arjun.deshmukh2@gmail.com
+Arjun Gupta,DJG2431838,"Shivaji Nagar, Pune, Maharashtra, India",18.53059352,73.84793492,19,Female,19,3/3/2025,10:37,High,1,Business,Urban,West,arjun.gupta2@gmail.com
+Aditya Kadam,VUX8403036,"College Road, Nashik, Maharashtra, India",20.00164371,73.79125108,49,Female,8,3/3/2025,16:38,Medium,0,Retired,Semi-Urban,East,aditya.kadam1@gmail.com
+Arjun Deshmukh,DBW3125205,"Garkheda, Aurangabad, Maharashtra, India",19.85923984,75.34734681,31,Male,9,3/4/2025,9:21,Medium,0,Business,Urban,Central,arjun.deshmukh3@gmail.com
+Priya Yadav,JBV5064001,"Shivaji Nagar, Pune, Maharashtra, India",18.53610445,73.84351809,48,Female,10,3/4/2025,11:06,Medium,1,Student,Rural,South,priya.yadav1@gmail.com
+Sai Patil,OYL1578914,"MG Road, Pune, Maharashtra, India",18.51593824,73.85877055,43,Male,17,3/5/2025,8:43,Medium,0,Business,Semi-Urban,Central,sai.patil@gmail.com
+Ananya Gupta,SVN2013037,"Shivaji Nagar, Pune, Maharashtra, India",18.53344822,73.84694537,32,Female,1,3/1/2025,15:10,Medium,0,Retired,Rural,North,ananya.gupta1@gmail.com
+Aarav Kadam,NNK0982291,"Dadar West, Mumbai, Maharashtra, India",19.01581679,72.84817694,57,Male,10,3/2/2025,17:56,Medium,0,Business,Rural,East,aarav.kadam2@gmail.com
+Kavya Sharma,MGO3086372,"Andheri East, Mumbai, Maharashtra, India",19.10893891,72.8698147,35,Female,2,3/6/2025,12:48,Medium,1,Farmer,Rural,North,kavya.sharma@gmail.com
+Vivaan Gupta,QBF9375738,"CIDCO, Aurangabad, Maharashtra, India",19.87915015,75.34770528,35,Female,10,3/3/2025,7:26,Medium,0,Worker,Urban,North,vivaan.gupta@gmail.com
+Aarav Gupta,GUE9787029,"CIDCO, Aurangabad, Maharashtra, India",19.87792463,75.34829184,63,Male,3,3/7/2025,14:18,Low,1,Government Employee,Urban,East,aarav.gupta@gmail.com
+Diya Deshmukh,OGT6154888,"Andheri East, Mumbai, Maharashtra, India",19.11473713,72.86485899,66,Female,6,3/5/2025,7:20,Low,0,Farmer,Rural,West,diya.deshmukh@gmail.com
+Aarav Deshmukh,KRL7353802,"Shivaji Nagar, Pune, Maharashtra, India",18.53549177,73.8407086,56,Male,8,3/4/2025,16:23,Medium,0,Farmer,Rural,West,aarav.deshmukh@gmail.com
+Sai Sharma,XGY8346489,"Garkheda, Aurangabad, Maharashtra, India",19.85479994,75.35352886,55,Male,2,3/7/2025,14:17,Medium,1,Worker,Urban,North,sai.sharma1@gmail.com
+Aditya Kadam,JBX3864140,"College Road, Nashik, Maharashtra, India",19.9998521,73.78532796,79,Male,17,3/8/2025,14:27,Low,1,Worker,Rural,East,aditya.kadam2@gmail.com
+Priya Jain,RXM3026832,"Andheri East, Mumbai, Maharashtra, India",19.11712709,72.86615632,34,Male,5,3/7/2025,16:43,Medium,0,Worker,Urban,South,priya.jain@gmail.com
+Arjun Jain,XIA7260178,"Dadar West, Mumbai, Maharashtra, India",19.01682989,72.84549415,32,Female,2,3/7/2025,17:36,Medium,0,Worker,Urban,South,arjun.jain1@gmail.com
+Aarav Yadav,XKR6951042,"College Road, Nashik, Maharashtra, India",19.99818919,73.79166376,33,Female,15,3/6/2025,15:54,Medium,0,Business,Rural,East,aarav.yadav@gmail.com
+Priya Jain,SZT0496325,"Sitabuldi, Nagpur, Maharashtra, India",21.15032205,79.09074802,44,Male,17,3/4/2025,18:08,Medium,0,Worker,Rural,East,priya.jain1@gmail.com
+Diya Sharma,ZGT2235878,"Shivaji Nagar, Pune, Maharashtra, India",18.53603197,73.84927472,42,Female,20,3/6/2025,16:30,Medium,0,Retired,Rural,North,diya.sharma@gmail.com
+Ananya Kadam,CUX2966179,"Andheri East, Mumbai, Maharashtra, India",19.11268502,72.86968847,64,Male,14,3/5/2025,12:20,Low,1,Farmer,Semi-Urban,Central,ananya.kadam1@gmail.com
+Priya Yadav,ISB6216856,"MG Road, Pune, Maharashtra, India",18.51746059,73.85271343,18,Female,11,3/6/2025,13:55,High,1,Government Employee,Urban,West,priya.yadav2@gmail.com
+Aditya Gupta,STO6694730,"College Road, Nashik, Maharashtra, India",19.99652342,73.79399112,46,Male,20,3/1/2025,12:52,Medium,1,Farmer,Urban,Central,aditya.gupta2@gmail.com
+Aarav Joshi,UDJ9498571,"MG Road, Pune, Maharashtra, India",18.5154941,73.85575797,59,Male,16,3/4/2025,10:48,Medium,1,Worker,Urban,Central,aarav.joshi1@gmail.com
+Priya Gupta,MYO4792197,"Sitabuldi, Nagpur, Maharashtra, India",21.14860971,79.08711328,56,Female,15,3/5/2025,8:27,Medium,0,Business,Urban,South,priya.gupta@gmail.com
+Kavya Deshmukh,UHC8891099,"Dadar West, Mumbai, Maharashtra, India",19.01621686,72.84651775,69,Male,8,3/4/2025,10:34,Low,1,Retired,Urban,West,kavya.deshmukh@gmail.com
+Priya Jain,UIG5649026,"Sitabuldi, Nagpur, Maharashtra, India",21.14667441,79.0883082,28,Male,13,3/8/2025,13:10,High,1,Government Employee,Urban,West,priya.jain2@gmail.com
+Aditya Deshmukh,QXS7274069,"Dadar West, Mumbai, Maharashtra, India",19.02253274,72.84497312,57,Male,15,3/4/2025,10:09,Medium,1,Worker,Semi-Urban,Central,aditya.deshmukh2@gmail.com
+Arjun Yadav,JRS2473441,"CIDCO, Aurangabad, Maharashtra, India",19.87997479,75.34134851,54,Female,16,3/7/2025,9:04,Medium,0,Business,Rural,North,arjun.yadav@gmail.com
+Vivaan Jain,LWO5274845,"College Road, Nashik, Maharashtra, India",20.00160372,73.7912075,35,Male,16,3/2/2025,15:59,Medium,0,Government Employee,Urban,North,vivaan.jain1@gmail.com
+Arjun Joshi,XMC3973743,"Dadar West, Mumbai, Maharashtra, India",19.01337796,72.8519125,29,Female,15,3/4/2025,7:40,High,0,Student,Urban,East,arjun.joshi1@gmail.com
+Ananya Jain,JWC9050920,"Andheri East, Mumbai, Maharashtra, India",19.11843033,72.87323464,40,Female,4,3/4/2025,9:39,Medium,0,Worker,Urban,Central,ananya.jain1@gmail.com
+Sai Patil,EPP5054936,"Sitabuldi, Nagpur, Maharashtra, India",21.14183617,79.09095026,50,Male,12,3/3/2025,14:13,Medium,1,Worker,Semi-Urban,North,sai.patil1@gmail.com
+Sai Joshi,QVJ6938680,"Andheri East, Mumbai, Maharashtra, India",19.11579382,72.87331097,66,Male,5,3/8/2025,14:07,Low,1,Farmer,Urban,East,sai.joshi2@gmail.com
+Ananya Jain,SMI9286656,"Sitabuldi, Nagpur, Maharashtra, India",21.14143703,79.08945365,79,Male,1,3/2/2025,9:26,Low,0,Retired,Urban,North,ananya.jain2@gmail.com
+Ananya Kadam,QYO3620480,"Andheri East, Mumbai, Maharashtra, India",19.10949309,72.87399897,54,Male,11,3/2/2025,10:11,Medium,1,Worker,Urban,East,ananya.kadam2@gmail.com
+Diya Deshmukh,RMP9032173,"CIDCO, Aurangabad, Maharashtra, India",19.87549197,75.34327435,53,Female,6,3/2/2025,18:12,Medium,0,Retired,Urban,North,diya.deshmukh1@gmail.com
+Aarav Kadam,VRZ4285663,"Garkheda, Aurangabad, Maharashtra, India",19.86165966,75.35237508,58,Female,20,3/2/2025,8:28,Medium,0,Student,Urban,South,aarav.kadam3@gmail.com
+Kavya Kadam,ZAN6265464,"CIDCO, Aurangabad, Maharashtra, India",19.87249315,75.34067267,61,Female,13,3/8/2025,8:49,Low,0,Worker,Urban,West,kavya.kadam@gmail.com
+Ananya Deshmukh,DCQ4142914,"Shivaji Nagar, Pune, Maharashtra, India",18.53033669,73.84523273,65,Female,12,3/4/2025,12:45,Low,1,Farmer,Semi-Urban,North,ananya.deshmukh1@gmail.com
+Diya Deshmukh,UIQ2803882,"Andheri East, Mumbai, Maharashtra, India",19.11819814,72.87402314,71,Male,13,3/3/2025,8:46,Low,0,Retired,Urban,South,diya.deshmukh2@gmail.com
+Arjun Yadav,THK9001093,"Shivaji Nagar, Pune, Maharashtra, India",18.53062124,73.84649236,71,Male,7,3/7/2025,7:01,Low,0,Student,Urban,North,arjun.yadav1@gmail.com
+Sai Yadav,IVF9990065,"Andheri East, Mumbai, Maharashtra, India",19.11034385,72.87323181,69,Female,19,3/4/2025,15:49,Low,0,Business,Semi-Urban,East,sai.yadav3@gmail.com
+Arjun Joshi,FFZ1665001,"College Road, Nashik, Maharashtra, India",19.99733566,73.79322286,67,Female,13,3/3/2025,18:08,Low,0,Worker,Rural,East,arjun.joshi2@gmail.com
+Diya Joshi,BCP3526143,"Shivaji Nagar, Pune, Maharashtra, India",18.53203294,73.84215449,44,Female,3,3/8/2025,15:56,Medium,0,Government Employee,Rural,North,diya.joshi@gmail.com
+Arjun Kadam,KEP0283898,"CIDCO, Aurangabad, Maharashtra, India",19.87934746,75.34564593,80,Male,14,3/3/2025,15:42,Low,0,Student,Urban,East,arjun.kadam1@gmail.com
+Sai Yadav,GCJ1784391,"College Road, Nashik, Maharashtra, India",19.99391407,73.78995412,65,Female,6,3/4/2025,16:26,Low,0,Retired,Urban,South,sai.yadav4@gmail.com
+Aarav Yadav,LCX0802942,"Garkheda, Aurangabad, Maharashtra, India",19.8594641,75.34802562,28,Female,8,3/4/2025,16:47,High,0,Farmer,Semi-Urban,East,aarav.yadav1@gmail.com
+Sai Joshi,VXG3470037,"Sitabuldi, Nagpur, Maharashtra, India",21.14238262,79.08965987,79,Female,17,3/1/2025,7:57,Low,0,Business,Urban,West,sai.joshi3@gmail.com
+Isha Deshmukh,AIK2036421,"Sitabuldi, Nagpur, Maharashtra, India",21.14812534,79.0922542,20,Female,11,3/3/2025,14:37,High,1,Government Employee,Rural,South,isha.deshmukh1@gmail.com
+Aarav Deshmukh,WOK9794281,"College Road, Nashik, Maharashtra, India",19.9951428,73.78982446,34,Male,11,3/1/2025,14:07,Medium,1,Retired,Rural,Central,aarav.deshmukh1@gmail.com
+Sai Kadam,HBL4578901,"Andheri East, Mumbai, Maharashtra, India",19.1128199,72.87469734,22,Male,2,3/7/2025,8:07,High,0,Government Employee,Urban,South,sai.kadam@gmail.com
+Kavya Kadam,VZC0451673,"CIDCO, Aurangabad, Maharashtra, India",19.8733397,75.34509928,54,Female,14,3/6/2025,8:45,Medium,0,Government Employee,Rural,Central,kavya.kadam1@gmail.com
+Aarav Sharma,NJP9091678,"MG Road, Pune, Maharashtra, India",18.51694922,73.85465313,25,Male,19,3/1/2025,12:58,High,1,Farmer,Rural,Central,aarav.sharma2@gmail.com
+Arjun Sharma,NZJ9787833,"MG Road, Pune, Maharashtra, India",18.51776446,73.86056193,75,Female,18,3/1/2025,16:48,Low,0,Business,Urban,East,arjun.sharma1@gmail.com
+Arjun Sharma,QAI0438227,"Dadar West, Mumbai, Maharashtra, India",19.0207894,72.84516431,70,Male,20,3/1/2025,9:54,Low,0,Farmer,Rural,South,arjun.sharma2@gmail.com
+Vivaan Deshmukh,GAV3074228,"Sitabuldi, Nagpur, Maharashtra, India",21.14410166,79.08403478,59,Male,5,3/4/2025,8:48,Medium,0,Retired,Semi-Urban,North,vivaan.deshmukh1@gmail.com
+Ananya Jain,KPJ6194753,"Dadar West, Mumbai, Maharashtra, India",19.01473498,72.8456371,23,Male,19,3/5/2025,18:08,High,0,Retired,Semi-Urban,South,ananya.jain3@gmail.com
+Ananya Joshi,VTO9934923,"Sitabuldi, Nagpur, Maharashtra, India",21.1505555,79.09315522,50,Male,20,3/6/2025,11:53,Medium,1,Farmer,Semi-Urban,South,ananya.joshi1@gmail.com
+Priya Yadav,RVN7796323,"Dadar West, Mumbai, Maharashtra, India",19.02183155,72.84914769,22,Female,3,3/3/2025,15:11,High,0,Student,Rural,East,priya.yadav3@gmail.com
+Aarav Kadam,IWF3433414,"College Road, Nashik, Maharashtra, India",19.99624968,73.79132044,45,Male,4,3/6/2025,12:49,Medium,1,Student,Urban,West,aarav.kadam4@gmail.com
+Arjun Yadav,RMP3277109,"Sitabuldi, Nagpur, Maharashtra, India",21.14551,79.08645529,18,Male,1,3/2/2025,10:32,High,1,Retired,Rural,North,arjun.yadav2@gmail.com
+Arjun Patil,MXY1791900,"Dadar West, Mumbai, Maharashtra, India",19.01466316,72.85119273,20,Male,4,3/7/2025,8:54,High,0,Business,Urban,Central,arjun.patil1@gmail.com
+Diya Yadav,ZIZ0152109,"MG Road, Pune, Maharashtra, India",18.51712928,73.86080462,76,Male,8,3/2/2025,11:45,Low,1,Worker,Semi-Urban,South,diya.yadav@gmail.com
+Kavya Joshi,JRG4332948,"Dadar West, Mumbai, Maharashtra, India",19.01996247,72.84366415,61,Male,1,3/2/2025,18:08,Low,0,Student,Rural,West,kavya.joshi@gmail.com
+Isha Jain,IDC4946362,"MG Road, Pune, Maharashtra, India",18.52381349,73.86139636,70,Female,3,3/4/2025,18:50,Low,0,Student,Semi-Urban,North,isha.jain@gmail.com
+Arjun Sharma,QRE7701206,"Garkheda, Aurangabad, Maharashtra, India",19.86391461,75.34776903,49,Male,9,3/3/2025,12:31,Medium,1,Farmer,Urban,South,arjun.sharma3@gmail.com
+Diya Deshmukh,XMK2652747,"College Road, Nashik, Maharashtra, India",19.99692716,73.7896626,59,Female,2,3/8/2025,7:42,Medium,0,Farmer,Semi-Urban,Central,diya.deshmukh3@gmail.com
+Diya Jain,ZEU7816664,"Garkheda, Aurangabad, Maharashtra, India",19.85953299,75.35251131,74,Male,17,3/7/2025,11:35,Low,1,Worker,Semi-Urban,East,diya.jain@gmail.com
+Vivaan Jain,NWS5144315,"Garkheda, Aurangabad, Maharashtra, India",19.86386638,75.35254489,74,Male,8,3/2/2025,7:29,Low,0,Student,Rural,East,vivaan.jain2@gmail.com
+Arjun Kadam,WRF5260844,"Andheri East, Mumbai, Maharashtra, India",19.11566524,72.86513825,77,Male,2,3/5/2025,16:11,Low,0,Farmer,Rural,West,arjun.kadam2@gmail.com
+Aditya Kadam,PWA3908017,"Garkheda, Aurangabad, Maharashtra, India",19.86393316,75.35109786,28,Male,14,3/5/2025,11:10,High,1,Business,Urban,East,aditya.kadam3@gmail.com
+Aarav Deshmukh,EBB6420449,"MG Road, Pune, Maharashtra, India",18.52360047,73.86108699,31,Female,17,3/8/2025,14:42,Medium,1,Student,Rural,Central,aarav.deshmukh2@gmail.com
+Aarav Patil,IQR4283249,"Dadar West, Mumbai, Maharashtra, India",19.02080168,72.84378572,47,Male,18,3/3/2025,12:06,Medium,1,Business,Rural,North,aarav.patil@gmail.com
+Priya Kadam,ZGB2727730,"Andheri East, Mumbai, Maharashtra, India",19.10887534,72.87196225,21,Female,13,3/6/2025,17:13,High,0,Worker,Rural,North,priya.kadam@gmail.com
+Priya Kadam,UBX7097788,"Dadar West, Mumbai, Maharashtra, India",19.01400637,72.85195313,39,Female,2,3/4/2025,17:09,Medium,0,Business,Rural,South,priya.kadam1@gmail.com
+Aarav Deshmukh,SBH2226790,"MG Road, Pune, Maharashtra, India",18.52312679,73.85655855,56,Male,2,3/7/2025,8:09,Medium,0,Student,Urban,North,aarav.deshmukh3@gmail.com
+Ananya Kadam,BRM8828601,"Sitabuldi, Nagpur, Maharashtra, India",21.1492265,79.08572019,49,Female,15,3/4/2025,12:38,Medium,1,Government Employee,Urban,East,ananya.kadam3@gmail.com
+Kavya Patil,PPM1679009,"Shivaji Nagar, Pune, Maharashtra, India",18.53048178,73.84386228,57,Female,19,3/5/2025,14:07,Medium,1,Government Employee,Rural,West,kavya.patil1@gmail.com
+Aarav Joshi,SOF8761417,"Andheri East, Mumbai, Maharashtra, India",19.11468958,72.86819186,31,Male,18,3/6/2025,12:01,Medium,1,Worker,Rural,West,aarav.joshi2@gmail.com
+Ananya Patil,OUZ7281045,"Sitabuldi, Nagpur, Maharashtra, India",21.14260631,79.08978436,27,Female,9,3/8/2025,15:44,High,0,Farmer,Urban,North,ananya.patil1@gmail.com
+Kavya Joshi,UUG6399479,"Garkheda, Aurangabad, Maharashtra, India",19.85483746,75.34580012,76,Male,4,3/6/2025,13:43,Low,1,Farmer,Semi-Urban,North,kavya.joshi1@gmail.com
+Isha Sharma,NBU1451693,"Garkheda, Aurangabad, Maharashtra, India",19.85851884,75.35345353,35,Female,1,3/8/2025,16:05,Medium,0,Retired,Urban,West,isha.sharma@gmail.com
+Ananya Yadav,GNL5255375,"MG Road, Pune, Maharashtra, India",18.51712502,73.85846374,63,Male,10,3/1/2025,18:13,Low,0,Farmer,Semi-Urban,Central,ananya.yadav@gmail.com
+Diya Joshi,BLO0670541,"Sitabuldi, Nagpur, Maharashtra, India",21.14685712,79.08712545,18,Female,6,3/5/2025,7:07,High,0,Farmer,Urban,Central,diya.joshi1@gmail.com
+Sai Patil,ZQF4049786,"CIDCO, Aurangabad, Maharashtra, India",19.87904754,75.34400067,66,Female,13,3/3/2025,7:22,Low,0,Retired,Urban,West,sai.patil2@gmail.com
+Aarav Sharma,NEV6903157,"Shivaji Nagar, Pune, Maharashtra, India",18.53019637,73.84098357,30,Female,2,3/7/2025,14:02,Medium,1,Retired,Rural,Central,aarav.sharma3@gmail.com
+Ananya Sharma,BWL3450406,"Andheri East, Mumbai, Maharashtra, India",19.11549332,72.87109928,47,Female,16,3/5/2025,17:35,Medium,0,Student,Urban,Central,ananya.sharma@gmail.com
+Sai Yadav,XKO2346058,"College Road, Nashik, Maharashtra, India",19.99885769,73.78688726,48,Female,1,3/5/2025,16:02,Medium,0,Worker,Rural,South,sai.yadav5@gmail.com
+Arjun Joshi,QHG6094703,"Garkheda, Aurangabad, Maharashtra, India",19.85450172,75.34593994,29,Male,11,3/5/2025,16:05,High,0,Business,Rural,Central,arjun.joshi3@gmail.com
+Sai Deshmukh,RXB0924820,"Shivaji Nagar, Pune, Maharashtra, India",18.53140791,73.84489335,39,Male,7,3/4/2025,9:01,Medium,0,Worker,Semi-Urban,East,sai.deshmukh@gmail.com
+Arjun Jain,PPW3390883,"College Road, Nashik, Maharashtra, India",19.99882371,73.79254338,39,Female,5,3/8/2025,14:35,Medium,1,Government Employee,Rural,Central,arjun.jain2@gmail.com
+Aarav Yadav,RRX1500384,"Dadar West, Mumbai, Maharashtra, India",19.01856588,72.84800093,36,Female,5,3/5/2025,13:14,Medium,1,Business,Urban,West,aarav.yadav2@gmail.com
+Diya Patil,PCI9331379,"CIDCO, Aurangabad, Maharashtra, India",19.87661408,75.34631121,61,Male,10,3/4/2025,17:52,Low,0,Student,Semi-Urban,South,diya.patil@gmail.com
+Priya Sharma,ELP8035065,"College Road, Nashik, Maharashtra, India",19.9925744,73.79023776,18,Male,18,3/6/2025,9:53,High,0,Retired,Urban,East,priya.sharma3@gmail.com
+Diya Kadam,RSC6921298,"Garkheda, Aurangabad, Maharashtra, India",19.85723675,75.35082383,58,Male,17,3/8/2025,7:20,Medium,0,Government Employee,Rural,West,diya.kadam@gmail.com
+Diya Kadam,YOQ2995276,"Dadar West, Mumbai, Maharashtra, India",19.01931769,72.84734751,39,Male,3,3/5/2025,7:52,Medium,0,Government Employee,Rural,North,diya.kadam1@gmail.com
+Vivaan Joshi,IGE8113009,"Shivaji Nagar, Pune, Maharashtra, India",18.52840895,73.84340669,44,Male,16,3/4/2025,8:14,Medium,0,Retired,Urban,North,vivaan.joshi4@gmail.com
+Aditya Sharma,EBU4229676,"Dadar West, Mumbai, Maharashtra, India",19.01616774,72.8475617,69,Female,6,3/8/2025,17:51,Low,0,Farmer,Semi-Urban,North,aditya.sharma2@gmail.com
+Kavya Joshi,MHT4415618,"MG Road, Pune, Maharashtra, India",18.52065418,73.8531723,53,Male,8,3/4/2025,11:08,Medium,1,Retired,Urban,Central,kavya.joshi2@gmail.com
+Diya Yadav,GDM1621653,"Sitabuldi, Nagpur, Maharashtra, India",21.147404,79.08756876,60,Female,5,3/5/2025,12:39,Low,1,Government Employee,Urban,West,diya.yadav1@gmail.com
+Kavya Sharma,EZV7897118,"Garkheda, Aurangabad, Maharashtra, India",19.8599389,75.34536334,44,Female,13,3/2/2025,8:28,Medium,0,Worker,Urban,East,kavya.sharma1@gmail.com
+Isha Jain,CJX0355649,"CIDCO, Aurangabad, Maharashtra, India",19.87955004,75.34442333,56,Female,19,3/8/2025,17:00,Medium,0,Retired,Urban,Central,isha.jain1@gmail.com
+Diya Yadav,VYF5067936,"Dadar West, Mumbai, Maharashtra, India",19.02165942,72.84492718,31,Male,2,3/1/2025,14:09,Medium,1,Student,Rural,North,diya.yadav2@gmail.com
+Vivaan Yadav,ELY3971603,"CIDCO, Aurangabad, Maharashtra, India",19.87497254,75.34599687,19,Female,14,3/3/2025,10:10,High,1,Farmer,Rural,East,vivaan.yadav@gmail.com
+Kavya Joshi,FBF7987735,"Shivaji Nagar, Pune, Maharashtra, India",18.52752094,73.84168988,62,Male,4,3/6/2025,7:40,Low,0,Student,Urban,Central,kavya.joshi3@gmail.com
+Sai Gupta,JBB9798969,"Andheri East, Mumbai, Maharashtra, India",19.1119388,72.86509034,63,Female,8,3/3/2025,16:22,Low,0,Farmer,Semi-Urban,Central,sai.gupta1@gmail.com
+Sai Deshmukh,CAH6636280,"MG Road, Pune, Maharashtra, India",18.52073734,73.85574652,62,Female,17,3/1/2025,10:06,Low,1,Government Employee,Semi-Urban,West,sai.deshmukh1@gmail.com
+Priya Deshmukh,UDI5892643,"MG Road, Pune, Maharashtra, India",18.52019357,73.85764033,66,Female,4,3/4/2025,13:32,Low,1,Worker,Rural,West,priya.deshmukh1@gmail.com
+Ananya Jain,LOP9722429,"College Road, Nashik, Maharashtra, India",20.00045887,73.79443424,59,Male,5,3/1/2025,15:10,Medium,0,Government Employee,Rural,West,ananya.jain4@gmail.com
+Isha Gupta,POV1673699,"College Road, Nashik, Maharashtra, India",19.99697818,73.78789235,57,Female,19,3/8/2025,12:15,Medium,1,Worker,Rural,East,isha.gupta@gmail.com
+Vivaan Sharma,JGI8656922,"MG Road, Pune, Maharashtra, India",18.51846596,73.85192148,54,Male,12,3/6/2025,18:11,Medium,0,Retired,Semi-Urban,Central,vivaan.sharma@gmail.com
+Aditya Sharma,RIC7001914,"Dadar West, Mumbai, Maharashtra, India",19.01266618,72.85158438,36,Male,2,3/7/2025,12:58,Medium,1,Student,Urban,East,aditya.sharma3@gmail.com
+Vivaan Joshi,IGR6756703,"Dadar West, Mumbai, Maharashtra, India",19.016604,72.84532721,66,Female,6,3/8/2025,12:51,Low,1,Student,Urban,North,vivaan.joshi5@gmail.com
+Vivaan Joshi,OTE8391534,"Shivaji Nagar, Pune, Maharashtra, India",18.52983456,73.84436626,18,Male,12,3/6/2025,11:56,High,1,Retired,Urban,East,vivaan.joshi6@gmail.com
+Isha Patil,KSB9138685,"Sitabuldi, Nagpur, Maharashtra, India",21.14993842,79.08467356,67,Male,14,3/3/2025,13:51,Low,1,Business,Urban,South,isha.patil1@gmail.com
+Diya Sharma,BDN4491455,"CIDCO, Aurangabad, Maharashtra, India",19.88076054,75.34084135,49,Male,10,3/7/2025,11:48,Medium,1,Retired,Urban,West,diya.sharma1@gmail.com
+Vivaan Sharma,LGV6030407,"Andheri East, Mumbai, Maharashtra, India",19.11042174,72.87130348,77,Female,18,3/5/2025,15:55,Low,0,Farmer,Rural,East,vivaan.sharma1@gmail.com
+Diya Patil,QQE0907902,"MG Road, Pune, Maharashtra, India",18.5243107,73.85370012,26,Female,16,3/1/2025,11:10,High,1,Retired,Rural,South,diya.patil1@gmail.com
+Kavya Deshmukh,IFJ9812609,"Sitabuldi, Nagpur, Maharashtra, India",21.1467236,79.09150082,31,Female,7,3/5/2025,15:15,Medium,0,Business,Urban,Central,kavya.deshmukh1@gmail.com
+Vivaan Kadam,PGD8821200,"Dadar West, Mumbai, Maharashtra, India",19.01511035,72.84875547,75,Male,19,3/6/2025,15:54,Low,0,Retired,Semi-Urban,East,vivaan.kadam@gmail.com
+Arjun Yadav,GLP7803895,"CIDCO, Aurangabad, Maharashtra, India",19.87340491,75.33844372,40,Female,1,3/4/2025,14:38,Medium,1,Government Employee,Urban,South,arjun.yadav3@gmail.com
+Vivaan Jain,BKO6502719,"College Road, Nashik, Maharashtra, India",19.99582895,73.78921997,67,Female,20,3/6/2025,11:36,Low,1,Business,Rural,North,vivaan.jain3@gmail.com
+Aditya Yadav,NDD8443762,"Sitabuldi, Nagpur, Maharashtra, India",21.14727309,79.08637711,75,Female,18,3/5/2025,18:14,Low,0,Business,Rural,South,aditya.yadav@gmail.com
+Aditya Sharma,LKX7869354,"Sitabuldi, Nagpur, Maharashtra, India",21.14644576,79.08685582,49,Male,20,3/5/2025,18:41,Medium,0,Farmer,Urban,South,aditya.sharma4@gmail.com
+Isha Joshi,NDO9246585,"Shivaji Nagar, Pune, Maharashtra, India",18.53512492,73.84565719,73,Male,20,3/7/2025,17:49,Low,0,Farmer,Rural,East,isha.joshi1@gmail.com
+Aarav Patil,BPL1470279,"Dadar West, Mumbai, Maharashtra, India",19.02225807,72.85114444,36,Female,11,3/6/2025,13:55,Medium,1,Retired,Rural,South,aarav.patil1@gmail.com
+Ananya Patil,UNR6573480,"College Road, Nashik, Maharashtra, India",19.99992145,73.78676594,75,Female,20,3/4/2025,8:52,Low,0,Worker,Urban,Central,ananya.patil2@gmail.com
+Diya Kadam,ZIA7712307,"Garkheda, Aurangabad, Maharashtra, India",19.86311555,75.35268165,42,Female,10,3/1/2025,12:08,Medium,1,Worker,Urban,East,diya.kadam2@gmail.com
+Vivaan Deshmukh,LSG0694912,"Sitabuldi, Nagpur, Maharashtra, India",21.14880835,79.09053994,76,Female,1,3/6/2025,12:01,Low,1,Student,Rural,West,vivaan.deshmukh2@gmail.com
+Diya Yadav,OPF5315540,"MG Road, Pune, Maharashtra, India",18.52184239,73.85665811,46,Male,7,3/7/2025,15:01,Medium,0,Student,Urban,South,diya.yadav3@gmail.com
+Kavya Patil,RSY6661479,"Sitabuldi, Nagpur, Maharashtra, India",21.14509455,79.08590476,30,Female,3,3/2/2025,18:13,Medium,0,Student,Rural,East,kavya.patil2@gmail.com
+Sai Patil,TQQ8920518,"Garkheda, Aurangabad, Maharashtra, India",19.86021899,75.35167255,55,Male,12,3/7/2025,16:19,Medium,0,Business,Urban,Central,sai.patil3@gmail.com
+Isha Yadav,AZZ7140876,"Dadar West, Mumbai, Maharashtra, India",19.02159345,72.84753873,76,Male,5,3/7/2025,15:05,Low,0,Retired,Urban,South,isha.yadav@gmail.com
+Diya Gupta,HKF1802306,"Sitabuldi, Nagpur, Maharashtra, India",21.14472156,79.08380923,70,Female,7,3/7/2025,15:46,Low,0,Student,Urban,West,diya.gupta2@gmail.com
+Ananya Kadam,QLC3467769,"MG Road, Pune, Maharashtra, India",18.5251935,73.86141344,25,Male,19,3/3/2025,14:54,High,1,Farmer,Urban,North,ananya.kadam4@gmail.com
+Arjun Jain,ENC6737022,"Shivaji Nagar, Pune, Maharashtra, India",18.5323181,73.84280111,49,Female,9,3/4/2025,10:19,Medium,1,Business,Semi-Urban,South,arjun.jain3@gmail.com
+Arjun Jain,IHA5715781,"Garkheda, Aurangabad, Maharashtra, India",19.8612484,75.34754962,52,Male,11,3/1/2025,13:19,Medium,1,Government Employee,Urban,North,arjun.jain4@gmail.com
+Arjun Yadav,PMX5535143,"Garkheda, Aurangabad, Maharashtra, India",19.85566255,75.34945256,41,Male,15,3/7/2025,9:21,Medium,0,Worker,Urban,East,arjun.yadav4@gmail.com
+Ananya Jain,NVT2859993,"Sitabuldi, Nagpur, Maharashtra, India",21.14643921,79.09217076,18,Male,20,3/3/2025,8:34,High,0,Business,Urban,Central,ananya.jain5@gmail.com
+Aarav Patil,TFO6002704,"CIDCO, Aurangabad, Maharashtra, India",19.87679961,75.33913773,48,Male,14,3/5/2025,11:01,Medium,1,Business,Semi-Urban,East,aarav.patil2@gmail.com
+Priya Yadav,FZM2186924,"CIDCO, Aurangabad, Maharashtra, India",19.87356174,75.34262434,45,Male,6,3/7/2025,15:27,Medium,0,Business,Semi-Urban,South,priya.yadav4@gmail.com
+Arjun Kadam,KKQ9428302,"Dadar West, Mumbai, Maharashtra, India",19.014663,72.85082395,24,Female,16,3/2/2025,7:35,High,0,Retired,Rural,Central,arjun.kadam3@gmail.com
+Vivaan Deshmukh,DSC6748231,"Dadar West, Mumbai, Maharashtra, India",19.01407185,72.84644573,21,Female,1,3/5/2025,11:13,High,1,Worker,Urban,Central,vivaan.deshmukh3@gmail.com
+Sai Joshi,MUK3339025,"MG Road, Pune, Maharashtra, India",18.51792074,73.85767187,79,Female,6,3/7/2025,9:43,Low,0,Worker,Urban,Central,sai.joshi4@gmail.com
+Vivaan Patil,CKW7169421,"College Road, Nashik, Maharashtra, India",20.00082285,73.78561479,80,Male,3,3/5/2025,13:53,Low,1,Government Employee,Rural,East,vivaan.patil@gmail.com
+Arjun Kadam,WMN0267409,"CIDCO, Aurangabad, Maharashtra, India",19.87270723,75.34163073,55,Male,6,3/2/2025,11:46,Medium,1,Worker,Semi-Urban,South,arjun.kadam4@gmail.com
+Isha Deshmukh,CYZ8990013,"Sitabuldi, Nagpur, Maharashtra, India",21.14260445,79.09310534,68,Female,17,3/6/2025,8:16,Low,0,Student,Urban,West,isha.deshmukh2@gmail.com
+Arjun Jain,ZKV5499902,"Sitabuldi, Nagpur, Maharashtra, India",21.14362205,79.08592812,19,Female,9,3/8/2025,7:51,High,0,Student,Semi-Urban,East,arjun.jain5@gmail.com
+Priya Yadav,CXN9930272,"Shivaji Nagar, Pune, Maharashtra, India",18.53584252,73.84372399,38,Male,9,3/6/2025,15:51,Medium,0,Worker,Urban,East,priya.yadav5@gmail.com
+Vivaan Gupta,WLB5914978,"Andheri East, Mumbai, Maharashtra, India",19.10951308,72.87189834,77,Male,14,3/3/2025,9:40,Low,0,Business,Semi-Urban,East,vivaan.gupta1@gmail.com
+Aditya Yadav,ZXW4317930,"CIDCO, Aurangabad, Maharashtra, India",19.88013791,75.33903957,68,Female,11,3/2/2025,17:27,Low,0,Government Employee,Rural,South,aditya.yadav1@gmail.com
+Vivaan Jain,YOS7427248,"CIDCO, Aurangabad, Maharashtra, India",19.88031383,75.3466427,73,Female,8,3/6/2025,18:20,Low,0,Student,Semi-Urban,East,vivaan.jain4@gmail.com
+Isha Patil,ZCN5073846,"Dadar West, Mumbai, Maharashtra, India",19.013073,72.84977963,37,Male,12,3/1/2025,14:28,Medium,1,Worker,Rural,West,isha.patil2@gmail.com
+Arjun Sharma,JML2077400,"Andheri East, Mumbai, Maharashtra, India",19.11013332,72.86994421,77,Male,17,3/4/2025,14:34,Low,1,Business,Rural,Central,arjun.sharma4@gmail.com
+Arjun Gupta,ZSE4806600,"CIDCO, Aurangabad, Maharashtra, India",19.87677878,75.34163555,58,Female,12,3/8/2025,10:08,Medium,1,Student,Urban,South,arjun.gupta3@gmail.com
+Priya Deshmukh,GER1962260,"Sitabuldi, Nagpur, Maharashtra, India",21.14992774,79.08919416,67,Female,18,3/8/2025,18:35,Low,0,Student,Urban,West,priya.deshmukh2@gmail.com
+Sai Jain,SYN3929426,"CIDCO, Aurangabad, Maharashtra, India",19.87655863,75.34689432,41,Male,15,3/7/2025,12:25,Medium,1,Farmer,Urban,South,sai.jain1@gmail.com
+Aarav Joshi,SQS3694179,"Dadar West, Mumbai, Maharashtra, India",19.0129596,72.85088519,29,Female,15,3/7/2025,17:07,High,0,Retired,Semi-Urban,Central,aarav.joshi3@gmail.com
+Isha Patil,QIT9895517,"CIDCO, Aurangabad, Maharashtra, India",19.87234945,75.34810681,31,Male,8,3/4/2025,12:16,Medium,1,Government Employee,Urban,South,isha.patil3@gmail.com
+Vivaan Kadam,ZVJ4314555,"MG Road, Pune, Maharashtra, India",18.52288337,73.85628167,21,Male,12,3/6/2025,17:30,High,0,Business,Urban,Central,vivaan.kadam1@gmail.com
+Priya Patil,ZLZ3376954,"CIDCO, Aurangabad, Maharashtra, India",19.87512455,75.34633881,65,Male,6,3/5/2025,10:51,Low,1,Farmer,Urban,West,priya.patil@gmail.com
+Isha Joshi,VNB1512868,"Dadar West, Mumbai, Maharashtra, India",19.01667531,72.84496269,70,Male,3,3/2/2025,9:45,Low,0,Farmer,Semi-Urban,South,isha.joshi2@gmail.com
+Ananya Yadav,ZFW4177332,"Andheri East, Mumbai, Maharashtra, India",19.11711604,72.86926838,49,Female,3,3/7/2025,16:33,Medium,0,Farmer,Urban,West,ananya.yadav1@gmail.com
+Aditya Joshi,CUL5035556,"Shivaji Nagar, Pune, Maharashtra, India",18.53158352,73.84201087,49,Female,8,3/8/2025,16:46,Medium,0,Worker,Urban,Central,aditya.joshi1@gmail.com
+Ananya Gupta,FRY1117498,"Dadar West, Mumbai, Maharashtra, India",19.02159953,72.85167677,71,Male,15,3/1/2025,12:49,Low,1,Farmer,Urban,East,ananya.gupta2@gmail.com
+Arjun Yadav,UYJ9260285,"College Road, Nashik, Maharashtra, India",19.99395049,73.79272679,30,Female,7,3/7/2025,12:32,Medium,1,Student,Urban,East,arjun.yadav5@gmail.com
+Sai Deshmukh,DQV2827522,"Sitabuldi, Nagpur, Maharashtra, India",21.14945045,79.08753114,51,Female,8,3/3/2025,7:50,Medium,0,Student,Semi-Urban,West,sai.deshmukh2@gmail.com
+Sai Joshi,RIH3527226,"Garkheda, Aurangabad, Maharashtra, India",19.863478,75.34862091,38,Male,11,3/8/2025,17:19,Medium,0,Business,Urban,West,sai.joshi5@gmail.com
+Priya Gupta,QGA9428389,"Andheri East, Mumbai, Maharashtra, India",19.11312059,72.87275206,75,Female,7,3/2/2025,14:43,Low,1,Business,Semi-Urban,South,priya.gupta1@gmail.com
+Arjun Gupta,GMS8630881,"Shivaji Nagar, Pune, Maharashtra, India",18.5363002,73.84580601,18,Male,12,3/6/2025,13:58,High,1,Business,Urban,West,arjun.gupta4@gmail.com
+Ananya Joshi,PML7258477,"Andheri East, Mumbai, Maharashtra, India",19.11193907,72.87232222,37,Female,18,3/7/2025,17:25,Medium,0,Retired,Semi-Urban,West,ananya.joshi2@gmail.com
+Priya Gupta,PZD5784752,"Shivaji Nagar, Pune, Maharashtra, India",18.53367113,73.84176084,75,Female,3,3/8/2025,11:22,Low,1,Retired,Urban,East,priya.gupta2@gmail.com
+Arjun Sharma,EOI2693038,"Andheri East, Mumbai, Maharashtra, India",19.11645235,72.87094472,75,Female,8,3/8/2025,17:54,Low,0,Farmer,Rural,North,arjun.sharma5@gmail.com
+Vivaan Gupta,CXL4687043,"Sitabuldi, Nagpur, Maharashtra, India",21.14148567,79.08601206,27,Female,14,3/7/2025,10:16,High,1,Retired,Urban,East,vivaan.gupta2@gmail.com
+Isha Joshi,ITG5470270,"Garkheda, Aurangabad, Maharashtra, India",19.85804151,75.34525474,73,Female,10,3/4/2025,7:35,Low,0,Worker,Rural,West,isha.joshi3@gmail.com
+Aarav Joshi,CUE2270915,"CIDCO, Aurangabad, Maharashtra, India",19.87252678,75.34310808,31,Female,1,3/6/2025,12:38,Medium,1,Farmer,Urban,West,aarav.joshi4@gmail.com
+Diya Yadav,XBU8236653,"MG Road, Pune, Maharashtra, India",18.52344744,73.85414913,77,Female,20,3/1/2025,11:59,Low,1,Government Employee,Semi-Urban,West,diya.yadav4@gmail.com
+Isha Yadav,OQN1423765,"CIDCO, Aurangabad, Maharashtra, India",19.87965392,75.34176774,63,Male,12,3/2/2025,9:20,Low,0,Government Employee,Semi-Urban,West,isha.yadav1@gmail.com
+Diya Gupta,PRS1896397,"MG Road, Pune, Maharashtra, India",18.52089349,73.8525228,36,Male,5,3/1/2025,9:52,Medium,0,Farmer,Semi-Urban,South,diya.gupta3@gmail.com
+Vivaan Deshmukh,TJN8566284,"CIDCO, Aurangabad, Maharashtra, India",19.87164192,75.33903703,34,Female,11,3/4/2025,14:12,Medium,1,Farmer,Rural,East,vivaan.deshmukh4@gmail.com
+Vivaan Kadam,TIL3173874,"MG Road, Pune, Maharashtra, India",18.52372487,73.86019242,48,Female,13,3/8/2025,18:45,Medium,0,Retired,Urban,North,vivaan.kadam2@gmail.com
+Vivaan Deshmukh,ECA8562481,"MG Road, Pune, Maharashtra, India",18.52265037,73.85515337,61,Female,1,3/1/2025,15:16,Low,0,Farmer,Urban,West,vivaan.deshmukh5@gmail.com
+Vivaan Kadam,HIH9192182,"Garkheda, Aurangabad, Maharashtra, India",19.86280666,75.34514644,64,Male,3,3/8/2025,17:50,Low,0,Business,Urban,East,vivaan.kadam3@gmail.com
+Aarav Joshi,WJN1246332,"Sitabuldi, Nagpur, Maharashtra, India",21.14977626,79.08753424,33,Male,18,3/2/2025,10:18,Medium,1,Retired,Urban,East,aarav.joshi5@gmail.com
+Vivaan Patil,KNB9542496,"Sitabuldi, Nagpur, Maharashtra, India",21.14801393,79.08924552,54,Male,1,3/5/2025,17:15,Medium,0,Retired,Urban,North,vivaan.patil1@gmail.com
+Vivaan Deshmukh,FMC7359562,"Sitabuldi, Nagpur, Maharashtra, India",21.14297661,79.08811107,45,Male,14,3/2/2025,11:07,Medium,1,Retired,Urban,Central,vivaan.deshmukh6@gmail.com
+Arjun Sharma,MEX4978840,"Andheri East, Mumbai, Maharashtra, India",19.11038071,72.86501328,27,Female,20,3/8/2025,9:13,High,0,Government Employee,Urban,Central,arjun.sharma6@gmail.com
+Priya Patil,HCC5539328,"Garkheda, Aurangabad, Maharashtra, India",19.8593948,75.34654194,38,Female,12,3/5/2025,8:27,Medium,0,Business,Semi-Urban,Central,priya.patil1@gmail.com
+Diya Sharma,OFN8046325,"Shivaji Nagar, Pune, Maharashtra, India",18.53630885,73.84355787,49,Female,10,3/2/2025,13:06,Medium,1,Retired,Urban,East,diya.sharma2@gmail.com
+Ananya Sharma,KUN3810506,"Shivaji Nagar, Pune, Maharashtra, India",18.53001,73.8475073,49,Female,20,3/7/2025,8:34,Medium,0,Government Employee,Urban,North,ananya.sharma1@gmail.com
+Priya Yadav,MGA1112463,"Shivaji Nagar, Pune, Maharashtra, India",18.53542048,73.8397359,77,Female,17,3/4/2025,9:11,Low,0,Student,Urban,South,priya.yadav6@gmail.com
+Ananya Gupta,GGV5205101,"Shivaji Nagar, Pune, Maharashtra, India",18.52982537,73.84160357,62,Male,14,3/2/2025,15:38,Low,0,Retired,Urban,West,ananya.gupta3@gmail.com
+Arjun Yadav,NNU8412401,"CIDCO, Aurangabad, Maharashtra, India",19.87431159,75.34302837,44,Female,3,3/2/2025,12:46,Medium,1,Student,Urban,West,arjun.yadav6@gmail.com
+Vivaan Patil,XQG0869460,"Andheri East, Mumbai, Maharashtra, India",19.11219735,72.86554643,23,Male,4,3/4/2025,9:31,High,0,Worker,Semi-Urban,Central,vivaan.patil2@gmail.com
+Isha Patil,ACQ2014073,"Garkheda, Aurangabad, Maharashtra, India",19.86184086,75.34939368,25,Female,18,3/4/2025,14:40,High,1,Worker,Urban,East,isha.patil4@gmail.com
+Priya Jain,UOH5033247,"MG Road, Pune, Maharashtra, India",18.51777171,73.85588928,19,Male,15,3/2/2025,13:08,High,1,Farmer,Urban,East,priya.jain3@gmail.com
+Kavya Jain,RNG2392498,"Sitabuldi, Nagpur, Maharashtra, India",21.14377429,79.08395678,20,Male,3,3/7/2025,10:16,High,1,Worker,Urban,Central,kavya.jain2@gmail.com
+Aarav Joshi,GPR4581302,"Andheri East, Mumbai, Maharashtra, India",19.11034202,72.86905863,19,Male,15,3/5/2025,8:45,High,0,Government Employee,Urban,South,aarav.joshi6@gmail.com
+Ananya Sharma,BSU4322069,"CIDCO, Aurangabad, Maharashtra, India",19.87642671,75.34092547,61,Female,1,3/4/2025,18:48,Low,0,Worker,Semi-Urban,North,ananya.sharma2@gmail.com
+Arjun Yadav,WMM8668860,"College Road, Nashik, Maharashtra, India",19.99353154,73.78557365,21,Female,14,3/8/2025,11:36,High,1,Business,Semi-Urban,East,arjun.yadav7@gmail.com
+Sai Sharma,HRJ8581916,"College Road, Nashik, Maharashtra, India",19.99539273,73.7886396,64,Female,16,3/4/2025,8:23,Low,0,Farmer,Urban,East,sai.sharma2@gmail.com
+Vivaan Kadam,VGE4317376,"CIDCO, Aurangabad, Maharashtra, India",19.87808474,75.34805964,51,Female,19,3/8/2025,15:04,Medium,0,Worker,Rural,West,vivaan.kadam4@gmail.com
+Aarav Deshmukh,ZQX2388674,"Andheri East, Mumbai, Maharashtra, India",19.11177964,72.86826422,29,Female,16,3/8/2025,13:14,High,1,Farmer,Rural,Central,aarav.deshmukh4@gmail.com
+Ananya Gupta,FEG2327424,"MG Road, Pune, Maharashtra, India",18.52242178,73.86155722,61,Male,9,3/4/2025,7:52,Low,0,Worker,Urban,West,ananya.gupta4@gmail.com
+Aarav Joshi,SVW8627509,"Shivaji Nagar, Pune, Maharashtra, India",18.5321171,73.84735528,32,Female,2,3/2/2025,13:27,Medium,1,Government Employee,Urban,East,aarav.joshi7@gmail.com
+Aditya Kadam,BYM6176158,"Sitabuldi, Nagpur, Maharashtra, India",21.14762723,79.09046718,80,Male,19,3/4/2025,14:53,Low,1,Business,Urban,East,aditya.kadam4@gmail.com
+Aarav Jain,RMO8476352,"Andheri East, Mumbai, Maharashtra, India",19.10885615,72.86646181,39,Male,16,3/6/2025,17:50,Medium,0,Business,Urban,Central,aarav.jain1@gmail.com
+Arjun Joshi,HQO1764850,"Garkheda, Aurangabad, Maharashtra, India",19.85490948,75.35343974,79,Female,9,3/1/2025,11:02,Low,1,Student,Urban,South,arjun.joshi4@gmail.com
+Vivaan Deshmukh,VSI3193511,"Dadar West, Mumbai, Maharashtra, India",19.01367597,72.84675796,78,Female,3,3/4/2025,8:37,Low,0,Worker,Semi-Urban,East,vivaan.deshmukh7@gmail.com
+Aditya Kadam,AWI6965387,"Sitabuldi, Nagpur, Maharashtra, India",21.15036697,79.08929047,50,Female,11,3/3/2025,12:17,Medium,1,Retired,Rural,North,aditya.kadam5@gmail.com
+Arjun Jain,GNO0679189,"College Road, Nashik, Maharashtra, India",19.99819141,73.79270444,47,Female,14,3/2/2025,15:11,Medium,0,Government Employee,Urban,East,arjun.jain6@gmail.com
+Kavya Patil,IQE3460992,"MG Road, Pune, Maharashtra, India",18.51690033,73.85957854,21,Male,15,3/5/2025,14:19,High,1,Farmer,Rural,West,kavya.patil3@gmail.com
+Isha Joshi,RZQ3295099,"Andheri East, Mumbai, Maharashtra, India",19.11778656,72.8690333,80,Female,8,3/3/2025,17:30,Low,0,Student,Urban,Central,isha.joshi4@gmail.com
+Priya Patil,CTG0239072,"Garkheda, Aurangabad, Maharashtra, India",19.86116234,75.34800482,36,Female,8,3/3/2025,9:20,Medium,0,Worker,Urban,West,priya.patil2@gmail.com
+Sai Joshi,MVV8141805,"CIDCO, Aurangabad, Maharashtra, India",19.87933455,75.34339469,73,Male,15,3/6/2025,13:41,Low,1,Business,Urban,East,sai.joshi6@gmail.com
+Priya Joshi,ITR1481555,"Shivaji Nagar, Pune, Maharashtra, India",18.52725614,73.84790642,33,Male,16,3/3/2025,10:01,Medium,1,Worker,Rural,South,priya.joshi@gmail.com
+Ananya Deshmukh,YDT1023142,"CIDCO, Aurangabad, Maharashtra, India",19.87235175,75.33970495,56,Female,17,3/1/2025,13:30,Medium,1,Retired,Urban,West,ananya.deshmukh2@gmail.com
+Isha Joshi,SIY6893822,"Sitabuldi, Nagpur, Maharashtra, India",21.14511398,79.0903245,43,Male,17,3/1/2025,9:05,Medium,0,Worker,Urban,East,isha.joshi5@gmail.com
+Aarav Kadam,SUS1518572,"Andheri East, Mumbai, Maharashtra, India",19.11041297,72.86672247,18,Male,17,3/6/2025,14:33,High,1,Government Employee,Semi-Urban,North,aarav.kadam5@gmail.com
+Kavya Gupta,OLP4034173,"CIDCO, Aurangabad, Maharashtra, India",19.87815611,75.34404614,63,Male,5,3/2/2025,11:04,Low,1,Business,Rural,South,kavya.gupta2@gmail.com
+Priya Joshi,HMN2741802,"College Road, Nashik, Maharashtra, India",19.99307811,73.7908948,40,Female,3,3/8/2025,15:24,Medium,0,Worker,Urban,North,priya.joshi1@gmail.com
+Arjun Yadav,TJE4928949,"Andheri East, Mumbai, Maharashtra, India",19.10985343,72.87330239,58,Male,9,3/2/2025,17:41,Medium,0,Government Employee,Semi-Urban,West,arjun.yadav8@gmail.com
+Arjun Gupta,HCE9229065,"Sitabuldi, Nagpur, Maharashtra, India",21.14342184,79.09311891,64,Female,9,3/1/2025,16:50,Low,0,Government Employee,Urban,West,arjun.gupta5@gmail.com
+Aditya Sharma,VNR9505890,"Garkheda, Aurangabad, Maharashtra, India",19.8571698,75.34986059,56,Male,10,3/8/2025,15:43,Medium,0,Student,Rural,West,aditya.sharma5@gmail.com
+Vivaan Patil,KJE4074374,"MG Road, Pune, Maharashtra, India",18.52303242,73.85853844,48,Female,15,3/2/2025,12:15,Medium,1,Farmer,Urban,North,vivaan.patil3@gmail.com
+Diya Gupta,PUF8382112,"Sitabuldi, Nagpur, Maharashtra, India",21.14525269,79.09306187,32,Male,4,3/1/2025,17:43,Medium,0,Farmer,Rural,South,diya.gupta4@gmail.com
+Isha Deshmukh,OSM6487337,"CIDCO, Aurangabad, Maharashtra, India",19.87588401,75.34578293,34,Female,20,3/2/2025,14:58,Medium,1,Retired,Semi-Urban,East,isha.deshmukh3@gmail.com
+Diya Deshmukh,PUP7732722,"CIDCO, Aurangabad, Maharashtra, India",19.87133115,75.34054411,79,Male,3,3/8/2025,16:45,Low,0,Government Employee,Urban,South,diya.deshmukh4@gmail.com
+Ananya Patil,FKY2529356,"Shivaji Nagar, Pune, Maharashtra, India",18.52670369,73.8463369,49,Male,16,3/3/2025,14:08,Medium,1,Worker,Rural,Central,ananya.patil3@gmail.com
+Vivaan Joshi,DUP8893749,"Dadar West, Mumbai, Maharashtra, India",19.01714976,72.84876255,72,Male,14,3/6/2025,13:12,Low,1,Retired,Urban,North,vivaan.joshi7@gmail.com
+Vivaan Deshmukh,UHN4680818,"College Road, Nashik, Maharashtra, India",19.99470012,73.79329211,35,Female,1,3/7/2025,14:31,Medium,1,Retired,Urban,East,vivaan.deshmukh8@gmail.com
+Aarav Yadav,VXL6844576,"College Road, Nashik, Maharashtra, India",19.99884712,73.78809288,21,Male,4,3/1/2025,7:50,High,0,Retired,Urban,East,aarav.yadav3@gmail.com
+Isha Deshmukh,JTF0373613,"CIDCO, Aurangabad, Maharashtra, India",19.87282623,75.34131988,32,Male,7,3/8/2025,7:12,Medium,0,Retired,Urban,North,isha.deshmukh4@gmail.com
+Priya Jain,SPX7864823,"CIDCO, Aurangabad, Maharashtra, India",19.87570321,75.34520772,54,Female,3,3/4/2025,13:00,Medium,1,Retired,Urban,East,priya.jain4@gmail.com
+Sai Gupta,AQQ3660476,"Dadar West, Mumbai, Maharashtra, India",19.01790516,72.84504941,61,Female,10,3/1/2025,16:35,Low,0,Worker,Urban,North,sai.gupta2@gmail.com
+Priya Gupta,ATU3537276,"Andheri East, Mumbai, Maharashtra, India",19.11709899,72.87190074,77,Female,6,3/2/2025,7:17,Low,0,Retired,Urban,South,priya.gupta3@gmail.com
+Aditya Jain,YYO6672011,"Shivaji Nagar, Pune, Maharashtra, India",18.53500702,73.84074134,37,Male,1,3/7/2025,10:36,Medium,1,Government Employee,Urban,Central,aditya.jain3@gmail.com
+Priya Jain,NOZ7145799,"Dadar West, Mumbai, Maharashtra, India",19.02061569,72.84722653,51,Male,12,3/2/2025,8:50,Medium,0,Student,Semi-Urban,Central,priya.jain5@gmail.com
+Sai Joshi,WTK7939877,"Shivaji Nagar, Pune, Maharashtra, India",18.5332801,73.8455839,50,Female,14,3/3/2025,11:51,Medium,1,Student,Urban,North,sai.joshi7@gmail.com
+Aarav Patil,AGP1332840,"Garkheda, Aurangabad, Maharashtra, India",19.86396449,75.34967031,26,Female,18,3/5/2025,9:07,High,0,Government Employee,Urban,North,aarav.patil3@gmail.com
+Aditya Gupta,CBG3613320,"MG Road, Pune, Maharashtra, India",18.51699129,73.85944841,76,Male,7,3/7/2025,8:00,Low,0,Worker,Rural,West,aditya.gupta3@gmail.com
+Arjun Yadav,LYI5384970,"Andheri East, Mumbai, Maharashtra, India",19.11775393,72.87349512,35,Female,14,3/3/2025,7:22,Medium,0,Student,Urban,East,arjun.yadav9@gmail.com
+Ananya Sharma,ILN9756693,"Sitabuldi, Nagpur, Maharashtra, India",21.15064377,79.09056082,61,Female,7,3/5/2025,11:02,Low,1,Retired,Urban,South,ananya.sharma3@gmail.com
+Diya Gupta,NLU4897159,"College Road, Nashik, Maharashtra, India",19.99739193,73.79323881,52,Female,11,3/8/2025,13:53,Medium,1,Farmer,Urban,South,diya.gupta5@gmail.com
+Arjun Sharma,WXI6344954,"Shivaji Nagar, Pune, Maharashtra, India",18.52675813,73.84044392,41,Female,1,3/8/2025,7:27,Medium,0,Business,Rural,Central,arjun.sharma7@gmail.com
+Vivaan Joshi,YZL7540152,"Garkheda, Aurangabad, Maharashtra, India",19.86152682,75.34985398,78,Male,2,3/2/2025,13:18,Low,1,Retired,Rural,Central,vivaan.joshi8@gmail.com
+Aarav Deshmukh,AOK6848866,"CIDCO, Aurangabad, Maharashtra, India",19.87199012,75.34632117,38,Female,3,3/7/2025,18:22,Medium,0,Retired,Rural,North,aarav.deshmukh5@gmail.com
+Aditya Joshi,LCW7080539,"CIDCO, Aurangabad, Maharashtra, India",19.87710778,75.34367783,70,Male,2,3/3/2025,16:58,Low,0,Business,Urban,Central,aditya.joshi2@gmail.com
+Ananya Kadam,NMS1032551,"CIDCO, Aurangabad, Maharashtra, India",19.87786556,75.34779819,69,Female,9,3/4/2025,17:44,Low,0,Worker,Semi-Urban,North,ananya.kadam5@gmail.com
+Kavya Jain,QBG6668756,"College Road, Nashik, Maharashtra, India",19.99697109,73.79400342,72,Female,13,3/3/2025,16:27,Low,0,Worker,Semi-Urban,East,kavya.jain3@gmail.com
+Isha Kadam,WFZ6307175,"Dadar West, Mumbai, Maharashtra, India",19.02150192,72.84617897,70,Female,14,3/3/2025,10:46,Low,1,Retired,Semi-Urban,Central,isha.kadam@gmail.com
+Aarav Joshi,AAK1301947,"College Road, Nashik, Maharashtra, India",19.99696196,73.78506777,64,Male,3,3/1/2025,15:11,Low,0,Government Employee,Rural,South,aarav.joshi8@gmail.com
+Arjun Kadam,OLJ5039961,"Sitabuldi, Nagpur, Maharashtra, India",21.14372778,79.0860341,64,Male,1,3/8/2025,16:29,Low,0,Government Employee,Semi-Urban,Central,arjun.kadam5@gmail.com
+Ananya Jain,FQO8860162,"College Road, Nashik, Maharashtra, India",19.99442871,73.7932929,18,Female,8,3/5/2025,15:09,High,0,Worker,Rural,West,ananya.jain6@gmail.com
+Vivaan Yadav,TRG3184259,"Shivaji Nagar, Pune, Maharashtra, India",18.53463523,73.8469513,41,Male,20,3/6/2025,11:21,Medium,1,Farmer,Rural,West,vivaan.yadav1@gmail.com
+Ananya Joshi,FEH2695111,"MG Road, Pune, Maharashtra, India",18.51759511,73.85212861,25,Female,16,3/6/2025,17:13,High,0,Farmer,Urban,East,ananya.joshi3@gmail.com
+Arjun Deshmukh,GUM1705543,"MG Road, Pune, Maharashtra, India",18.51832597,73.85356989,47,Male,13,3/8/2025,9:04,Medium,0,Farmer,Urban,North,arjun.deshmukh4@gmail.com
+Ananya Gupta,DXF6060367,"College Road, Nashik, Maharashtra, India",19.99976719,73.78693278,22,Female,5,3/6/2025,11:00,High,1,Student,Rural,West,ananya.gupta5@gmail.com
+Priya Yadav,ZUG2968781,"Andheri East, Mumbai, Maharashtra, India",19.11764763,72.87444414,55,Female,16,3/7/2025,14:31,Medium,1,Farmer,Urban,Central,priya.yadav7@gmail.com
+Isha Joshi,WUD5606864,"Sitabuldi, Nagpur, Maharashtra, India",21.14728708,79.08471369,27,Female,10,3/8/2025,10:58,High,1,Farmer,Semi-Urban,South,isha.joshi6@gmail.com
+Aarav Sharma,DDO3892208,"MG Road, Pune, Maharashtra, India",18.52322454,73.86076234,63,Male,10,3/7/2025,18:36,Low,0,Business,Urban,North,aarav.sharma4@gmail.com
+Kavya Deshmukh,NHB5299842,"Garkheda, Aurangabad, Maharashtra, India",19.85692141,75.35334437,24,Female,19,3/2/2025,13:03,High,1,Business,Urban,East,kavya.deshmukh2@gmail.com
+Vivaan Sharma,CEJ5240203,"Sitabuldi, Nagpur, Maharashtra, India",21.14840711,79.08389584,45,Male,11,3/7/2025,12:28,Medium,1,Farmer,Rural,Central,vivaan.sharma2@gmail.com
+Isha Jain,NTX3862772,"MG Road, Pune, Maharashtra, India",18.51618432,73.85669022,48,Female,7,3/7/2025,17:23,Medium,0,Farmer,Urban,North,isha.jain2@gmail.com
+Vivaan Yadav,DVV1304855,"CIDCO, Aurangabad, Maharashtra, India",19.87803542,75.34447979,49,Male,9,3/1/2025,9:30,Medium,0,Farmer,Semi-Urban,West,vivaan.yadav2@gmail.com
+Kavya Jain,NLH7611881,"Dadar West, Mumbai, Maharashtra, India",19.01979555,72.85105693,18,Male,15,3/4/2025,14:57,High,1,Farmer,Rural,South,kavya.jain4@gmail.com
+Aditya Deshmukh,YTS8073467,"MG Road, Pune, Maharashtra, India",18.52379575,73.86160326,39,Female,1,3/6/2025,14:23,Medium,1,Business,Rural,East,aditya.deshmukh3@gmail.com
+Vivaan Yadav,MDR3120444,"MG Road, Pune, Maharashtra, India",18.52093653,73.85382971,79,Male,5,3/2/2025,9:13,Low,0,Government Employee,Rural,North,vivaan.yadav3@gmail.com
+Sai Gupta,FMK4689566,"MG Road, Pune, Maharashtra, India",18.52049481,73.8542164,51,Female,13,3/8/2025,16:55,Medium,0,Worker,Urban,West,sai.gupta3@gmail.com
+Aditya Kadam,PRP5117987,"Sitabuldi, Nagpur, Maharashtra, India",21.14940646,79.08514654,61,Female,8,3/8/2025,13:16,Low,1,Government Employee,Urban,Central,aditya.kadam6@gmail.com
+Vivaan Sharma,VSG0742245,"Sitabuldi, Nagpur, Maharashtra, India",21.15043583,79.08592341,62,Male,7,3/3/2025,11:20,Low,1,Business,Urban,West,vivaan.sharma3@gmail.com
+Vivaan Deshmukh,OYZ7402245,"MG Road, Pune, Maharashtra, India",18.51683772,73.85502492,48,Female,3,3/3/2025,13:21,Medium,1,Government Employee,Urban,South,vivaan.deshmukh9@gmail.com
+Aditya Deshmukh,HRA7020002,"Dadar West, Mumbai, Maharashtra, India",19.02238492,72.84979224,57,Female,10,3/6/2025,9:24,Medium,0,Retired,Rural,South,aditya.deshmukh4@gmail.com
+Diya Patil,NFF5556243,"Sitabuldi, Nagpur, Maharashtra, India",21.14694192,79.08632457,60,Female,2,3/8/2025,15:26,Low,0,Worker,Rural,South,diya.patil2@gmail.com
+Isha Joshi,ODF2323372,"Sitabuldi, Nagpur, Maharashtra, India",21.14816366,79.08892132,42,Female,20,3/4/2025,17:13,Medium,0,Student,Urban,Central,isha.joshi7@gmail.com
+Ananya Patil,NOX7230266,"College Road, Nashik, Maharashtra, India",19.99681299,73.79436377,80,Female,17,3/3/2025,10:47,Low,1,Farmer,Urban,East,ananya.patil4@gmail.com
+Diya Gupta,WWE7540522,"Shivaji Nagar, Pune, Maharashtra, India",18.52866848,73.84120376,38,Male,18,3/2/2025,11:27,Medium,1,Government Employee,Rural,West,diya.gupta6@gmail.com
+Sai Deshmukh,OIA1738711,"College Road, Nashik, Maharashtra, India",19.99673388,73.78881895,26,Male,4,3/5/2025,8:47,High,0,Government Employee,Urban,West,sai.deshmukh3@gmail.com
+Vivaan Yadav,DHZ4710442,"Garkheda, Aurangabad, Maharashtra, India",19.85441649,75.35488572,65,Female,9,3/6/2025,8:23,Low,0,Government Employee,Urban,Central,vivaan.yadav4@gmail.com
+Sai Deshmukh,POO9584492,"MG Road, Pune, Maharashtra, India",18.51787591,73.85847047,40,Male,3,3/4/2025,14:09,Medium,1,Student,Urban,South,sai.deshmukh4@gmail.com
+Priya Kadam,BMM3587536,"MG Road, Pune, Maharashtra, India",18.51582384,73.85831533,37,Female,16,3/1/2025,9:59,Medium,0,Farmer,Rural,South,priya.kadam2@gmail.com
+Arjun Yadav,ADR3973245,"Andheri East, Mumbai, Maharashtra, India",19.11269859,72.86604987,41,Male,12,3/7/2025,14:04,Medium,1,Farmer,Rural,South,arjun.yadav10@gmail.com
+Kavya Patil,NLO7508357,"Dadar West, Mumbai, Maharashtra, India",19.0225313,72.85144182,59,Male,11,3/1/2025,11:02,Medium,1,Student,Rural,South,kavya.patil4@gmail.com
+Priya Yadav,YJQ8096743,"Dadar West, Mumbai, Maharashtra, India",19.01557953,72.84301409,53,Female,3,3/5/2025,16:47,Medium,0,Retired,Urban,South,priya.yadav8@gmail.com
+Vivaan Yadav,ZMC8449583,"MG Road, Pune, Maharashtra, India",18.52301714,73.86047526,64,Female,5,3/7/2025,13:32,Low,1,Business,Rural,North,vivaan.yadav5@gmail.com
+Aarav Yadav,UKP3716141,"CIDCO, Aurangabad, Maharashtra, India",19.8798219,75.34225913,65,Male,9,3/5/2025,13:16,Low,1,Government Employee,Rural,South,aarav.yadav4@gmail.com
+Aditya Joshi,MWB0756767,"Sitabuldi, Nagpur, Maharashtra, India",21.14230977,79.08980515,18,Female,20,3/6/2025,13:49,High,1,Student,Semi-Urban,East,aditya.joshi3@gmail.com
+Aditya Joshi,PYK8973084,"CIDCO, Aurangabad, Maharashtra, India",19.87643915,75.34404248,69,Female,14,3/5/2025,10:27,Low,1,Student,Rural,South,aditya.joshi4@gmail.com
+Vivaan Joshi,MFH4295962,"Sitabuldi, Nagpur, Maharashtra, India",21.14766217,79.08364413,19,Male,16,3/6/2025,10:07,High,1,Government Employee,Urban,Central,vivaan.joshi9@gmail.com
+Aditya Kadam,NJR3139403,"Garkheda, Aurangabad, Maharashtra, India",19.85943077,75.34888109,75,Male,16,3/1/2025,16:42,Low,0,Retired,Semi-Urban,North,aditya.kadam7@gmail.com
+Aditya Jain,XSV2160684,"MG Road, Pune, Maharashtra, India",18.52471249,73.85814367,33,Male,13,3/1/2025,11:34,Medium,1,Retired,Rural,Central,aditya.jain4@gmail.com
+Ananya Gupta,VRQ9006725,"Andheri East, Mumbai, Maharashtra, India",19.11324467,72.8653096,63,Female,5,3/4/2025,7:01,Low,0,Business,Urban,South,ananya.gupta6@gmail.com
+Kavya Sharma,DQC2025263,"MG Road, Pune, Maharashtra, India",18.52537641,73.85315935,22,Female,9,3/1/2025,16:53,High,0,Farmer,Semi-Urban,West,kavya.sharma2@gmail.com
+Ananya Deshmukh,BDO5953167,"MG Road, Pune, Maharashtra, India",18.51738728,73.85756141,57,Female,20,3/6/2025,17:51,Medium,0,Retired,Urban,North,ananya.deshmukh3@gmail.com
+Kavya Yadav,XCM4645085,"Dadar West, Mumbai, Maharashtra, India",19.01970394,72.8520746,45,Female,9,3/6/2025,17:34,Medium,0,Retired,Rural,East,kavya.yadav@gmail.com
+Sai Yadav,UQB3462875,"Dadar West, Mumbai, Maharashtra, India",19.01333018,72.84773901,37,Female,14,3/4/2025,7:33,Medium,0,Farmer,Semi-Urban,West,sai.yadav6@gmail.com
+Aarav Deshmukh,DCM2375255,"Sitabuldi, Nagpur, Maharashtra, India",21.15075419,79.09092708,57,Female,17,3/7/2025,11:50,Medium,1,Retired,Rural,South,aarav.deshmukh6@gmail.com
+Ananya Gupta,APN3035729,"College Road, Nashik, Maharashtra, India",19.99589832,73.79204132,22,Female,18,3/5/2025,15:44,High,0,Worker,Semi-Urban,West,ananya.gupta7@gmail.com
+Arjun Yadav,NXV9685754,"Shivaji Nagar, Pune, Maharashtra, India",18.5314368,73.84467367,22,Female,2,3/3/2025,16:41,High,0,Government Employee,Rural,South,arjun.yadav11@gmail.com
+Kavya Joshi,TIY9600632,"Dadar West, Mumbai, Maharashtra, India",19.0175584,72.8515433,40,Male,7,3/2/2025,10:46,Medium,1,Retired,Urban,Central,kavya.joshi4@gmail.com
+Arjun Sharma,SFE5419562,"Shivaji Nagar, Pune, Maharashtra, India",18.52911643,73.84554394,75,Female,17,3/8/2025,8:11,Low,0,Farmer,Semi-Urban,South,arjun.sharma8@gmail.com
+Vivaan Jain,SXL5407656,"College Road, Nashik, Maharashtra, India",20.00208238,73.78832015,62,Female,10,3/8/2025,17:11,Low,0,Business,Semi-Urban,East,vivaan.jain5@gmail.com
+Isha Kadam,QRZ6273416,"College Road, Nashik, Maharashtra, India",19.99716216,73.79394322,76,Female,16,3/1/2025,14:41,Low,1,Business,Urban,South,isha.kadam1@gmail.com
+Aarav Patil,ALW7459580,"MG Road, Pune, Maharashtra, India",18.52284342,73.85768321,26,Male,8,3/6/2025,9:10,High,0,Government Employee,Urban,East,aarav.patil4@gmail.com
+Priya Joshi,UJE9453073,"MG Road, Pune, Maharashtra, India",18.52350591,73.85697024,51,Male,8,3/2/2025,15:07,Medium,0,Government Employee,Urban,Central,priya.joshi2@gmail.com
+Diya Jain,BDC0353862,"Shivaji Nagar, Pune, Maharashtra, India",18.52842727,73.84101996,40,Female,17,3/5/2025,16:51,Medium,0,Business,Semi-Urban,Central,diya.jain1@gmail.com
+Diya Deshmukh,KRK6379059,"College Road, Nashik, Maharashtra, India",19.99344089,73.7930691,40,Female,7,3/5/2025,16:05,Medium,0,Business,Urban,Central,diya.deshmukh5@gmail.com
+Ananya Patil,ULI2489312,"Sitabuldi, Nagpur, Maharashtra, India",21.14334654,79.08565711,43,Male,15,3/3/2025,15:27,Medium,0,Business,Rural,Central,ananya.patil5@gmail.com
+Isha Patil,KAS1775605,"Sitabuldi, Nagpur, Maharashtra, India",21.14815877,79.08514601,19,Female,8,3/6/2025,7:21,High,0,Worker,Urban,West,isha.patil5@gmail.com
+Sai Jain,ABL5403147,"MG Road, Pune, Maharashtra, India",18.51585319,73.85606965,40,Male,18,3/6/2025,13:40,Medium,1,Worker,Urban,East,sai.jain2@gmail.com
+Ananya Sharma,PXJ2109018,"Sitabuldi, Nagpur, Maharashtra, India",21.14380009,79.08496429,50,Female,13,3/6/2025,8:14,Medium,0,Retired,Semi-Urban,West,ananya.sharma4@gmail.com
+Priya Joshi,FFJ2284352,"Garkheda, Aurangabad, Maharashtra, India",19.85513042,75.3501555,65,Female,1,3/8/2025,9:52,Low,0,Government Employee,Rural,South,priya.joshi3@gmail.com
+Diya Jain,RMV0341386,"College Road, Nashik, Maharashtra, India",19.99543335,73.78750208,49,Male,1,3/1/2025,14:06,Medium,1,Student,Rural,South,diya.jain2@gmail.com
+Kavya Kadam,OPI8157119,"Dadar West, Mumbai, Maharashtra, India",19.02243614,72.849409,24,Male,17,3/7/2025,16:12,High,0,Government Employee,Urban,Central,kavya.kadam2@gmail.com
+Aarav Joshi,GLZ9104268,"Garkheda, Aurangabad, Maharashtra, India",19.85937332,75.3464614,67,Female,2,3/6/2025,16:06,Low,0,Worker,Urban,South,aarav.joshi9@gmail.com
+Sai Sharma,OOK1719864,"College Road, Nashik, Maharashtra, India",19.99987284,73.792064,37,Female,8,3/2/2025,12:21,Medium,1,Retired,Rural,Central,sai.sharma3@gmail.com
+Priya Kadam,WHD3500245,"College Road, Nashik, Maharashtra, India",19.99638181,73.78928484,29,Female,10,3/6/2025,13:04,High,1,Student,Urban,Central,priya.kadam3@gmail.com
+Arjun Joshi,TJK9606781,"Sitabuldi, Nagpur, Maharashtra, India",21.14247544,79.08392194,75,Male,12,3/2/2025,8:37,Low,0,Student,Urban,South,arjun.joshi5@gmail.com
+Isha Sharma,CGH9501861,"CIDCO, Aurangabad, Maharashtra, India",19.87999277,75.34300489,70,Male,20,3/8/2025,7:36,Low,0,Worker,Urban,West,isha.sharma1@gmail.com
+Ananya Sharma,VNG0512767,"Sitabuldi, Nagpur, Maharashtra, India",21.14109405,79.08513899,27,Male,15,3/5/2025,11:37,High,1,Student,Urban,North,ananya.sharma5@gmail.com
+Diya Gupta,CWF0966272,"Shivaji Nagar, Pune, Maharashtra, India",18.53287886,73.84867657,45,Male,9,3/6/2025,16:36,Medium,0,Student,Urban,East,diya.gupta7@gmail.com
+Arjun Sharma,AHK9059752,"CIDCO, Aurangabad, Maharashtra, India",19.87967772,75.34773748,72,Male,16,3/8/2025,14:19,Low,1,Farmer,Urban,North,arjun.sharma9@gmail.com
+Diya Sharma,KUC1760189,"Andheri East, Mumbai, Maharashtra, India",19.11205326,72.86760243,26,Female,20,3/8/2025,15:43,High,0,Farmer,Semi-Urban,East,diya.sharma3@gmail.com
+Arjun Joshi,FWB9233296,"Sitabuldi, Nagpur, Maharashtra, India",21.14936179,79.08579827,45,Female,8,3/8/2025,16:43,Medium,0,Government Employee,Rural,North,arjun.joshi6@gmail.com
+Aditya Gupta,KMT0260850,"Garkheda, Aurangabad, Maharashtra, India",19.86030284,75.35122474,35,Male,4,3/5/2025,7:35,Medium,0,Retired,Urban,South,aditya.gupta4@gmail.com
+Isha Sharma,ZQM4050159,"Garkheda, Aurangabad, Maharashtra, India",19.86016317,75.3455365,23,Female,16,3/8/2025,7:56,High,0,Student,Urban,East,isha.sharma2@gmail.com
+Diya Joshi,XHR1316115,"CIDCO, Aurangabad, Maharashtra, India",19.87902644,75.3427621,76,Male,10,3/2/2025,13:14,Low,1,Retired,Rural,Central,diya.joshi2@gmail.com
+Aarav Sharma,NOX6480209,"Dadar West, Mumbai, Maharashtra, India",19.01771335,72.8470005,22,Male,10,3/3/2025,12:38,High,1,Farmer,Urban,South,aarav.sharma5@gmail.com
+Vivaan Jain,DOB7292004,"Shivaji Nagar, Pune, Maharashtra, India",18.53422113,73.84071275,65,Male,17,3/6/2025,7:45,Low,0,Student,Urban,East,vivaan.jain6@gmail.com
+Aditya Deshmukh,WVA8132021,"MG Road, Pune, Maharashtra, India",18.51661902,73.85534812,75,Male,1,3/7/2025,9:45,Low,0,Business,Rural,Central,aditya.deshmukh5@gmail.com
+Arjun Patil,ERK2891506,"Andheri East, Mumbai, Maharashtra, India",19.11772821,72.87435917,59,Female,17,3/7/2025,11:16,Medium,1,Farmer,Urban,East,arjun.patil2@gmail.com
+Priya Yadav,AWC3089171,"MG Road, Pune, Maharashtra, India",18.51695304,73.8587282,56,Female,12,3/3/2025,9:13,Medium,0,Retired,Urban,East,priya.yadav9@gmail.com
+Aditya Patil,DNS6561332,"College Road, Nashik, Maharashtra, India",19.99733021,73.78864297,26,Male,1,3/6/2025,10:01,High,1,Business,Rural,East,aditya.patil@gmail.com
+Arjun Sharma,ZQK1712035,"Sitabuldi, Nagpur, Maharashtra, India",21.14747146,79.08776154,42,Male,10,3/5/2025,7:30,Medium,0,Retired,Rural,North,arjun.sharma10@gmail.com
+Aditya Joshi,WNS4165176,"Shivaji Nagar, Pune, Maharashtra, India",18.526946,73.83981457,64,Male,10,3/1/2025,13:41,Low,1,Student,Urban,North,aditya.joshi5@gmail.com
+Ananya Patil,YTX6381114,"Dadar West, Mumbai, Maharashtra, India",19.02245058,72.85189609,19,Female,4,3/6/2025,9:08,High,0,Government Employee,Rural,North,ananya.patil6@gmail.com
+Aarav Jain,XQO0879976,"Garkheda, Aurangabad, Maharashtra, India",19.8625653,75.3453781,26,Female,16,3/5/2025,13:30,High,1,Student,Urban,North,aarav.jain2@gmail.com
+Diya Gupta,IMN4133023,"College Road, Nashik, Maharashtra, India",19.99299609,73.78526764,73,Male,11,3/2/2025,13:07,Low,1,Business,Urban,North,diya.gupta8@gmail.com
+Isha Joshi,SNY5471971,"Shivaji Nagar, Pune, Maharashtra, India",18.5289696,73.8424026,78,Female,8,3/2/2025,16:06,Low,0,Business,Rural,East,isha.joshi8@gmail.com
+Sai Gupta,HAR0310637,"Shivaji Nagar, Pune, Maharashtra, India",18.53194272,73.84137102,26,Male,18,3/2/2025,11:01,High,1,Business,Urban,South,sai.gupta4@gmail.com
+Ananya Sharma,JOI2372103,"Dadar West, Mumbai, Maharashtra, India",19.0211834,72.84734027,71,Female,20,3/7/2025,13:30,Low,1,Government Employee,Rural,Central,ananya.sharma6@gmail.com
+Arjun Yadav,YNJ5450661,"CIDCO, Aurangabad, Maharashtra, India",19.87746584,75.33945956,53,Male,8,3/7/2025,12:20,Medium,1,Worker,Rural,North,arjun.yadav12@gmail.com
+Priya Kadam,KWI0313244,"Garkheda, Aurangabad, Maharashtra, India",19.85948883,75.3542394,18,Male,17,3/6/2025,15:17,High,0,Worker,Rural,South,priya.kadam4@gmail.com
+Kavya Kadam,OTG7361544,"CIDCO, Aurangabad, Maharashtra, India",19.87313298,75.34545075,65,Male,11,3/1/2025,13:08,Low,1,Farmer,Urban,West,kavya.kadam3@gmail.com
+Ananya Jain,WJE3380948,"Dadar West, Mumbai, Maharashtra, India",19.01283736,72.8443391,52,Male,3,3/4/2025,16:28,Medium,0,Government Employee,Urban,South,ananya.jain7@gmail.com
+Ananya Jain,AHP0434898,"Andheri East, Mumbai, Maharashtra, India",19.10942173,72.86577025,70,Male,13,3/1/2025,7:24,Low,0,Worker,Urban,West,ananya.jain8@gmail.com
+Diya Yadav,LIK5266608,"College Road, Nashik, Maharashtra, India",19.99786012,73.79276023,58,Female,4,3/1/2025,8:40,Medium,0,Business,Rural,East,diya.yadav5@gmail.com
+Isha Patil,LOH8028560,"College Road, Nashik, Maharashtra, India",19.99880803,73.78692858,64,Female,6,3/7/2025,10:09,Low,1,Retired,Urban,West,isha.patil6@gmail.com
+Vivaan Sharma,YXA7852094,"Shivaji Nagar, Pune, Maharashtra, India",18.53061764,73.84939005,40,Male,19,3/3/2025,15:15,Medium,0,Business,Urban,North,vivaan.sharma4@gmail.com
+Aarav Joshi,SEZ3760188,"Sitabuldi, Nagpur, Maharashtra, India",21.14944795,79.09040419,60,Female,2,3/1/2025,7:55,Low,0,Retired,Urban,West,aarav.joshi10@gmail.com
+Ananya Patil,YBY8065976,"Garkheda, Aurangabad, Maharashtra, India",19.85759513,75.3517546,30,Male,4,3/3/2025,15:50,Medium,0,Business,Urban,West,ananya.patil7@gmail.com
+Kavya Sharma,EDM2315006,"Sitabuldi, Nagpur, Maharashtra, India",21.14312532,79.08739612,37,Male,6,3/7/2025,16:08,Medium,0,Worker,Urban,Central,kavya.sharma3@gmail.com
+Aditya Patil,OCP3181401,"Shivaji Nagar, Pune, Maharashtra, India",18.53231476,73.8494741,26,Male,10,3/6/2025,15:55,High,0,Business,Rural,Central,aditya.patil1@gmail.com
+Kavya Deshmukh,JHH4783750,"Shivaji Nagar, Pune, Maharashtra, India",18.52655055,73.84947128,40,Male,20,3/5/2025,12:47,Medium,1,Retired,Urban,West,kavya.deshmukh3@gmail.com
+Kavya Joshi,XCP7770097,"Sitabuldi, Nagpur, Maharashtra, India",21.14852672,79.08837718,22,Male,11,3/7/2025,17:25,High,0,Retired,Semi-Urban,Central,kavya.joshi5@gmail.com
+Aditya Deshmukh,QKP9081800,"Shivaji Nagar, Pune, Maharashtra, India",18.53556614,73.84204508,76,Female,19,3/5/2025,9:50,Low,0,Retired,Rural,Central,aditya.deshmukh6@gmail.com
+Arjun Deshmukh,BRQ5239964,"MG Road, Pune, Maharashtra, India",18.51601621,73.85248173,79,Male,8,3/6/2025,18:44,Low,0,Farmer,Rural,East,arjun.deshmukh5@gmail.com
+Diya Patil,ZGO5587091,"CIDCO, Aurangabad, Maharashtra, India",19.87450813,75.34115034,80,Male,19,3/1/2025,11:24,Low,1,Student,Rural,North,diya.patil3@gmail.com
+Ananya Patil,ITY6324936,"MG Road, Pune, Maharashtra, India",18.52035639,73.85947933,56,Male,13,3/5/2025,17:40,Medium,0,Worker,Urban,North,ananya.patil8@gmail.com
+Sai Kadam,TSH6403030,"Shivaji Nagar, Pune, Maharashtra, India",18.53626605,73.84795931,53,Female,8,3/6/2025,12:42,Medium,1,Student,Urban,West,sai.kadam1@gmail.com
+Kavya Kadam,XFL5570158,"Andheri East, Mumbai, Maharashtra, India",19.10891733,72.87107316,64,Female,14,3/1/2025,16:16,Low,0,Farmer,Rural,North,kavya.kadam4@gmail.com
+Aarav Gupta,DFO0272614,"Shivaji Nagar, Pune, Maharashtra, India",18.52644433,73.8449278,57,Male,16,3/1/2025,14:30,Medium,1,Retired,Urban,South,aarav.gupta1@gmail.com
+Sai Joshi,SNC0305908,"Shivaji Nagar, Pune, Maharashtra, India",18.52920521,73.84929216,76,Female,6,3/3/2025,15:21,Low,0,Farmer,Rural,North,sai.joshi8@gmail.com
+Aditya Deshmukh,CTK3613050,"Garkheda, Aurangabad, Maharashtra, India",19.86051209,75.35035138,76,Female,3,3/4/2025,18:57,Low,0,Government Employee,Urban,West,aditya.deshmukh7@gmail.com
+Diya Jain,QCM3670979,"MG Road, Pune, Maharashtra, India",18.52166765,73.85960759,71,Male,1,3/7/2025,16:05,Low,0,Student,Rural,East,diya.jain3@gmail.com
+Diya Yadav,QHZ1168677,"Shivaji Nagar, Pune, Maharashtra, India",18.52971197,73.84398018,52,Female,16,3/4/2025,12:12,Medium,1,Student,Urban,South,diya.yadav6@gmail.com
+Ananya Yadav,IZD9541086,"Andheri East, Mumbai, Maharashtra, India",19.11832895,72.87131949,62,Female,4,3/2/2025,7:49,Low,0,Student,Semi-Urban,East,ananya.yadav2@gmail.com
+Ananya Sharma,AUU4622237,"MG Road, Pune, Maharashtra, India",18.51707679,73.85659369,66,Male,6,3/1/2025,10:55,Low,1,Farmer,Urban,East,ananya.sharma7@gmail.com
+Arjun Deshmukh,NIF0986482,"Garkheda, Aurangabad, Maharashtra, India",19.85786083,75.35499882,47,Female,2,3/8/2025,7:45,Medium,0,Retired,Urban,North,arjun.deshmukh6@gmail.com
+Aditya Joshi,YYN8487499,"Andheri East, Mumbai, Maharashtra, India",19.11486322,72.87030513,62,Male,16,3/5/2025,18:40,Low,0,Worker,Rural,Central,aditya.joshi6@gmail.com
+Ananya Sharma,VHW0919572,"Garkheda, Aurangabad, Maharashtra, India",19.85857466,75.34948956,54,Female,9,3/2/2025,14:44,Medium,1,Government Employee,Urban,Central,ananya.sharma8@gmail.com
+Vivaan Jain,AAS2874543,"Garkheda, Aurangabad, Maharashtra, India",19.85726289,75.35075393,37,Male,12,3/4/2025,17:53,Medium,0,Student,Semi-Urban,North,vivaan.jain7@gmail.com
+Ananya Joshi,DZR5661063,"Sitabuldi, Nagpur, Maharashtra, India",21.14628137,79.08567634,22,Male,17,3/5/2025,14:10,High,1,Government Employee,Urban,North,ananya.joshi4@gmail.com
+Priya Gupta,KDU1478419,"College Road, Nashik, Maharashtra, India",19.99354378,73.78778471,19,Female,17,3/4/2025,18:28,High,0,Student,Urban,West,priya.gupta4@gmail.com
+Aditya Yadav,QZD0742214,"Andheri East, Mumbai, Maharashtra, India",19.11730926,72.87380924,18,Female,18,3/6/2025,9:55,High,0,Retired,Semi-Urban,West,aditya.yadav2@gmail.com
+Ananya Jain,ZNA6752592,"CIDCO, Aurangabad, Maharashtra, India",19.87730931,75.34679371,63,Female,11,3/8/2025,15:52,Low,0,Government Employee,Urban,South,ananya.jain9@gmail.com
+Aditya Joshi,BJU8182101,"Andheri East, Mumbai, Maharashtra, India",19.11413532,72.87152184,56,Male,4,3/2/2025,16:30,Medium,0,Worker,Rural,East,aditya.joshi7@gmail.com
+Isha Jain,OPK5833519,"Sitabuldi, Nagpur, Maharashtra, India",21.14382894,79.08476527,34,Female,6,3/4/2025,13:58,Medium,1,Retired,Urban,Central,isha.jain3@gmail.com
+Kavya Deshmukh,FDP1297034,"Andheri East, Mumbai, Maharashtra, India",19.11220733,72.86795049,72,Female,2,3/7/2025,7:11,Low,0,Worker,Rural,West,kavya.deshmukh4@gmail.com
+Priya Deshmukh,KFU0032939,"Garkheda, Aurangabad, Maharashtra, India",19.85703204,75.34807102,46,Male,1,3/6/2025,13:21,Medium,1,Government Employee,Urban,North,priya.deshmukh3@gmail.com
+Kavya Joshi,HAS2024780,"College Road, Nashik, Maharashtra, India",19.99298619,73.79475412,31,Female,16,3/3/2025,11:30,Medium,1,Farmer,Urban,West,kavya.joshi6@gmail.com
+Priya Deshmukh,CQO2048350,"Sitabuldi, Nagpur, Maharashtra, India",21.14287135,79.09214659,22,Female,4,3/3/2025,16:11,High,0,Student,Urban,North,priya.deshmukh4@gmail.com
+Diya Jain,RIY1571966,"Garkheda, Aurangabad, Maharashtra, India",19.86363618,75.35253057,58,Male,6,3/7/2025,11:52,Medium,1,Business,Urban,Central,diya.jain4@gmail.com
+Arjun Patil,LEH4407956,"Dadar West, Mumbai, Maharashtra, India",19.01477744,72.84715917,76,Male,4,3/5/2025,14:43,Low,1,Student,Semi-Urban,West,arjun.patil3@gmail.com
+Arjun Sharma,ISH4136873,"CIDCO, Aurangabad, Maharashtra, India",19.87573815,75.34654193,23,Male,1,3/2/2025,12:10,High,1,Farmer,Rural,East,arjun.sharma11@gmail.com
+Diya Jain,VIS5364591,"Sitabuldi, Nagpur, Maharashtra, India",21.14841831,79.09046741,74,Male,13,3/1/2025,10:07,Low,1,Worker,Urban,Central,diya.jain5@gmail.com
+Isha Deshmukh,KUK5570824,"CIDCO, Aurangabad, Maharashtra, India",19.87254056,75.34677681,79,Female,16,3/7/2025,16:42,Low,0,Government Employee,Rural,West,isha.deshmukh5@gmail.com
+Diya Gupta,QLW6439537,"MG Road, Pune, Maharashtra, India",18.5244085,73.856777,75,Female,7,3/7/2025,9:45,Low,0,Retired,Urban,West,diya.gupta9@gmail.com
+Sai Jain,IHZ5276955,"College Road, Nashik, Maharashtra, India",19.9943069,73.7849257,75,Female,14,3/8/2025,9:48,Low,0,Retired,Urban,South,sai.jain3@gmail.com
+Isha Kadam,WIQ4676765,"Sitabuldi, Nagpur, Maharashtra, India",21.14774641,79.08710103,59,Female,15,3/2/2025,14:58,Medium,1,Retired,Semi-Urban,West,isha.kadam2@gmail.com
+Kavya Kadam,JVG5412037,"Shivaji Nagar, Pune, Maharashtra, India",18.53273504,73.84032931,54,Female,6,3/5/2025,18:47,Medium,0,Student,Rural,Central,kavya.kadam5@gmail.com
+Aarav Gupta,ROE9805140,"Shivaji Nagar, Pune, Maharashtra, India",18.53149466,73.83971866,32,Male,8,3/5/2025,16:10,Medium,0,Worker,Rural,East,aarav.gupta2@gmail.com
+Vivaan Gupta,MAT2739973,"Sitabuldi, Nagpur, Maharashtra, India",21.148111,79.08916643,76,Female,16,3/8/2025,8:19,Low,0,Government Employee,Urban,Central,vivaan.gupta3@gmail.com
+Kavya Joshi,PRF6042006,"College Road, Nashik, Maharashtra, India",20.00134216,73.79311946,60,Female,15,3/1/2025,10:07,Low,1,Student,Urban,North,kavya.joshi7@gmail.com
+Aarav Gupta,STH6026350,"Garkheda, Aurangabad, Maharashtra, India",19.8579023,75.34802614,59,Male,18,3/7/2025,11:27,Medium,1,Worker,Urban,Central,aarav.gupta3@gmail.com
+Kavya Jain,UME3537062,"Shivaji Nagar, Pune, Maharashtra, India",18.53587526,73.84953639,60,Male,6,3/6/2025,14:06,Low,1,Worker,Urban,East,kavya.jain5@gmail.com
+Isha Patil,JVU8706336,"Sitabuldi, Nagpur, Maharashtra, India",21.14936823,79.08945911,62,Male,5,3/8/2025,14:52,Low,1,Farmer,Urban,East,isha.patil7@gmail.com
+Kavya Sharma,AOF7103773,"CIDCO, Aurangabad, Maharashtra, India",19.87269298,75.34418503,20,Male,1,3/5/2025,16:31,High,0,Business,Semi-Urban,West,kavya.sharma4@gmail.com
+Sai Jain,JWT5027540,"CIDCO, Aurangabad, Maharashtra, India",19.87851305,75.34637993,72,Male,7,3/6/2025,12:17,Low,1,Business,Urban,East,sai.jain4@gmail.com
+Aditya Sharma,AWR1251762,"Garkheda, Aurangabad, Maharashtra, India",19.85564132,75.35340262,39,Male,13,3/4/2025,10:25,Medium,1,Student,Semi-Urban,North,aditya.sharma6@gmail.com
+Isha Gupta,RND0009080,"MG Road, Pune, Maharashtra, India",18.52004537,73.85242593,25,Male,3,3/5/2025,10:00,High,1,Worker,Semi-Urban,West,isha.gupta1@gmail.com
+Diya Yadav,GDR9666287,"Dadar West, Mumbai, Maharashtra, India",19.02092112,72.85226079,38,Male,16,3/2/2025,18:43,Medium,0,Student,Urban,Central,diya.yadav7@gmail.com
+Arjun Joshi,SEM4989615,"Dadar West, Mumbai, Maharashtra, India",19.01950921,72.84572636,30,Male,12,3/7/2025,11:21,Medium,1,Business,Urban,East,arjun.joshi7@gmail.com
+Kavya Deshmukh,HJF7883564,"Dadar West, Mumbai, Maharashtra, India",19.0207813,72.8524303,25,Female,15,3/1/2025,10:26,High,1,Government Employee,Semi-Urban,East,kavya.deshmukh5@gmail.com
+Diya Gupta,FTU0225650,"Sitabuldi, Nagpur, Maharashtra, India",21.14528339,79.08385699,34,Female,8,3/7/2025,11:46,Medium,1,Worker,Semi-Urban,South,diya.gupta10@gmail.com
+Priya Deshmukh,XME6932205,"Dadar West, Mumbai, Maharashtra, India",19.01653818,72.84780619,63,Female,12,3/8/2025,7:25,Low,0,Business,Rural,North,priya.deshmukh5@gmail.com
+Sai Deshmukh,UPX6364281,"CIDCO, Aurangabad, Maharashtra, India",19.87525329,75.34439813,29,Female,7,3/5/2025,14:47,High,1,Student,Semi-Urban,North,sai.deshmukh5@gmail.com
+Arjun Sharma,NXB2689566,"MG Road, Pune, Maharashtra, India",18.52410949,73.8526402,39,Male,4,3/7/2025,7:39,Medium,0,Retired,Urban,East,arjun.sharma12@gmail.com
+Sai Joshi,SOB1979413,"Dadar West, Mumbai, Maharashtra, India",19.02152828,72.85250756,54,Male,18,3/8/2025,9:53,Medium,0,Worker,Rural,North,sai.joshi9@gmail.com
+Isha Gupta,IKK5135869,"Shivaji Nagar, Pune, Maharashtra, India",18.53287663,73.8464681,73,Male,13,3/4/2025,12:57,Low,1,Business,Urban,North,isha.gupta2@gmail.com
+Vivaan Jain,SXM8705391,"Shivaji Nagar, Pune, Maharashtra, India",18.53539794,73.84915261,34,Female,20,3/8/2025,14:00,Medium,1,Worker,Rural,West,vivaan.jain8@gmail.com
+Diya Kadam,XLV2111498,"MG Road, Pune, Maharashtra, India",18.52458391,73.85259012,46,Female,17,3/6/2025,7:02,Medium,0,Farmer,Rural,North,diya.kadam3@gmail.com
+Diya Kadam,SOI6149193,"Andheri East, Mumbai, Maharashtra, India",19.11672935,72.87136102,51,Male,1,3/3/2025,8:11,Medium,0,Farmer,Rural,South,diya.kadam4@gmail.com
+Aditya Deshmukh,TKF2466341,"Sitabuldi, Nagpur, Maharashtra, India",21.14379724,79.08372805,23,Male,20,3/2/2025,18:39,High,0,Farmer,Urban,South,aditya.deshmukh8@gmail.com
+Aarav Gupta,CLI5497350,"College Road, Nashik, Maharashtra, India",19.99503842,73.79366818,30,Female,9,3/8/2025,8:14,Medium,0,Business,Urban,North,aarav.gupta4@gmail.com
+Kavya Deshmukh,EUN2455949,"Dadar West, Mumbai, Maharashtra, India",19.02073723,72.84831796,66,Male,20,3/4/2025,18:55,Low,0,Student,Urban,West,kavya.deshmukh6@gmail.com
+Ananya Joshi,LRT3857499,"Andheri East, Mumbai, Maharashtra, India",19.11654208,72.87121193,74,Female,18,3/5/2025,14:16,Low,1,Business,Semi-Urban,West,ananya.joshi5@gmail.com
+Sai Sharma,UQA4291646,"CIDCO, Aurangabad, Maharashtra, India",19.87604146,75.34668806,22,Female,19,3/8/2025,14:58,High,1,Worker,Urban,West,sai.sharma4@gmail.com
+Aarav Joshi,KHM5926308,"MG Road, Pune, Maharashtra, India",18.52347658,73.85517575,59,Male,16,3/5/2025,15:16,Medium,0,Student,Urban,Central,aarav.joshi11@gmail.com
+Isha Sharma,ZWR3365048,"College Road, Nashik, Maharashtra, India",19.99277475,73.78597305,45,Female,18,3/6/2025,17:50,Medium,0,Business,Rural,North,isha.sharma3@gmail.com
+Arjun Gupta,PVW9550173,"CIDCO, Aurangabad, Maharashtra, India",19.87238486,75.3463335,33,Female,2,3/2/2025,12:49,Medium,1,Business,Urban,South,arjun.gupta6@gmail.com
+Aarav Deshmukh,DYQ5058367,"Sitabuldi, Nagpur, Maharashtra, India",21.14279674,79.08423059,54,Male,7,3/5/2025,17:11,Medium,0,Farmer,Urban,Central,aarav.deshmukh7@gmail.com
+Aditya Sharma,JTR8408370,"Sitabuldi, Nagpur, Maharashtra, India",21.14740986,79.09149136,24,Male,9,3/3/2025,16:19,High,0,Retired,Rural,West,aditya.sharma7@gmail.com
+Vivaan Yadav,LCM5170378,"Shivaji Nagar, Pune, Maharashtra, India",18.53271967,73.84694126,47,Male,18,3/1/2025,9:04,Medium,0,Student,Rural,Central,vivaan.yadav6@gmail.com
+Arjun Kadam,VTA7540659,"CIDCO, Aurangabad, Maharashtra, India",19.87571183,75.34300454,42,Male,10,3/3/2025,17:27,Medium,0,Farmer,Semi-Urban,West,arjun.kadam6@gmail.com
+Aditya Deshmukh,MFJ8334240,"Sitabuldi, Nagpur, Maharashtra, India",21.14481335,79.09014418,65,Male,4,3/2/2025,8:29,Low,0,Farmer,Semi-Urban,South,aditya.deshmukh9@gmail.com
+Sai Jain,OWS3888066,"CIDCO, Aurangabad, Maharashtra, India",19.87793695,75.34438556,73,Male,7,3/1/2025,12:22,Low,1,Retired,Urban,South,sai.jain5@gmail.com
+Sai Joshi,RPS1585773,"MG Road, Pune, Maharashtra, India",18.52214849,73.85172301,58,Male,14,3/4/2025,15:39,Medium,0,Student,Urban,South,sai.joshi10@gmail.com
+Sai Kadam,IHB8959403,"Garkheda, Aurangabad, Maharashtra, India",19.85833561,75.34591406,43,Female,10,3/5/2025,11:04,Medium,1,Retired,Rural,Central,sai.kadam2@gmail.com
+Vivaan Yadav,YXW5018408,"Garkheda, Aurangabad, Maharashtra, India",19.85749776,75.35357297,29,Male,2,3/7/2025,14:54,High,1,Government Employee,Semi-Urban,Central,vivaan.yadav7@gmail.com
+Kavya Kadam,GFI5573315,"College Road, Nashik, Maharashtra, India",19.99904437,73.79196752,23,Female,6,3/7/2025,11:49,High,1,Retired,Semi-Urban,East,kavya.kadam6@gmail.com
+Isha Yadav,XFE5504572,"Dadar West, Mumbai, Maharashtra, India",19.01547983,72.84382881,52,Female,9,3/3/2025,16:04,Medium,0,Farmer,Semi-Urban,North,isha.yadav2@gmail.com
+Priya Kadam,BCX9863115,"Garkheda, Aurangabad, Maharashtra, India",19.85710023,75.35289897,42,Female,13,3/3/2025,8:13,Medium,0,Business,Urban,North,priya.kadam5@gmail.com
+Diya Sharma,XEY8343234,"Garkheda, Aurangabad, Maharashtra, India",19.85751529,75.34993422,47,Male,2,3/8/2025,17:25,Medium,0,Worker,Rural,North,diya.sharma4@gmail.com
+Kavya Joshi,DZN6625470,"Dadar West, Mumbai, Maharashtra, India",19.01988971,72.8524788,35,Female,16,3/8/2025,9:02,Medium,0,Worker,Rural,East,kavya.joshi8@gmail.com
+Arjun Kadam,ZEZ0615066,"Sitabuldi, Nagpur, Maharashtra, India",21.14805697,79.08474206,32,Male,1,3/3/2025,14:43,Medium,1,Farmer,Semi-Urban,West,arjun.kadam7@gmail.com
+Kavya Gupta,YRW5059072,"CIDCO, Aurangabad, Maharashtra, India",19.87755202,75.34055639,72,Female,19,3/8/2025,14:13,Low,1,Student,Semi-Urban,North,kavya.gupta3@gmail.com
+Priya Jain,UUK1999409,"Andheri East, Mumbai, Maharashtra, India",19.11245634,72.86879818,28,Female,17,3/8/2025,13:17,High,1,Student,Rural,South,priya.jain6@gmail.com

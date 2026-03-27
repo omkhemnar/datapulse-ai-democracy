@@ -1,0 +1,54 @@
+Name,Age,Gender,BoothID,Area,Occupation,Experience
+Rajesh Kumar,45,Male,B-101,Mumbai Rural,Farmer,Yes
+Priya Sharma,29,Female,B-102,Pune Rural,Teacher,No
+Amit Patel,34,Male,B-101,Mumbai South,IT Professional,Yes
+Sneha Desai,23,Female,B-103,Navi Mumbai,Student,No
+Vikram Singh,55,Male,B-101,Thane,Business Owner,Yes
+Geeta Devi,62,Female,B-102,Pune City,Retired,Yes
+Rahul Verma,19,Male,B-103,Bandra,Student,No
+Anjali Gupta,38,Female,B-101,Andheri,Plumber,Yes
+Suresh Jadhav,41,Male,B-102,Nashik,Farmer,Yes
+Kavita Joshi,31,Female,B-103,Nagpur,Nurse,No
+Mohan Rao,48,Male,B-101,Bhandup,Carpenter,Yes
+Pooja Mehta,26,Female,B-102,Dadar,Software Engineer,Yes
+Kishore Kumar,60,Male,B-103,Aurangabad,Farmer,Yes
+Neha Singh,35,Female,B-101,Kalyan,Shopkeeper,Yes
+Sanjay Patil,28,Male,B-102,Satara,Delivery Executive,No
+Rekha Chavan,42,Female,B-103,Kolhapur,Tailor,Yes
+Nitin Kadam,50,Male,B-101,Solapur,Factory Worker,Yes
+Swati Desai,24,Female,B-102,Panvel,Receptionist,No
+Ramesh Bhat,65,Male,B-103,Jalgaon,Retired,Yes
+Deepa Pawar,33,Female,B-101,Sangli,Housewife,Yes
+Manoj Tiwari,39,Male,B-102,Wardha,Mechanic,Yes
+Aarti Shinde,27,Female,B-103,Amravati,Beautician,No
+Siddharth Mane,21,Male,B-101,Nanded,Student,No
+Pallavi More,46,Female,B-102,Dhule,Teacher,Yes
+Ravi Kotecha,53,Male,B-103,Latur,Businessman,Yes
+Manisha Kulkarni,30,Female,B-101,Mira Road,Accountant,Yes
+Ajay Rathod,44,Male,B-102,Vasai,Driver,Yes
+Savita Gaikwad,58,Female,B-103,Virar,Cleaner,Yes
+Vijay Kale,36,Male,B-101,Malad,Clerk,Yes
+Kiran Bhosale,25,Female,B-102,Goregaon,Sales Executive,No
+Ashok Munde,49,Male,B-103,Borivali,Security Guard,Yes
+Sunita Kamble,40,Female,B-101,Kandivali,Chef,Yes
+Dinesh Wagh,32,Male,B-102,Dahisar,Electrician,No
+Meera Pande,29,Female,B-103,Kurla,Designer,Yes
+Santosh Nair,52,Male,B-101,Vikhroli,HR Manager,Yes
+Jyoti Iyer,47,Female,B-102,Mulund,Banker,Yes
+Prakash Pillai,61,Male,B-103,Ghatkopar,Retired,Yes
+Rutuja Deshmukh,22,Female,B-101,Powai,Student,No
+Arun Hegde,37,Male,B-102,Sion,Architect,Yes
+Madhuri Dixit,43,Female,B-103,Chembur,Consultant,Yes
+Vishal Khurana,28,Male,B-101,Mahim,Engineer,Yes
+Priyanka Chopra,34,Female,B-102,Byculla,Doctor,Yes
+Salman Khan,56,Male,B-103,Parel,Actor,Yes
+Kareena Kapoor,41,Female,B-101,Worli,Entrepreneur,Yes
+Ranbir Kapoor,39,Male,B-102,Colaba,Investor,Yes
+Deepika Padukone,36,Female,B-103,Cuffe Parade,Analyst,Yes
+Sachin Tendulkar,48,Male,B-101,Marine Drive,Sports Coach,Yes
+Virat Kohli,33,Male,B-102,Juhu,Gym Trainer,Yes
+Anushka Sharma,34,Female,B-103,Versova,Event Manager,Yes
+Rohit Sharma,35,Male,B-101,Lokhandwala,Cricketer,Yes
+Jasprit Bumrah,28,Male,B-102,Malabar Hill,Bowler,Yes
+Smriti Mandhana,25,Female,B-103,Breach Candy,Athlete,No
+Hardik Pandya,28,Male,B-101,Khar,Freelancer,Yes

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, ActivitySquare, ShieldCheck, BarChart4 } from 'lucide-react';
 import Button from '../components/ui/Button';
@@ -5,6 +6,17 @@ import ParticleBackground from '../components/ParticleBackground';
 
 export default function LandingPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    try {
+      const token = localStorage.getItem('token');
+      if (token) {
+        const payload = JSON.parse(atob(token.split('.')[1]));
+        if (payload.role === 'voter') navigate('/citizen', { replace: true });
+        else navigate('/dashboard', { replace: true });
+      }
+    } catch(e) {}
+  }, [navigate]);
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-slate-950 text-white flex flex-col items-center justify-center selection:bg-primary-500/30">

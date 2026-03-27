@@ -1,0 +1,24 @@
+const mongoose = require('mongoose');
+require('dotenv').config();
+
+async function checkAll() {
+  try {
+    await mongoose.connect(process.env.MONGODB_URI);
+    const collections = await mongoose.connection.db.listCollections().toArray();
+    console.log('--- Database Audit ---');
+    for (const coll of collections) {
+      const count = await mongoose.connection.db.collection(coll.name).countDocuments();
+      console.log(`[${coll.name}]: ${count} docs`);
+      if (count > 0) {
+        const sample = await mongoose.connection.db.collection(coll.name).findOne({});
+        console.log(`  Sample keys: ${Object.keys(sample).join(', ')}`);
+      }
+    }
+    process.exit(0);
+  } catch (err) {
+    console.error(err);
+    process.exit(1);
+  }
+}
+
+checkAll();

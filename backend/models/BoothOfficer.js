@@ -12,18 +12,20 @@ const BoothOfficerSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  resetPasswordToken: String,
+  resetPasswordExpires: Date
 }, { timestamps: true });
 
 // Hash password before saving
-BoothOfficerSchema.pre('save', async function() {
+BoothOfficerSchema.pre('save', async function () {
   if (!this.isModified('password')) return;
   const salt = await bcrypt.genSalt(10);
   this.password = await bcrypt.hash(this.password, salt);
 });
 
 // Method to compare password
-BoothOfficerSchema.methods.comparePassword = async function(candidatePassword) {
+BoothOfficerSchema.methods.comparePassword = async function (candidatePassword) {
   return await bcrypt.compare(candidatePassword, this.password);
 };
 

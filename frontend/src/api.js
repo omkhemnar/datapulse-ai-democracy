@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const API_BASE = import.meta.env.DEV ? '' : 'http://localhost:5001'
+// Use VITE_API_URL in production (set in Vercel), fallback to localhost in development
+const API_BASE = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? '' : 'http://localhost:5001')
 
 export const uploadCSV = async (file) => {
   const formData = new FormData()
@@ -41,6 +42,21 @@ export const sendCampaign = async (data) => {
   return res.data
 }
 
+export const sendNotificationEmail = async (data) => {
+  const res = await axios.post(`${API_BASE}/api/send-notifications`, data)
+  return res.data
+}
+
+export const getAllSchemes = async () => {
+  const res = await axios.get(`${API_BASE}/api/schemes`)
+  return res.data
+}
+
+export const getSchemesByCluster = async (cluster) => {
+  const res = await axios.get(`${API_BASE}/api/schemes/${encodeURIComponent(cluster)}`)
+  return res.data
+}
+
 export const loadSampleData = async () => {
   const res = await axios.get(`${API_BASE}/api/load-sample`)
   return res.data
@@ -58,4 +74,9 @@ export const downloadSampleCsv = async () => {
   link.click()
   link.remove()
   window.URL.revokeObjectURL(url)
+}
+
+export const sendTelegramClusterNotification = async (data) => {
+  const res = await axios.post(`${API_BASE}/api/telegram/cluster-notify`, data)
+  return res.data
 }

@@ -1,0 +1,362 @@
+[
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d425"
+    },
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "__v": 0,
+    "benefits": "Financial benefit of Rs. 6000/- per year is transferred directly into the bank accounts of farmer families across the country in three equal installments of Rs. 2000/- every four months.",
+    "category": "Agriculture",
+    "cluster": "Dynamic",
+    "description": "A central sector scheme providing income support to all landholding farmers' families in the country to supplement their financial needs for procuring various inputs related to agriculture and allied activities as well as domestic needs.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.535Z"
+    },
+    "tags": [
+      "Farmers",
+      "Income Support",
+      "Central",
+      "PM-Kisan",
+      "agriculture"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Bank Account Details",
+      "Land Ownership Records"
+    ],
+    "eligibility": "Must be an active landholding farmer family consisting of husband, wife, and minor children owning cultivable land.",
+    "endDate": "Ongoing",
+    "link": "https://pmkisan.gov.in/",
+    "startDate": "2018-12-01",
+    "state": "All",
+    "type": "Central"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d426"
+    },
+    "name": "Ayushman Bharat Pradhan Mantri Jan Arogya Yojana (PMJAY)",
+    "__v": 0,
+    "benefits": "Rs. 5,00,000 health cover per eligible family per year. Cashless and paperless access to healthcare services.",
+    "category": "Healthcare",
+    "cluster": "Dynamic",
+    "description": "The world's largest health insurance/ assurance scheme fully financed by the government, providing a health cover of Rs. 5 Lakhs per family per year for secondary and tertiary care hospitalization across public and private empaneled hospitals.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Health",
+      "Insurance",
+      "Vulnerable",
+      "Central",
+      "medical"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Ration Card",
+      "PMJAY Golden Card",
+      "Income Certificate"
+    ],
+    "eligibility": "Economically vulnerable families identified within the SECC 2011 database. No cap on family size or age.",
+    "endDate": "Ongoing",
+    "link": "https://pmjay.gov.in/",
+    "startDate": "2018-09-23",
+    "state": "All",
+    "type": "Central"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d427"
+    },
+    "name": "Stand-Up India Scheme",
+    "__v": 0,
+    "benefits": "Composite loan (inclusive of term loan and working capital) between Rs 10 lakh and up to Rs 100 lakh for business commencement.",
+    "category": "Business",
+    "cluster": "Dynamic",
+    "description": "Facilitating bank loans between 10 lakh and 1 Crore to at least one Scheduled Caste (SC) or Scheduled Tribe (ST) borrower and at least one woman borrower per bank branch for setting up a greenfield enterprise.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Women",
+      "Entrepreneurs",
+      "SC/ST",
+      "Central",
+      "startup",
+      "workers"
+    ],
+    "documents": [
+      "Identity Proof",
+      "Address Proof",
+      "Business Plan/Project Report",
+      "Caste Certificate (if applicable)"
+    ],
+    "eligibility": "SC/ST and/or woman entrepreneurs above 18 years of age. Must be a greenfield enterprise.",
+    "endDate": "2025-12-31",
+    "link": "https://www.standupmitra.in/",
+    "startDate": "2016-04-05",
+    "state": "All",
+    "type": "Central"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d428"
+    },
+    "name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "__v": 0,
+    "benefits": "Subsidy ranging from Rs. 1.0 Lakh to Rs. 2.67 Lakh depending on the income category (EWS, LIG, MIG).",
+    "category": "Housing & Shelter",
+    "cluster": "Dynamic",
+    "description": "Providing pucca houses to all eligible families/beneficiaries against the slum rehabilitation and affordable housing requirements. Ensures 'Housing for All' in urban areas.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Housing",
+      "Urban",
+      "Credit Subsidy",
+      "Central",
+      "infrastructure"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Income Proof",
+      "Bank Statement",
+      "Affidavit of Not Owning Pucca House"
+    ],
+    "eligibility": "Beneficiary family should not own a pucca house either in their name or in the name of any member of their family in any part of India.",
+    "endDate": "2024-12-31",
+    "link": "https://pmaymis.gov.in/",
+    "startDate": "2015-06-25",
+    "state": "All",
+    "type": "Central"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d429"
+    },
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "__v": 0,
+    "benefits": "High compound interest rate (currently approx 8.2%) with full maturity value and tax exemption benefits under Section 80C.",
+    "category": "Education & Financial",
+    "cluster": "Dynamic",
+    "description": "A small savings scheme backed by the Government of India targeted exclusively towards the parents of girl children, encouraging them to build a fund for the future education and marriage expenses of their female child.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Women",
+      "Child Welfare",
+      "Savings",
+      "Central",
+      "young"
+    ],
+    "documents": [
+      "Birth Certificate of Girl Child",
+      "Identity and Address Proof of Parents",
+      "Bank Account Opening Form"
+    ],
+    "eligibility": "Parents or legal guardians of a girl child less than 10 years of age. Maximum two accounts per family.",
+    "endDate": "Ongoing",
+    "link": "https://www.indiapost.gov.in/Financial/pages/content/post-office-saving-schemes.aspx",
+    "startDate": "2015-01-22",
+    "state": "All",
+    "type": "Central"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d42a"
+    },
+    "name": "Mukhya Mantri Vayoshri Yojana",
+    "__v": 0,
+    "benefits": "Direct Benefit Transfer (DBT) of Rs. 3,000 deposited into the senior citizen's bank account for purchasing medical/walking aids.",
+    "category": "Social Security",
+    "cluster": "Dynamic",
+    "description": "A special State scheme providing financial assistance specifically aimed at elder citizens experiencing age-related disabilities or infirmities, enabling them to purchase prescribed physical aids or assisted-living devices.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Senior",
+      "Disability",
+      "Medical Aids",
+      "State",
+      "Maharashtra"
+    ],
+    "documents": [
+      "Aadhaar Card",
+      "Medical Certificate of Impairment",
+      "Age Proof",
+      "Maharashtra Domicile Certificate",
+      "Bank Passbook"
+    ],
+    "eligibility": "Senior citizens above the age of 65 years residing strictly within Maharashtra State, suffering from age-related ailments.",
+    "endDate": "Ongoing",
+    "link": "https://sjsa.maharashtra.gov.in/en/scheme-category/special-assistance",
+    "startDate": "2024-02-05",
+    "state": "Maharashtra",
+    "type": "State"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d42b"
+    },
+    "name": "Majhi Kanya Bhagyashree Scheme",
+    "__v": 0,
+    "benefits": "Total financial grant escalating up to Rs. 50,000 provided across various educational landmarks if the girl remains unmarried until age 18.",
+    "category": "Women & Child",
+    "cluster": "Dynamic",
+    "description": "A Maharashtra state initiative intended to retain girls in schools, decrease the female foeticide rate, and prevent child marriages by providing staggered financial incentives linked directly to educational milestones.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Women",
+      "Child Welfare",
+      "Education",
+      "State",
+      "Maharashtra",
+      "young"
+    ],
+    "documents": [
+      "Birth Certificate",
+      "Income Certificate",
+      "BPL Ration Card",
+      "Bank Account of Girl Child",
+      "Domicile Certificate"
+    ],
+    "eligibility": "Families living below the poverty line (BPL) or having an annual income up to Rs. 7.5 lakh in Maharashtra. Maximum 2 girls per family.",
+    "endDate": "Ongoing",
+    "link": "https://womenchild.maharashtra.gov.in/",
+    "startDate": "2016-04-01",
+    "state": "Maharashtra",
+    "type": "State"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d42c"
+    },
+    "name": "Mahatma Jyotirao Phule Jan Arogya Yojana",
+    "__v": 0,
+    "benefits": "Cashless health coverage of Rs. 5,00,000 per family per year for 1356 enumerated procedures.",
+    "category": "Healthcare",
+    "cluster": "Dynamic",
+    "description": "The flagship health insurance scheme of Maharashtra government providing comprehensive cashless medical hospitalization for serious diseases requiring hospitalization for specialized surgeries and therapies.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Health",
+      "Insurance",
+      "State",
+      "Maharashtra",
+      "medical"
+    ],
+    "documents": [
+      "Maharashtra Ration Card",
+      "Aadhaar Card",
+      "Government Issued Photo ID"
+    ],
+    "eligibility": "All citizens holding an Orange, Yellow, or White Ration card issued by the Civil Supplies Department of Maharashtra.",
+    "endDate": "Ongoing",
+    "link": "https://www.jeevandayee.gov.in/",
+    "startDate": "2012-07-02",
+    "state": "Maharashtra",
+    "type": "State"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d42d"
+    },
+    "name": "Namo Shetkari Maha Samman Nidhi",
+    "__v": 0,
+    "benefits": "An additional Rs. 6000/- per year transferred directly to the farmer, thereby doubling their total annual support combining with PM-KISAN to Rs. 12,000/-.",
+    "category": "Agriculture",
+    "cluster": "Dynamic",
+    "description": "An independent state-backed top-up scheme identical and supplementary to PM-KISAN, specifically designed to inject an additional parallel income stream explicitly to landholding farmers in Maharashtra.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Farmers",
+      "Income Support",
+      "State",
+      "Maharashtra",
+      "agriculture"
+    ],
+    "documents": [
+      "PM-KISAN Registration Number",
+      "Aadhaar Card",
+      "7/12 Land Extract",
+      "Bank Passbook"
+    ],
+    "eligibility": "Farmers must be registered under PM-KISAN and actively holding cultivable land in Maharashtra.",
+    "endDate": "Ongoing",
+    "link": "https://nsmny.mahaonline.gov.in/",
+    "startDate": "2023-05-30",
+    "state": "Maharashtra",
+    "type": "State"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d42e"
+    },
+    "name": "Shravanbal Seva Rajya Nivruttivetan Yojana",
+    "__v": 0,
+    "benefits": "Pension of Rs. 1000 to Rs. 1500 per month deposited physically into the beneficiary's registered bank account.",
+    "category": "Social Security",
+    "cluster": "Dynamic",
+    "description": "State pension scheme meant to provide a permanent layer of financial dignity and sustenance to destitute and elderly citizens living below the poverty line in Maharashtra.",
+    "lastUpdated": {
+      "": "2026-03-26T18:26:31.536Z"
+    },
+    "tags": [
+      "Senior",
+      "Pension",
+      "Vulnerable",
+      "State",
+      "Maharashtra"
+    ],
+    "documents": [
+      "Age Proof (65+)",
+      "Income Certificate (Below 21,000)",
+      "Maharashtra Domicile",
+      "Ration Card"
+    ],
+    "eligibility": "Destitute elderly individuals aged 65 or above whose family income does not exceed Rs. 21,000 per annum and who are residents of Maharashtra.",
+    "endDate": "Ongoing",
+    "link": "https://sjsa.maharashtra.gov.in/en/scheme-category/special-assistance",
+    "startDate": "2004-01-01",
+    "state": "Maharashtra",
+    "type": "State"
+  },
+  {
+    "_id": {
+      "": "69c3fce3200fa8ba91c9d42f"
+    },
+    "name": "Lek Ladki Yojana",
+    "type": "State",
+    "state": "Maharashtra",
+    "description": "Financial assistance for girl children from birth to education",
+    "benefits": "Up to ₹1,01,000 across stages",
+    "eligibility": "Refer to official portal for detailed inclusion limits.",
+    "documents": [
+      "N/A"
+    ],
+    "startDate": "2023-04-01",
+    "endDate": "Ongoing",
+    "link": "https://womenchild.maharashtra.gov.in/",
+    "category": "Women & Child",
+    "tags": [
+      "women",
+      "girl",
+      "female",
+      "education"
+    ],
+    "lastUpdated": {
+      "": "2026-03-27T08:51:16.074Z"
+    },
+    "__v": 0,
+    "cluster": "Dynamic"
+  }
+]

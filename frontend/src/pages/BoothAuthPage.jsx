@@ -1,9 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Shield, ArrowRight, Loader2, Eye, EyeOff } from 'lucide-react';
 
 export default function BoothAuthPage() {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      navigate('/dashboard', { replace: true });
+    }
+  }, [navigate]);
+
   const [mode, setMode] = useState('login'); // login | signup | forgot
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -30,7 +37,7 @@ export default function BoothAuthPage() {
         payload.password = password;
       }
 
-      const res = await fetch(`http://localhost:5001${endpoint}`, {
+      const res = await fetch(endpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
