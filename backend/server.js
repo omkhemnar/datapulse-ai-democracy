@@ -625,7 +625,7 @@ app.post('/api/send-notifications', async (req, res) => {
 
       try {
         await axios.post('https://api.resend.com/emails', {
-          from: 'DataPulse Team <onboarding@resend.dev>',
+          from: 'DataPulse Team <no-reply@datapulsedemocracy.com>',
           to: recipient.email,
           subject: scheme ? `Government Scheme Update: ${scheme}` : 'Government Scheme Update',
           text: emailText
