@@ -613,8 +613,7 @@ app.post('/api/send-notifications', async (req, res) => {
       await transporter.verify();
       console.log('[Email API] SMTP connection verified successfully.');
     } catch (verifyErr) {
-      console.error('[Email API] SMTP Verification failed:', verifyErr.message);
-      return res.status(500).json({ error: 'Email SMTP server is currently unreachable. Please check server logs.' });
+      return res.status(500).json({ error: 'Email SMTP server is unreachable: ' + verifyErr.message });
     }
 
     // Slice recipients list to a maximum of 25 to prevent SMTP rate-limiting/throttling
