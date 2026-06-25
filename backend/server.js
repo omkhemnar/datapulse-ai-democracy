@@ -20,22 +20,61 @@ const transporter = nodemailer.createTransport({
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS
-  }
+  },
+  connectionTimeout: 5000, // 5 seconds connection timeout
+  greetingTimeout: 5000,   // 5 seconds greeting timeout
+  socketTimeout: 5000      // 5 seconds socket timeout
 });
 
 const app = express();
 const PORT = 5001;
 
-// MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/datapulse', {
-  // Use latest parser
-})
-  .then(() => {
-    console.log('Connected to MongoDB');
-    fetchSchemes(); // Initial fetch
-    cron.schedule('0 0 * * *', fetchSchemes); // Daily
-  })
-  .catch(err => console.error('MongoDB connection error:', err));
+// MongoDB Connection Helper with Caching and Error Handling
+let isConnected = false;
+
+async function connectDB() {
+  console.log("Connecting to MongoDB...");
+  
+  if (mongoose.connection.readyState === 1) {
+    console.log("MongoDB is already connected");
+    return mongoose.connection;
+  }
+  
+  if (mongoose.connection.readyState === 2) {
+    console.log("MongoDB connection is in progress...");
+    return new Promise((resolve, reject) => {
+      mongoose.connection.once('open', () => {
+        console.log("MongoDB Connected");
+        resolve(mongoose.connection);
+      });
+      mongoose.connection.once('error', (err) => {
+        console.error("MongoDB Connection Error:", err);
+        reject(err);
+      });
+    });
+  }
+
+  try {
+    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/datapulse', {
+      bufferCommands: false, // Disable buffering to fail fast if connection fails
+    });
+    console.log("MongoDB Connected");
+    
+    if (!isConnected) {
+      isConnected = true;
+      fetchSchemes().catch(err => console.error('Failed to run initial fetchSchemes:', err));
+      cron.schedule('0 0 * * *', fetchSchemes); // Daily
+    }
+    
+    return conn;
+  } catch (error) {
+    console.error("MongoDB Connection Error:", error);
+    throw error;
+  }
+}
+
+// Immediately trigger connection attempts on startup
+connectDB().catch(err => console.error("Initial MongoDB Connection failed:", err));
 
 const BoothOfficer = require('./models/BoothOfficer');
 const VoterAuth = require('./models/VoterAuth');
@@ -55,6 +94,19 @@ if (!fs.existsSync(DATA_FILE)) {
 
 app.use(cors());
 app.use(express.json());
+
+// Ensure database connection middleware
+const ensureDbConnected = async (req, res, next) => {
+  try {
+    await connectDB();
+    next();
+  } catch (err) {
+    console.error('Database connection middleware error:', err);
+    res.status(500).json({ error: 'Database connection failed: ' + err.message });
+  }
+};
+
+app.use('/api', ensureDbConnected);
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
@@ -494,9 +546,13 @@ app.post('/api/campaigns', (req, res) => {
 
 // Send Cluster Notifications
 app.post('/api/send-notifications', async (req, res) => {
+  console.log('[Email API] Called for cluster:', req.body.cluster);
   try {
-    const { cluster } = req.body;
-    if (!cluster) return res.status(400).json({ error: 'Cluster name is required' });
+    const { cluster, message, scheme } = req.body;
+    if (!cluster) {
+      console.warn('[Email API] Warning: Cluster name is missing in request.');
+      return res.status(400).json({ error: 'Cluster name is required' });
+    }
 
     const data = getVotersData();
     let voterGroups = data.voter_groups || [];
@@ -504,31 +560,97 @@ app.post('/api/send-notifications', async (req, res) => {
       voterGroups = (await fallbackClassification(data.voters)).voter_groups;
     }
 
-    const targetedVoters = voterGroups.filter(v => v.groups && v.groups.includes(cluster)).slice(0, 20);
+    const targetedVoters = voterGroups.filter(v => v.groups && v.groups.includes(cluster));
+    console.log(`[Email API] Found ${targetedVoters.length} total voters mapped to cluster "${cluster}" in voters.json.`);
 
     if (targetedVoters.length === 0) {
       return res.status(404).json({ error: 'No voters found for the selected cluster' });
     }
 
-    let sentCount = 0;
+    // Fetch registered voter emails from MongoDB VoterAuth collection
+    const voterIds = targetedVoters.map(v => v.VoterID.toUpperCase());
+    console.log('[Email API] Querying voterauths database collection for voter IDs...');
+    const registeredVoters = await VoterAuth.find({ voterId: { $in: voterIds } });
+    console.log(`[Email API] Database query returned ${registeredVoters.length} registered voter(s) with active accounts.`);
+
+    // Map VoterID -> Email
+    const emailMap = {};
+    const nameMap = {};
+    registeredVoters.forEach(rv => {
+      emailMap[rv.voterId] = rv.email;
+      nameMap[rv.voterId] = rv.name;
+    });
+
+    // Compile list of recipients with valid emails
+    const recipients = [];
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     for (const v of targetedVoters) {
-      const email = v.Email || `voter_${v.id}@example.com`;
-      const schemesStr = (v.eligible_schemes || []).join(', ') || 'General Government Updates';
+      const dbEmail = emailMap[v.VoterID.toUpperCase()];
+      const email = dbEmail || v.Email;
+
+      // Filter out dummy/placeholder emails to prevent mailer errors and speed up delivery
+      if (email && emailRegex.test(email) && !email.includes('example.com') && !email.includes('voter')) {
+        recipients.push({
+          name: nameMap[v.VoterID.toUpperCase()] || v.Name,
+          email: email,
+          voterId: v.VoterID,
+          eligible_schemes: v.eligible_schemes || []
+        });
+      }
+    }
+
+    console.log(`[Email API] Resolved ${recipients.length} valid recipient(s) for email transmission:`, recipients.map(r => r.email));
+
+    if (recipients.length === 0) {
+      console.warn('[Email API] No valid/registered recipient emails found in this cluster.');
+      return res.status(404).json({ error: 'No voters with valid, registered email addresses found in this cluster.' });
+    }
+
+    // Verify SMTP connection before attempting transmission
+    try {
+      console.log('[Email API] Verifying SMTP Transporter connection...');
+      await transporter.verify();
+      console.log('[Email API] SMTP connection verified successfully.');
+    } catch (verifyErr) {
+      console.error('[Email API] SMTP Verification failed:', verifyErr.message);
+      return res.status(500).json({ error: 'Email SMTP server is currently unreachable. Please check server logs.' });
+    }
+
+    // Slice recipients list to a maximum of 25 to prevent SMTP rate-limiting/throttling
+    const recipientsToSend = recipients.slice(0, 25);
+    console.log(`[Email API] Sending notifications to ${recipientsToSend.length} recipients (sliced to 25 for SMTP rate-limit safety).`);
+
+    // Send emails in parallel to avoid timing out the request
+    let sentCount = 0;
+    const emailPromises = recipientsToSend.map(async (recipient) => {
+      const schemesStr = (recipient.eligible_schemes || []).join(', ') || 'General Government Updates';
+      
+      const emailText = message 
+        ? `Dear ${recipient.name},\n\n${message}\n\nRegards,\nDataPulse Team`
+        : `Dear ${recipient.name},\n\nBased on your profile, you are eligible for the following scheme(s):\n\n${schemesStr}\n\nFor more benefits, please verify your details in the citizen portal.\n\nRegards,\nDataPulse Team`;
 
       const mailOptions = {
         from: process.env.EMAIL_USER || '"DataPulse Team" <no-reply@datapulse.gov.in>',
-        to: email,
-        subject: 'Government Scheme Update',
-        text: `Dear ${v.Name},\n\nBased on your profile, you are eligible for the following scheme(s):\n\n${schemesStr}\n\nFor more benefits, please verify your details in the citizen portal.\n\nRegards,\nDataPulse Team`
+        to: recipient.email,
+        subject: scheme ? `Government Scheme Update: ${scheme}` : 'Government Scheme Update',
+        text: emailText
       };
 
       try {
         await transporter.sendMail(mailOptions);
-        sentCount++;
-      } catch(err) {
-        console.error(`Failed to send email to ${email}:`, err.message);
+        console.log(`[Email API] Success: Sent email to ${recipient.email}`);
+        return { success: true };
+      } catch (sendErr) {
+        console.error(`[Email API] Failure: Failed to send email to ${recipient.email}:`, sendErr.message);
+        return { success: false, error: sendErr.message };
       }
-    }
+    });
+
+    const results = await Promise.all(emailPromises);
+    sentCount = results.filter(r => r.success).length;
+
+    console.log(`[Email API] Sent notifications to ${sentCount}/${recipientsToSend.length} successfully.`);
 
     const newCampaign = {
       name: `${cluster} - Email Notification`,
@@ -537,14 +659,18 @@ app.post('/api/send-notifications', async (req, res) => {
       replied: Math.floor(sentCount * 0.1),
       date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
     };
+
     try {
       const cmpData = JSON.parse(fs.readFileSync(CAMPAIGNS_FILE, 'utf8'));
       cmpData.unshift(newCampaign);
       fs.writeFileSync(CAMPAIGNS_FILE, JSON.stringify(cmpData, null, 2));
-    } catch(e) { }
+    } catch(e) {
+      console.error('[Email API] Failed to update campaigns list:', e.message);
+    }
 
     res.json({ success: true, count: sentCount, message: `Notification sent to ${sentCount} voters.` });
   } catch (err) {
+    console.error('[Email API] Unhandled Error:', err);
     res.status(500).json({ error: err.message });
   }
 });
