@@ -607,20 +607,14 @@ app.post('/api/send-notifications', async (req, res) => {
       return res.status(404).json({ error: 'No voters with valid, registered email addresses found in this cluster.' });
     }
 
-    // Verify SMTP connection before attempting transmission
-    try {
-      console.log('[Email API] Verifying SMTP Transporter connection...');
-      await transporter.verify();
-      console.log('[Email API] SMTP connection verified successfully.');
-    } catch (verifyErr) {
-      return res.status(500).json({ error: 'Email SMTP server is unreachable: ' + verifyErr.message });
-    }
+    // Verify Resend configuration
+    const resendApiKey = process.env.RESEND_API_KEY || 're_evquyklsiivayziu';
 
-    // Slice recipients list to a maximum of 25 to prevent SMTP rate-limiting/throttling
+    // Slice recipients list to a maximum of 25 to prevent Resend rate-limiting/throttling
     const recipientsToSend = recipients.slice(0, 25);
-    console.log(`[Email API] Sending notifications to ${recipientsToSend.length} recipients (sliced to 25 for SMTP rate-limit safety).`);
+    console.log(`[Email API] Sending notifications to ${recipientsToSend.length} recipients via Resend (sliced to 25 for rate safety).`);
 
-    // Send emails in parallel to avoid timing out the request
+    // Send emails in parallel using Resend API (HTTP Port 443, never blocked by Render)
     let sentCount = 0;
     const emailPromises = recipientsToSend.map(async (recipient) => {
       const schemesStr = (recipient.eligible_schemes || []).join(', ') || 'General Government Updates';
@@ -629,27 +623,31 @@ app.post('/api/send-notifications', async (req, res) => {
         ? `Dear ${recipient.name},\n\n${message}\n\nRegards,\nDataPulse Team`
         : `Dear ${recipient.name},\n\nBased on your profile, you are eligible for the following scheme(s):\n\n${schemesStr}\n\nFor more benefits, please verify your details in the citizen portal.\n\nRegards,\nDataPulse Team`;
 
-      const mailOptions = {
-        from: process.env.EMAIL_USER || '"DataPulse Team" <no-reply@datapulse.gov.in>',
-        to: recipient.email,
-        subject: scheme ? `Government Scheme Update: ${scheme}` : 'Government Scheme Update',
-        text: emailText
-      };
-
       try {
-        await transporter.sendMail(mailOptions);
-        console.log(`[Email API] Success: Sent email to ${recipient.email}`);
+        await axios.post('https://api.resend.com/emails', {
+          from: 'DataPulse Team <onboarding@resend.dev>',
+          to: recipient.email,
+          subject: scheme ? `Government Scheme Update: ${scheme}` : 'Government Scheme Update',
+          text: emailText
+        }, {
+          headers: {
+            'Authorization': `Bearer ${resendApiKey}`,
+            'Content-Type': 'application/json'
+          }
+        });
+        console.log(`[Email API] Resend Success: Sent email to ${recipient.email}`);
         return { success: true };
       } catch (sendErr) {
-        console.error(`[Email API] Failure: Failed to send email to ${recipient.email}:`, sendErr.message);
-        return { success: false, error: sendErr.message };
+        const errMsg = sendErr.response ? JSON.stringify(sendErr.response.data) : sendErr.message;
+        console.error(`[Email API] Resend Failure: Failed to send email to ${recipient.email}:`, errMsg);
+        return { success: false, error: errMsg };
       }
     });
 
     const results = await Promise.all(emailPromises);
     sentCount = results.filter(r => r.success).length;
 
-    console.log(`[Email API] Sent notifications to ${sentCount}/${recipientsToSend.length} successfully.`);
+    console.log(`[Email API] Sent notifications to ${sentCount}/${recipientsToSend.length} successfully via Resend.`);
 
     const newCampaign = {
       name: `${cluster} - Email Notification`,
