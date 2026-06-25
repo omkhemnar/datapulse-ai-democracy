@@ -608,7 +608,7 @@ app.post('/api/send-notifications', async (req, res) => {
     }
 
     // Verify Resend configuration
-    const resendApiKey = process.env.RESEND_API_KEY || 're_evquyklsiivayziu';
+    const resendApiKey = process.env.RESEND_API_KEY || 're_fhCv4oH8_FHFGXxUyt9LHk3dXQjHJxCKy';
 
     // Slice recipients list to a maximum of 25 to prevent Resend rate-limiting/throttling
     const recipientsToSend = recipients.slice(0, 25);
