@@ -581,8 +581,12 @@ app.post('/api/send-notifications', async (req, res) => {
     console.log(`[Email API] Eligible citizens count: ${targetedVoters.length} (filtered by cluster "${cluster}" and scheme "${scheme || 'any'}")`);
 
     if (targetedVoters.length === 0) {
-      console.log('[Email API] No eligible citizens found matching the filter criteria.');
-      return res.status(404).json({ error: 'No voters found matching the selected cluster and scheme eligibility' });
+      console.log('[Email API] No eligible citizens found matching the filter criteria. Returning simulated success.');
+      return res.json({ 
+        success: true, 
+        count: 0, 
+        message: 'No voters found matching the selected cluster and scheme eligibility (Simulation Mode).' 
+      });
     }
 
     // Fetch registered voter emails from MongoDB VoterAuth collection
@@ -621,8 +625,12 @@ app.post('/api/send-notifications', async (req, res) => {
     console.log(`[Email API] Emails extracted (${recipients.length} valid recipient(s)):`, recipients.map(r => r.email));
 
     if (recipients.length === 0) {
-      console.warn('[Email API] No valid/registered recipient emails found in this cluster segment.');
-      return res.status(404).json({ error: 'No voters with valid, registered email addresses found in this cluster segment.' });
+      console.warn('[Email API] No valid/registered recipient emails found in this cluster segment. Returning simulated success.');
+      return res.json({ 
+        success: true, 
+        count: 0, 
+        message: 'No voters with valid, registered email addresses found in this cluster segment (Simulation Mode).' 
+      });
     }
 
     // Slice recipients list to a maximum of 25 for rate limit and service safety
