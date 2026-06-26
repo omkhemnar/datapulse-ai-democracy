@@ -17,13 +17,18 @@ require('dotenv').config();
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
+  pool: true,             // Use connection pooling
+  maxConnections: 3,      // Limit concurrent connections
+  maxMessages: 100,       // Max messages per connection
+  rateDelta: 1000,        // Rate window (1s)
+  rateLimit: 1,           // Max 1 email per second
   auth: {
     user: process.env.EMAIL_USER || 'datapulsedemocracy26@gmail.com',
     pass: process.env.EMAIL_PASS || 'evquyklsiivayziu'
   },
-  connectionTimeout: 5000, // 5 seconds connection timeout
-  greetingTimeout: 5000,   // 5 seconds greeting timeout
-  socketTimeout: 5000      // 5 seconds socket timeout
+  connectionTimeout: 10000, // 10 seconds connection timeout
+  greetingTimeout: 10000,   // 10 seconds greeting timeout
+  socketTimeout: 10000      // 10 seconds socket timeout
 });
 
 const app = express();
@@ -546,9 +551,13 @@ app.post('/api/campaigns', (req, res) => {
 
 // Send Cluster Notifications
 app.post('/api/send-notifications', async (req, res) => {
-  console.log('[Email API] Called for cluster:', req.body.cluster);
+  console.log('\n[Email API] ------------------ API CALLED ------------------');
+  const { cluster, message, scheme } = req.body;
+  console.log('[Email API] Timestamp:', new Date().toISOString());
+  console.log('[Email API] Cluster selected:', cluster);
+  console.log('[Email API] Scheme selected:', scheme);
+
   try {
-    const { cluster, message, scheme } = req.body;
     if (!cluster) {
       console.warn('[Email API] Warning: Cluster name is missing in request.');
       return res.status(400).json({ error: 'Cluster name is required' });
@@ -557,23 +566,32 @@ app.post('/api/send-notifications', async (req, res) => {
     const data = getVotersData();
     let voterGroups = data.voter_groups || [];
     if (!voterGroups.length && data.voters && data.voters.length > 0) {
+      console.log('[Email API] Mapped voter groups not found in cache. Running fallback classification...');
       voterGroups = (await fallbackClassification(data.voters)).voter_groups;
     }
 
-    const targetedVoters = voterGroups.filter(v => v.groups && v.groups.includes(cluster));
-    console.log(`[Email API] Found ${targetedVoters.length} total voters mapped to cluster "${cluster}" in voters.json.`);
+    // Filter by BOTH Cluster AND Scheme eligibility
+    console.log('[Email API] Filtering voters by Cluster and Scheme eligibility...');
+    const targetedVoters = voterGroups.filter(v => {
+      const matchesCluster = v.groups && v.groups.includes(cluster);
+      const matchesScheme = scheme ? (v.eligible_schemes && v.eligible_schemes.includes(scheme)) : true;
+      return matchesCluster && matchesScheme;
+    });
+
+    console.log(`[Email API] Eligible citizens count: ${targetedVoters.length} (filtered by cluster "${cluster}" and scheme "${scheme || 'any'}")`);
 
     if (targetedVoters.length === 0) {
-      return res.status(404).json({ error: 'No voters found for the selected cluster' });
+      console.log('[Email API] No eligible citizens found matching the filter criteria.');
+      return res.status(404).json({ error: 'No voters found matching the selected cluster and scheme eligibility' });
     }
 
     // Fetch registered voter emails from MongoDB VoterAuth collection
     const voterIds = targetedVoters.map(v => v.VoterID.toUpperCase());
-    console.log('[Email API] Querying voterauths database collection for voter IDs...');
+    console.log('[Email API] Querying voterauths database collection for voter IDs to resolve registered accounts...');
     const registeredVoters = await VoterAuth.find({ voterId: { $in: voterIds } });
     console.log(`[Email API] Database query returned ${registeredVoters.length} registered voter(s) with active accounts.`);
 
-    // Map VoterID -> Email
+    // Map VoterID -> Email & Name
     const emailMap = {};
     const nameMap = {};
     registeredVoters.forEach(rv => {
@@ -600,54 +618,63 @@ app.post('/api/send-notifications', async (req, res) => {
       }
     }
 
-    console.log(`[Email API] Resolved ${recipients.length} valid recipient(s) for email transmission:`, recipients.map(r => r.email));
+    console.log(`[Email API] Emails extracted (${recipients.length} valid recipient(s)):`, recipients.map(r => r.email));
 
     if (recipients.length === 0) {
-      console.warn('[Email API] No valid/registered recipient emails found in this cluster.');
-      return res.status(404).json({ error: 'No voters with valid, registered email addresses found in this cluster.' });
+      console.warn('[Email API] No valid/registered recipient emails found in this cluster segment.');
+      return res.status(404).json({ error: 'No voters with valid, registered email addresses found in this cluster segment.' });
     }
 
-    // Verify Resend configuration
-    const resendApiKey = process.env.RESEND_API_KEY || 're_fhCv4oH8_FHFGXxUyt9LHk3dXQjHJxCKy';
+    // SMTP verification check before sending
+    console.log('[Email API] SMTP verification: Verifying connection to Gmail SMTP server...');
+    try {
+      await transporter.verify();
+      console.log('[Email API] SMTP verification SUCCESS: Connected and authenticated with Gmail.');
+    } catch (smtpVerifyErr) {
+      console.error('[Email API] SMTP verification FAILURE: Failed to connect to SMTP server.');
+      console.error('[Email API] Complete error stack:', smtpVerifyErr.stack || smtpVerifyErr);
+      console.error('[Email API] Note: Outbound SMTP ports (465/587) might be blocked by hosting provider (Render/Vercel).');
+      return res.status(502).json({
+        error: 'Email service SMTP connection failed. If this is a hosted deployment, please verify SMTP ports are unblocked.',
+        details: smtpVerifyErr.message
+      });
+    }
 
-    // Slice recipients list to a maximum of 25 to prevent Resend rate-limiting/throttling
+    // Slice recipients list to a maximum of 25 for rate limit and service safety
     const recipientsToSend = recipients.slice(0, 25);
-    console.log(`[Email API] Sending notifications to ${recipientsToSend.length} recipients via Resend (sliced to 25 for rate safety).`);
+    console.log(`[Email API] Batch size: Sending notifications to ${recipientsToSend.length} recipients via Gmail SMTP.`);
 
-    // Send emails in parallel using Resend API (HTTP Port 443, never blocked by Render)
+    // Send emails in sequence (leveraging Nodemailer's connection pooling)
     let sentCount = 0;
-    const emailPromises = recipientsToSend.map(async (recipient) => {
+    const results = [];
+
+    for (const recipient of recipientsToSend) {
       const schemesStr = (recipient.eligible_schemes || []).join(', ') || 'General Government Updates';
-      
       const emailText = message 
         ? `Dear ${recipient.name},\n\n${message}\n\nRegards,\nDataPulse Team`
         : `Dear ${recipient.name},\n\nBased on your profile, you are eligible for the following scheme(s):\n\n${schemesStr}\n\nFor more benefits, please verify your details in the citizen portal.\n\nRegards,\nDataPulse Team`;
 
+      const mailOptions = {
+        from: `"DataPulse Team" <${process.env.EMAIL_USER || 'datapulsedemocracy26@gmail.com'}>`,
+        to: recipient.email,
+        subject: scheme ? `Government Scheme Update: ${scheme}` : 'Government Scheme Update',
+        text: emailText
+      };
+
+      console.log(`[Email API] sendMail start: Dispatching email to ${recipient.email}`);
       try {
-        await axios.post('https://api.resend.com/emails', {
-          from: 'DataPulse Team <no-reply@datapulsedemocracy.com>',
-          to: recipient.email,
-          subject: scheme ? `Government Scheme Update: ${scheme}` : 'Government Scheme Update',
-          text: emailText
-        }, {
-          headers: {
-            'Authorization': `Bearer ${resendApiKey}`,
-            'Content-Type': 'application/json'
-          }
-        });
-        console.log(`[Email API] Resend Success: Sent email to ${recipient.email}`);
-        return { success: true };
+        const info = await transporter.sendMail(mailOptions);
+        console.log(`[Email API] sendMail success for: ${recipient.email}. Info:`, info.response);
+        results.push({ success: true, recipient: recipient.email });
+        sentCount++;
       } catch (sendErr) {
-        const errMsg = sendErr.response ? JSON.stringify(sendErr.response.data) : sendErr.message;
-        console.error(`[Email API] Resend Failure: Failed to send email to ${recipient.email}:`, errMsg);
-        return { success: false, error: errMsg };
+        console.error(`[Email API] sendMail failure for: ${recipient.email}. Error message:`, sendErr.message);
+        console.error('[Email API] Complete error stack:', sendErr.stack || sendErr);
+        results.push({ success: false, recipient: recipient.email, error: sendErr.message });
       }
-    });
+    }
 
-    const results = await Promise.all(emailPromises);
-    sentCount = results.filter(r => r.success).length;
-
-    console.log(`[Email API] Sent notifications to ${sentCount}/${recipientsToSend.length} successfully via Resend.`);
+    console.log(`[Email API] Transmission Summary: Sent notifications to ${sentCount}/${recipientsToSend.length} successfully.`);
 
     const newCampaign = {
       name: `${cluster} - Email Notification`,
@@ -665,9 +692,15 @@ app.post('/api/send-notifications', async (req, res) => {
       console.error('[Email API] Failed to update campaigns list:', e.message);
     }
 
-    res.json({ success: true, count: sentCount, message: `Notification sent to ${sentCount} voters.` });
+    res.json({ 
+      success: true, 
+      count: sentCount, 
+      results,
+      message: `Notification sent to ${sentCount} voters.` 
+    });
   } catch (err) {
     console.error('[Email API] Unhandled Error:', err);
+    console.error('[Email API] Complete error stack:', err.stack || err);
     res.status(500).json({ error: err.message });
   }
 });
