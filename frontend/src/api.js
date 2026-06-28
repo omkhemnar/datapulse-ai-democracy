@@ -80,3 +80,28 @@ export const sendTelegramClusterNotification = async (data) => {
   const res = await axios.post(`${API_BASE}/api/telegram/cluster-notify`, data)
   return res.data
 }
+
+export const addFamilyMember = async (data) => {
+  const res = await axios.post(`${API_BASE}/api/family-member`, data);
+  return res.data;
+};
+
+export const getFamilyMembers = async (voterId) => {
+  const res = await axios.get(`${API_BASE}/api/family-members/${voterId}`);
+  return res.data;
+};
+
+export const updateFamilyMember = async (id, data) => {
+  const res = await axios.put(`${API_BASE}/api/family-member/${id}`, data);
+  return res.data;
+};
+
+export const deleteFamilyMember = async (id) => {
+  const res = await axios.delete(`${API_BASE}/api/family-member/${id}`);
+  return res.data;
+};
+
+export const getFamilyMemberSchemes = async (id) => {
+  const res = await axios.get(`${API_BASE}/api/family-member/${id}/schemes`);
+  return res.data;
+};

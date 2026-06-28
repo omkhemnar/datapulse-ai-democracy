@@ -12,6 +12,7 @@ const crypto = require('crypto');
 const cron = require('node-cron');
 const { fetchSchemes } = require('./services/schemeFetcher');
 const Scheme = require('./models/Scheme');
+const FamilyMember = require('./models/FamilyMember');
 const { sendTelegramMessage, sendEligibilityAlerts, sendDeadlineReminders } = require('./services/telegramService');
 require('dotenv').config();
 
@@ -1153,6 +1154,197 @@ app.post('/api/telegram/cluster-notify', async (req, res) => {
     res.json({ success: true, count: sentCount, message: `Notification sent to ${sentCount} Telegram users.` });
   } catch (err) {
     console.error('[Telegram Error]', err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ─── Family Welfare API Routes ─────────────────────────────────
+
+// Add a family member
+app.post('/api/family-member', async (req, res) => {
+  try {
+    const member = new FamilyMember(req.body);
+    await member.save();
+    res.status(201).json({ success: true, member });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Get all family members for a voter
+app.get('/api/family-members/:voterId', async (req, res) => {
+  try {
+    const members = await FamilyMember.find({ voterId: req.params.voterId });
+    res.json(members);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Update a family member
+app.put('/api/family-member/:id', async (req, res) => {
+  try {
+    const member = await FamilyMember.findByIdAndUpdate(req.params.id, req.body, { new: true });
+    if (!member) return res.status(404).json({ error: 'Family member not found' });
+    res.json({ success: true, member });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Delete a family member
+app.delete('/api/family-member/:id', async (req, res) => {
+  try {
+    const member = await FamilyMember.findByIdAndDelete(req.params.id);
+    if (!member) return res.status(404).json({ error: 'Family member not found' });
+    res.json({ success: true, message: 'Family member deleted successfully' });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Get eligible and upcoming schemes for a family member
+app.get('/api/family-member/:id/schemes', async (req, res) => {
+  try {
+    const member = await FamilyMember.findById(req.params.id);
+    if (!member) return res.status(404).json({ error: 'Family member not found' });
+
+    const allSchemes = await Scheme.find({});
+    const eligible = [];
+    const upcoming = [];
+    const reminders = [];
+
+    // Demographic eligibility check
+    for (const scheme of allSchemes) {
+      const tags = (scheme.tags || []).map(t => t.toLowerCase());
+      const category = (scheme.category || '').toLowerCase();
+      const name = (scheme.name || '').toLowerCase();
+      const description = (scheme.description || '').toLowerCase();
+      const eligibilityText = (scheme.eligibility || '').toLowerCase();
+      const state = (scheme.state || 'All').toLowerCase();
+
+      // 1. State Filter
+      if (state !== 'all' && state !== member.state.toLowerCase()) {
+        continue;
+      }
+
+      // 2. Gender Filter
+      const isFemaleOnly = tags.includes('women') || tags.includes('girl') || tags.includes('female') ||
+                           category.includes('women') || name.includes('kanya') || name.includes('sukanya') ||
+                           description.includes('girl') || description.includes('women');
+      if (isFemaleOnly && member.gender.toLowerCase() !== 'female') {
+        continue;
+      }
+
+      // 3. Disability Filter
+      const isDisabilityOnly = tags.includes('disability') || category.includes('disability') ||
+                               description.includes('disab') || eligibilityText.includes('disabilit');
+      if (isDisabilityOnly && member.disability.toLowerCase() !== 'yes') {
+        continue;
+      }
+
+      // 4. Age Check & Progression Rules
+      let ageEligible = false;
+      let ageUpcoming = false;
+      let triggerAge = null;
+
+      // Special Rules for known schemes:
+      if (scheme.name === 'Sukanya Samriddhi Yojana (SSY)') {
+        // Girl child under 10
+        if (member.gender.toLowerCase() === 'female') {
+          if (member.age <= 10) {
+            ageEligible = true;
+          }
+        }
+      } else if (scheme.name === 'Lek Ladki Yojana' || scheme.name === 'Majhi Kanya Bhagyashree Scheme' || scheme.name === 'Beti Bachao Beti Padhao') {
+        // Girl child/women under 18
+        if (member.gender.toLowerCase() === 'female') {
+          if (member.age <= 18) {
+            ageEligible = true;
+          }
+        }
+      } else if (scheme.name === 'Chief Minister Employment Generation Programme' || scheme.name === 'Startup India Maharashtra') {
+        // Adult/Youth (18 - 45)
+        if (member.age >= 18 && member.age <= 45) {
+          ageEligible = true;
+        } else if (member.age < 18) {
+          ageUpcoming = true;
+          triggerAge = 18;
+        }
+      } else if (scheme.name === 'Stand-Up India Scheme') {
+        // Adult women/SC/ST >= 18
+        const isTargetGender = member.gender.toLowerCase() === 'female';
+        if (isTargetGender) {
+          if (member.age >= 18) {
+            ageEligible = true;
+          } else {
+            ageUpcoming = true;
+            triggerAge = 18;
+          }
+        }
+      } else if (scheme.name === 'Shravanbal Seva Rajya Nivruttivetan Yojana' || scheme.name === 'Mukhya Mantri Vayoshri Yojana') {
+        // Senior citizens >= 65
+        if (member.age >= 65) {
+          ageEligible = true;
+        } else if (member.age >= 50 && member.age < 65) {
+          ageUpcoming = true;
+          triggerAge = 65;
+        }
+      } else {
+        // Default age rules for other schemes:
+        // Check for general farmer/other schemes with no strict age caps
+        ageEligible = true;
+      }
+
+      // 5. Occupation & Income check (Farmer validation)
+      const isFarmerScheme = tags.includes('farmer') || tags.includes('agriculture') || 
+                             category.includes('agri') || description.includes('farmer');
+      if (isFarmerScheme && member.occupation.toLowerCase() !== 'farmer') {
+        ageEligible = false;
+        ageUpcoming = false;
+      }
+
+      if (ageEligible) {
+        eligible.push(scheme);
+      } else if (ageUpcoming && triggerAge) {
+        upcoming.push({
+          scheme,
+          triggerAge,
+          message: `Eligible at Age ${triggerAge} (Current Age: ${member.age})`
+        });
+        
+        // Add a reminder structure: schedule date when they turn triggerAge
+        const yearsToWait = triggerAge - member.age;
+        const scheduledDate = new Date();
+        scheduledDate.setFullYear(scheduledDate.getFullYear() + yearsToWait);
+        reminders.push({
+          schemeName: scheme.name,
+          triggerAge,
+          scheduledDate,
+          sent: false
+        });
+      }
+    }
+
+    // Save reminders and eligible schemes back to family member document
+    member.eligibleSchemes = eligible.map(s => s.name);
+    
+    // Merge new reminders if they don't already exist
+    reminders.forEach(r => {
+      const exists = member.reminders.some(existing => existing.schemeName === r.schemeName && existing.triggerAge === r.triggerAge);
+      if (!exists) {
+        member.reminders.push(r);
+      }
+    });
+    await member.save();
+
+    res.json({
+      success: true,
+      eligible,
+      upcoming
+    });
+  } catch (err) {
+    console.error('[Family Schemes API Error]', err);
     res.status(500).json({ error: err.message });
   }
 });
